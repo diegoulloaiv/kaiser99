@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#9CA5A4</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="MyTheme" parent="FirebaseUI">
+        <item name="android:textColorAlertDialogListItem">#FFAA1D12</item>
+        <item name="android:textColor">#FFAA1D12</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">#9CA5A4</item>
+        <item name="android:buttonStyle">@style/ButtonColor</item>
+        <item name="android:textViewStyle">@style/TextViewColor</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">#20201E</item>
+
+    </style>
+
+    <style name="TextViewColor" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">#322F2F</item>
+
+    </style>
+
+    <style name="ButtonColor" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+</resources>
+

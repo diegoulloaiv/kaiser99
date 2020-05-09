@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+>
+
+    <ImageView
+        android:id="@+id/iv_producto_carro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"/>
+
+    <TextView
+        android:id="@+id/txt_producto_carro"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txt_cantidad_carro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txt_precio_carro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+</LinearLayout>

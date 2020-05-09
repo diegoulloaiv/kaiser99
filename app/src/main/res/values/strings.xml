@@ -1,0 +1,3691 @@
+<resources>
+    <string name="app_name">kaiser</string>
+
+    <string-array name="provincias">
+        <item>"Buenos Aires"</item>
+        <item>"Catamarca"</item>
+        <item>"Ciudad Autónoma de Buenos Aires"</item>
+        <item>"Chaco"</item>
+        <item>"Chubut"</item>
+        <item>"Córdoba"</item>
+        <item>"Corrientes"</item>
+        <item>"Entre Ríos"</item>
+        <item>"Formosa"</item>
+        <item>"Jujuy"</item>
+        <item>"Misiones"</item>
+        <item>"Mendoza"</item>
+        <item>"Neuquén"</item>
+        <item>"La Rioja"</item>
+        <item>"La Pampa"</item>
+        <item>"Río Negro"</item>
+        <item>"Santa Cruz"</item>
+        <item>"San Juan"</item>
+        <item>"San Luis"</item>
+        <item>"Santa Fe"</item>
+        <item>"Santiago del Estero"</item>
+        <item>"Salta"</item>
+        <item>"Tierra del Fuego"</item>
+        <item>"Tucumán"</item>
+    </string-array>
+
+    <string-array name="ciudades_catamarca">
+        <item>"Adolfo E. Carranza"</item>
+        <item>"Alijilán"</item>
+        <item>"Amadores"</item>
+        <item>"Amanao"</item>
+        <item>"Ancasti"</item>
+        <item>"Andalgalá"</item>
+        <item>"Andalhualá"</item>
+        <item>"Anillaco"</item>
+        <item>"Anquincila"</item>
+        <item>"Antinaco"</item>
+        <item>"Antofagasta de la Sierra"</item>
+        <item>"Antofalla"</item>
+        <item>"Apoyaco"</item>
+        <item>"Balde de la Punta"</item>
+        <item>"Banda de Lucero"</item>
+        <item>"Bañado de Ovanta"</item>
+        <item>"Barranca Larga"</item>
+        <item>"Barrio Bancario"</item>
+        <item>"Belén"</item>
+        <item>"Capayán"</item>
+        <item>"Casa de Piedra"</item>
+        <item>"Caspichango"</item>
+        <item>"Cerro Negro"</item>
+        <item>"Chañar Punco"</item>
+        <item>"Chaquiago"</item>
+        <item>"Choya"</item>
+        <item>"Chuchucaruana"</item>
+        <item>"Chumbicha"</item>
+        <item>"Colana"</item>
+        <item>"Collagasta"</item>
+        <item>"Colonia del Valle"</item>
+        <item>"Colonia Nueva Coneta"</item>
+        <item>"Colpes"</item>
+        <item>"Colpes"</item>
+        <item>"Concepción"</item>
+        <item>"Cóndor Huasi"</item>
+        <item>"Coneta"</item>
+        <item>"Copacabana"</item>
+        <item>"Cordobita"</item>
+        <item>"Corral Quemado"</item>
+        <item>"Costa de Reyes"</item>
+        <item>"El Alamito"</item>
+        <item>"El Alto"</item>
+        <item>"El Aybal"</item>
+        <item>"El Bañado"</item>
+        <item>"El Bañado"</item>
+        <item>"El Bolsón"</item>
+        <item>"El Cajón"</item>
+        <item>"El Desmonte"</item>
+        <item>"El Divisadero"</item>
+        <item>"El Durazno"</item>
+        <item>"El Lindero"</item>
+        <item>"El Pajonal (Est. Pomán)"</item>
+        <item>"El Pantanillo"</item>
+        <item>"El Peñón"</item>
+        <item>"El Portezuelo"</item>
+        <item>"El Potrero"</item>
+        <item>"El Pueblito"</item>
+        <item>"El Puesto"</item>
+        <item>"El Puesto"</item>
+        <item>"El Quimilo"</item>
+        <item>"El Rodeo  "</item>
+        <item>"El Rosario"</item>
+        <item>"El Salado"</item>
+        <item>"Esquiú"</item>
+        <item>"Famatanca"</item>
+        <item>"Farallón Negro"</item>
+        <item>"Fiambalá"</item>
+        <item>"Fuerte Quemado"</item>
+        <item>"Guayamba"</item>
+        <item>"Hualfín"</item>
+        <item>"Huaycama"</item>
+        <item>"Huaycama"</item>
+        <item>"Huillapima"</item>
+        <item>"Icaño"</item>
+        <item>"Infanzón"</item>
+        <item>"Jacipunco"</item>
+        <item>"Joyango"</item>
+        <item>"La Aguada"</item>
+        <item>"La Bajada"</item>
+        <item>"La Candelaria"</item>
+        <item>"La Dorada"</item>
+        <item>"La Guardia"</item>
+        <item>"La Higuera"</item>
+        <item>"La Hoyada"</item>
+        <item>"La Loma"</item>
+        <item>"La Majada"</item>
+        <item>"La Merced"</item>
+        <item>"La Puerta"</item>
+        <item>"La Puntilla"</item>
+        <item>"La Viña"</item>
+        <item>"Las Cañas"</item>
+        <item>"Las Chacritas"</item>
+        <item>"Las Esquinas"</item>
+        <item>"Las Juntas"</item>
+        <item>"Las Juntas"</item>
+        <item>"Las Lajas"</item>
+        <item>"Las Mojarras"</item>
+        <item>"Las Palmitas"</item>
+        <item>"Las Tejas"</item>
+        <item>"Lavalle"</item>
+        <item>"Londres "</item>
+        <item>"Loro Huasi"</item>
+        <item>"Los Altos"</item>
+        <item>"Los Angeles"</item>
+        <item>"Los Balverdis"</item>
+        <item>"Los Castillos"</item>
+        <item>"Los Corrales"</item>
+        <item>"Los Nacimientos"</item>
+        <item>"Los Nacimientos"</item>
+        <item>"Los Talas"</item>
+        <item>"Los Varela"</item>
+        <item>"Manantiales"</item>
+        <item>"Medanitos"</item>
+        <item>"Miraflores"</item>
+        <item>"Monte Potrero"</item>
+        <item>"Mutquin"</item>
+        <item>"Palo Blanco"</item>
+        <item>"Palo Labrado"</item>
+        <item>"Pomán "</item>
+        <item>"Pomancillo Este"</item>
+        <item>"Pomancillo Oeste"</item>
+        <item>"Puerta de Corral Quemado"</item>
+        <item>"Puerta de San José"</item>
+        <item>"Punta de Balasto"</item>
+        <item>"Punta del Agua"</item>
+        <item>"Quirós"</item>
+        <item>"Ramblones"</item>
+        <item>"Recreo"</item>
+        <item>"Rincón"</item>
+        <item>"San Antonio"</item>
+        <item>"San Antonio"</item>
+        <item>"San Fernando del Valle de Catamarca"</item>
+        <item>"San Isidro"</item>
+        <item>"San José"</item>
+        <item>"San José"</item>
+        <item>"San Martín"</item>
+        <item>"San Miguel"</item>
+        <item>"San Pablo"</item>
+        <item>"San Pedro"</item>
+        <item>"San Pedro"</item>
+        <item>"Santa Cruz"</item>
+        <item>"Santa María"</item>
+        <item>"Saujil"</item>
+        <item>"Saujil"</item>
+        <item>"Siján"</item>
+        <item>"Singuil"</item>
+        <item>"Tapso"</item>
+        <item>"Tatón"</item>
+        <item>"Tinogasta"</item>
+        <item>"Vilismán"</item>
+        <item>"Villa de Balcozna"</item>
+        <item>"Villa Las Pirquitas"</item>
+        <item>"Villa Vil"</item>
+        <item>"Yapes"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_chubus">
+        <item>"Cerro Condor"</item>
+        <item>"Dique Florentino Ameghino"</item>
+        <item>"Dolavon"</item>
+        <item>"El Mirasol"</item>
+        <item>"Gaiman"</item>
+        <item>"Gan Gan"</item>
+        <item>"Gastre"</item>
+        <item>"Lagunita Salada"</item>
+        <item>"Las Plumas"</item>
+        <item>"Los Altares"</item>
+        <item>"Paso de Indios"</item>
+        <item>"Playa Union "</item>
+        <item>"Puerto Madryn"</item>
+        <item>"Puerto Piramides"</item>
+        <item>"Rawson"</item>
+        <item>"Telsen"</item>
+        <item>"Trelew"</item>
+        <item>"Yala Laubat"</item>
+        <item>"Bryn Gwyn"</item>
+        <item>"Chacay Oeste"</item>
+        <item>"La Angostura"</item>
+        <item>"Sepaucal"</item>
+        <item>"Treorcky"</item>
+        <item>"Astra"</item>
+        <item>"Camarones"</item>
+        <item>"Comodoro Rivadavia"</item>
+        <item>"Diadema Argentina"</item>
+        <item>"Garayalde"</item>
+        <item>"Rada Tilly"</item>
+        <item>"Sarmiento "</item>
+        <item>"Paraje Rio Pico"</item>
+        <item>"Aldea Beleiro"</item>
+        <item>"Doctor Ricardo Rojas"</item>
+        <item>"Facundo"</item>
+        <item>"Lago Blanco"</item>
+        <item>"Rio Mayo "</item>
+        <item>"El Hoyo"</item>
+        <item>"Lago Puelo"</item>
+        <item>"El Turbio"</item>
+        <item>"Las Golondrinas"</item>
+        <item>"Aldea Apeleg"</item>
+        <item>"Aldea Epulef"</item>
+        <item>"Aldea Escolar"</item>
+        <item>"Alto Rio Senguer"</item>
+        <item>"Buen Pasto"</item>
+        <item>"Carrenleufu"</item>
+        <item>"Cholila"</item>
+        <item>"Colan Conhue"</item>
+        <item>"Corcovado"</item>
+        <item>"Cushamen Centro"</item>
+        <item>"El Maiten"</item>
+        <item>"Epuyen"</item>
+        <item>"Esquel "</item>
+        <item>"Gobernador Costa"</item>
+        <item>"Gualjaina"</item>
+        <item>"Jose de San Martin"</item>
+        <item>"Los Cipreses"</item>
+        <item>"Paso del Sapo"</item>
+        <item>"Rio Pico"</item>
+        <item>"Tecka"</item>
+        <item>"Trevelin"</item>
+        <item>"Villa Futalaufquen"</item>
+        <item>"Cerro Centinela"</item>
+        <item>"Costa de Gualjaina"</item>
+        <item>"Costa del Chubut"</item>
+        <item>"Dos Lagunas"</item>
+        <item>"Dr. Atilio Oscar Viglione"</item>
+        <item>"El Coihue"</item>
+        <item>"Fofo Cahuel"</item>
+        <item>"Lago Rivadavia"</item>
+        <item>"Piedra Parada"</item>
+        <item>"Ranquil Huao"</item>
+        <item>"Rio Percy"</item>
+        <item>"Languineo"</item>
+        <item>"Arroyo Verde"</item>
+        <item>"Bahia Bustamante"</item>
+        <item>"Blancuntre"</item>
+        <item>"Buenos Aires Chico"</item>
+        <item>"El Escorial"</item>
+        <item>"Frontera de Rio Pico"</item>
+        <item>"Lago Epuyen"</item>
+        <item>"Lago Rosario"</item>
+        <item>"Leleque"</item>
+        <item>"Playa Magagna"</item>
+        <item>"Quinta El Mirador"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_tucuman">
+        <item>"7 de Abril"</item>
+        <item>"Acheral"</item>
+        <item>"Aguilares "</item>
+        <item>"Alderetes"</item>
+        <item>"Alpachiri"</item>
+        <item>"Alto Verde"</item>
+        <item>"Amaicha del Valle"</item>
+        <item>"Arcadia"</item>
+        <item>"Atahona"</item>
+        <item>"Banda del Río Salí"</item>
+        <item>"Barrio Aeropuerto"</item>
+        <item>"Barrio Casa Rosada"</item>
+        <item>"Barrio El Cruce"</item>
+        <item>"Barrio Lomas de Tafí"</item>
+        <item>"Barrio Mutual San Martín"</item>
+        <item>"Barrio Parada 14"</item>
+        <item>"Barrio San Felipe"</item>
+        <item>"Barrio San Jorge"</item>
+        <item>"Barrio San José III"</item>
+        <item>"Barrio San Roque"</item>
+        <item>"Barrio U.T.A. II"</item>
+        <item>"Bella Vista"</item>
+        <item>"Campo de Herrera"</item>
+        <item>"Capitán Cáceres"</item>
+        <item>"Choromoro"</item>
+        <item>"Colalao del Valle"</item>
+        <item>"Colombres"</item>
+        <item>"Colonia Mayo - Barrio La Milagrosa"</item>
+        <item>"Concepción"</item>
+        <item>"Delfín Gallo"</item>
+        <item>"Diagonal Norte - Luz y Fuerza - Los Pocitos - Villa Nueva Italia"</item>
+        <item>"El Bracho"</item>
+        <item>"El Cadillal"</item>
+        <item>"El Chañar"</item>
+        <item>"El Manantial"</item>
+        <item>"El Mollar"</item>
+        <item>"El Naranjo"</item>
+        <item>"Estación Aráoz"</item>
+        <item>"Famaillá "</item>
+        <item>"Garmendia "</item>
+        <item>"Graneros"</item>
+        <item>"Iltico"</item>
+        <item>"Ingenio Fronterita"</item>
+        <item>"Ingenio San Pablo"</item>
+        <item>"Juan Bautista Alberdi"</item>
+        <item>"La Cocha"</item>
+        <item>"La Florida"</item>
+        <item>"La Ramada"</item>
+        <item>"La Reducción"</item>
+        <item>"La Trinidad"</item>
+        <item>"Lamadrid "</item>
+        <item>"Las Cejas"</item>
+        <item>"Los Puestos"</item>
+        <item>"Los Ralos "</item>
+        <item>"Los Sarmientos"</item>
+        <item>"Lules"</item>
+        <item>"Macomitas"</item>
+        <item>"Manuel García Fernández "</item>
+        <item>"Medina"</item>
+        <item>"Monteagudo"</item>
+        <item>"Monteros"</item>
+        <item>"Nueva Trinidad"</item>
+        <item>"Pacará"</item>
+        <item>"Pala Pala"</item>
+        <item>"Piedrabuena"</item>
+        <item>"Pueblo Independencia"</item>
+        <item>"Ranchillos"</item>
+        <item>"Río Chico"</item>
+        <item>"Río Colorado"</item>
+        <item>"Río Seco"</item>
+        <item>"San Andrés"</item>
+        <item>"San José de La Cocha"</item>
+        <item>"San Miguel de Tucumán (Est. Tucumán)"</item>
+        <item>"San Pedro de Colalao"</item>
+        <item>"Santa Ana "</item>
+        <item>"Santa Cruz"</item>
+        <item>"Santa Lucía "</item>
+        <item>"Santa Rosa de Leales"</item>
+        <item>"Sargento Moya"</item>
+        <item>"Simoca"</item>
+        <item>"Soldado Maldonado"</item>
+        <item>"Taco Ralo"</item>
+        <item>"Tafí del Valle"</item>
+        <item>"Tafí Viejo"</item>
+        <item>"Teniente Berdina"</item>
+        <item>"Villa  Padre Monti"</item>
+        <item>"Villa Belgrano"</item>
+        <item>"Villa Benjamín Aráoz"</item>
+        <item>"Villa Burruyacú"</item>
+        <item>"Villa Carmela"</item>
+        <item>"Villa Chicligasta"</item>
+        <item>"Villa Clodomiro Hileret "</item>
+        <item>"Villa de Trancas"</item>
+        <item>"Villa Fiad - Ingenio Leales"</item>
+        <item>"Villa Las Flores"</item>
+        <item>"Villa Leales"</item>
+        <item>"Villa Mariano Moreno - El Colmenar "</item>
+        <item>"Villa Quinteros"</item>
+        <item>"Yerba Buena - Marcos Paz"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_tierra">
+        <item>"Laguna Escondida"</item>
+        <item>"Río Grande"</item>
+        <item>"Sin Localidades"</item>
+        <item>"Sin Localidades"</item>
+        <item>"Tolhuin"</item>
+        <item>"Ushuaia"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_salta">
+        <item>"Acoyte"</item>
+        <item>"Aguaray"</item>
+        <item>"Aguas Blancas"</item>
+        <item>"Alto de la Sierra"</item>
+        <item>"Ampascachi"</item>
+        <item>"Angastaco"</item>
+        <item>"Animaná"</item>
+        <item>"Antillá"</item>
+        <item>"Apolinario Saravia"</item>
+        <item>"Atocha"</item>
+        <item>"Cabra Corral"</item>
+        <item>"Cachi"</item>
+        <item>"Cafayate"</item>
+        <item>"Campamento Vespucio "</item>
+        <item>"Campichuelo"</item>
+        <item>"Campo Durán"</item>
+        <item>"Campo La Cruz"</item>
+        <item>"Campo Quijano"</item>
+        <item>"Campo Santo"</item>
+        <item>"Capiazuti"</item>
+        <item>"Capitán Juan Pagé"</item>
+        <item>"Carboncito"</item>
+        <item>"Ceibalito"</item>
+        <item>"Centro 25 de Junio"</item>
+        <item>"Cerrillos "</item>
+        <item>"Chicoana"</item>
+        <item>"Cobos"</item>
+        <item>"Cobres"</item>
+        <item>"Colonia Santa Rosa"</item>
+        <item>"Copo Quile"</item>
+        <item>"Coronel Cornejo"</item>
+        <item>"Coronel Juan Solá (Est. Morillo)"</item>
+        <item>"Coronel Moldes"</item>
+        <item>"Coronel Mollinedo"</item>
+        <item>"Coronel Olleros"</item>
+        <item>"Dragones"</item>
+        <item>"El Barrial"</item>
+        <item>"El Bordo"</item>
+        <item>"El Carril"</item>
+        <item>"El Galpón (Est. Foguista J. F. Juárez)"</item>
+        <item>"El Jardín"</item>
+        <item>"El Naranjo"</item>
+        <item>"El Potrero (Apeadero Cochabamba) "</item>
+        <item>"El Quebrachal"</item>
+        <item>"El Tabacal "</item>
+        <item>"El Tala (Est. Ruiz de los Llanos)"</item>
+        <item>"El Tipal y La Almudena"</item>
+        <item>"El Tunal"</item>
+        <item>"Embarcación"</item>
+        <item>"Gaona"</item>
+        <item>"General Ballivián"</item>
+        <item>"General Güemes (Est. Güemes)"</item>
+        <item>"General Mosconi (Est. Vespucio)"</item>
+        <item>"General Pizarro"</item>
+        <item>"Guachipas"</item>
+        <item>"Hickman"</item>
+        <item>"Hipólito Yrigoyen (Est. Tabacal)"</item>
+        <item>"Iruya"</item>
+        <item>"Isla de Cañas"</item>
+        <item>"Joaquín V. González"</item>
+        <item>"La Caldera"</item>
+        <item>"La Candelaria"</item>
+        <item>"La Ciénaga y Barrio San Rafael"</item>
+        <item>"La Merced"</item>
+        <item>"La Misión"</item>
+        <item>"La Poma"</item>
+        <item>"La Puerta"</item>
+        <item>"La Silleta"</item>
+        <item>"La Unión"</item>
+        <item>"La Viña"</item>
+        <item>"Las Costas"</item>
+        <item>"Las Lajitas"</item>
+        <item>"Los Blancos"</item>
+        <item>"Los Toldos"</item>
+        <item>"Luis Burela"</item>
+        <item>"Lumbreras"</item>
+        <item>"Macapillo"</item>
+        <item>"Metán Viejo"</item>
+        <item>"Misión Chaqueña"</item>
+        <item>"Misión El Cruce - El Milagro - El Jardín de San Martín"</item>
+        <item>"Misión Kilómetro 6"</item>
+        <item>"Misión Tierras Fiscales "</item>
+        <item>"Molinos"</item>
+        <item>"Nazareno"</item>
+        <item>"Nuestra Señora de Talavera"</item>
+        <item>"Olacapato"</item>
+        <item>"Pacará"</item>
+        <item>"Padre Lozano"</item>
+        <item>"Payogasta"</item>
+        <item>"Pichanal "</item>
+        <item>"Piquete Cabado"</item>
+        <item>"Piquirenda"</item>
+        <item>"Pluma de Pato"</item>
+        <item>"Poscaya"</item>
+        <item>"Presa El Tunal"</item>
+        <item>"Profesor Salvador Mazza (Est. Pocitos)"</item>
+        <item>"Pueblo Viejo"</item>
+        <item>"Recaredo"</item>
+        <item>"Río del Valle"</item>
+        <item>"Río Piedras"</item>
+        <item>"Rivadavia"</item>
+        <item>"Rosario de la Frontera"</item>
+        <item>"Rosario de Lerma"</item>
+        <item>"Salta"</item>
+        <item>"San Agustín"</item>
+        <item>"San Antonio de los Cobres"</item>
+        <item>"San Carlos"</item>
+        <item>"San Felipe"</item>
+        <item>"San José de Metán (Est. Metán)"</item>
+        <item>"San José de Orquera "</item>
+        <item>"San Marcos"</item>
+        <item>"San Ramón de la Nueva Orán (Est. Orán)"</item>
+        <item>"Santa María"</item>
+        <item>"Santa Rosa"</item>
+        <item>"Santa Rosa de los Pastos Grandes"</item>
+        <item>"Santa Victoria"</item>
+        <item>"Santa Victoria Este"</item>
+        <item>"Seclantás"</item>
+        <item>"Talapampa"</item>
+        <item>"Tartagal"</item>
+        <item>"Tobantirenda"</item>
+        <item>"Tolar Grande"</item>
+        <item>"Tolloche"</item>
+        <item>"Tolombón"</item>
+        <item>"Tranquitas"</item>
+        <item>"Urundel"</item>
+        <item>"Vaqueros"</item>
+        <item>"Villa Los Álamos"</item>
+        <item>"Villa San Lorenzo"</item>
+        <item>"Yacuy"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_santiago">
+        <item>"Abra Grande"</item>
+        <item>"Aerolito"</item>
+        <item>"Alhuampa "</item>
+        <item>"Ancaján"</item>
+        <item>"Antajé"</item>
+        <item>"Añatuya"</item>
+        <item>"Ardiles"</item>
+        <item>"Argentina"</item>
+        <item>"Árraga"</item>
+        <item>"Averías"</item>
+        <item>"Bandera"</item>
+        <item>"Bandera Bajada"</item>
+        <item>"Beltrán"</item>
+        <item>"Brea Pozo"</item>
+        <item>"Campo Gallo"</item>
+        <item>"Cañada Escobar"</item>
+        <item>"Casares"</item>
+        <item>"Caspi Corral"</item>
+        <item>"Chañar Pozo de Abajo"</item>
+        <item>"Chauchillas"</item>
+        <item>"Chaupi Pozo"</item>
+        <item>"Chilca Juliana"</item>
+        <item>"Choya"</item>
+        <item>"Clodomira"</item>
+        <item>"Colonia Alpina"</item>
+        <item>"Colonia Dora"</item>
+        <item>"Colonia El Simbolar"</item>
+        <item>"Colonia San Juan"</item>
+        <item>"Colonia Tinco"</item>
+        <item>"Coronel Manuel L. Rico"</item>
+        <item>"Cuatro Bocas"</item>
+        <item>"Donadeu"</item>
+        <item>"El 49"</item>
+        <item>"El Bobadal"</item>
+        <item>"El Caburé"</item>
+        <item>"El Charco"</item>
+        <item>"El Charco"</item>
+        <item>"El Colorado"</item>
+        <item>"El Crucero"</item>
+        <item>"El Cuadrado"</item>
+        <item>"El Deán"</item>
+        <item>"El Mojón"</item>
+        <item>"El Mojón"</item>
+        <item>"El Rincón"</item>
+        <item>"El Zanjón"</item>
+        <item>"Estación Atamisqui"</item>
+        <item>"Estación La Punta"</item>
+        <item>"Estación Robles"</item>
+        <item>"Estación Taboada"</item>
+        <item>"Estación Tacañitas"</item>
+        <item>"Fernández"</item>
+        <item>"Fortín Inca"</item>
+        <item>"Frías"</item>
+        <item>"Garza"</item>
+        <item>"Gramilla"</item>
+        <item>"Gramilla"</item>
+        <item>"Guardia Escolta"</item>
+        <item>"Hasse"</item>
+        <item>"Hernán Mejía Miraval"</item>
+        <item>"Herrera"</item>
+        <item>"Huyamampa"</item>
+        <item>"Icaño"</item>
+        <item>"Ingeniero Forres (Est. Chaguar Punco)"</item>
+        <item>"Isca Yacu"</item>
+        <item>"Isca Yacu Semaul"</item>
+        <item>"Kilómetro 30"</item>
+        <item>"La Aurora"</item>
+        <item>"La Banda"</item>
+        <item>"La Cañada"</item>
+        <item>"La Dársena"</item>
+        <item>"La Firmeza"</item>
+        <item>"La Invernada"</item>
+        <item>"La Nena"</item>
+        <item>"La Nueva Donosa"</item>
+        <item>"Laprida"</item>
+        <item>"Las Delicias"</item>
+        <item>"Las Palmitas"</item>
+        <item>"Las Tinajas"</item>
+        <item>"Lavalle"</item>
+        <item>"Libertad"</item>
+        <item>"Lilo Viejo"</item>
+        <item>"Los Cardozos"</item>
+        <item>"Los Juríes"</item>
+        <item>"Los Miranda"</item>
+        <item>"Los Núñez"</item>
+        <item>"Los Pirpintos"</item>
+        <item>"Los Quiroga"</item>
+        <item>"Los Soria"</item>
+        <item>"Los Telares"</item>
+        <item>"Los Tigres"</item>
+        <item>"Lugones"</item>
+        <item>"Maco"</item>
+        <item>"Malbrán"</item>
+        <item>"Mansupa"</item>
+        <item>"Maquito"</item>
+        <item>"Matará"</item>
+        <item>"Medellín"</item>
+        <item>"Minerva"</item>
+        <item>"Monte Quemado"</item>
+        <item>"Morales"</item>
+        <item>"Nueva Esperanza"</item>
+        <item>"Nueva Esperanza"</item>
+        <item>"Nueva Francia"</item>
+        <item>"Palo Negro"</item>
+        <item>"Pampa de los Guanacos"</item>
+        <item>"Patay"</item>
+        <item>"Pozo Betbeder"</item>
+        <item>"Pozo Hondo"</item>
+        <item>"Pozuelos"</item>
+        <item>"Pueblo Pablo Torelo (Est. Otumpa)"</item>
+        <item>"Puesto de San Antonio"</item>
+        <item>"Quimili"</item>
+        <item>"Ramírez de Velazco"</item>
+        <item>"Rapelli"</item>
+        <item>"Real Sayana"</item>
+        <item>"Rodeo de Valdez"</item>
+        <item>"Roversi"</item>
+        <item>"Sachayoj"</item>
+        <item>"San José del Boquerón"</item>
+        <item>"San Pedro"</item>
+        <item>"San Pedro"</item>
+        <item>"San Pedro"</item>
+        <item>"San Pedro"</item>
+        <item>"Santa María"</item>
+        <item>"Santiago del Estero"</item>
+        <item>"Santo Domingo"</item>
+        <item>"Santos Lugares"</item>
+        <item>"Sauzal"</item>
+        <item>"Selva"</item>
+        <item>"Simbol"</item>
+        <item>"Simbolar"</item>
+        <item>"Sol de Julio"</item>
+        <item>"Sumamao"</item>
+        <item>"Sumampa"</item>
+        <item>"Sumampa Viejo"</item>
+        <item>"Suncho Corral"</item>
+        <item>"Tapso"</item>
+        <item>"Termas de Río Hondo "</item>
+        <item>"Tintina"</item>
+        <item>"Tomás Young"</item>
+        <item>"Tramo 16"</item>
+        <item>"Tramo 20"</item>
+        <item>"Urutaú"</item>
+        <item>"Vaca Huañuna"</item>
+        <item>"Vilelas"</item>
+        <item>"Villa Atamisqui"</item>
+        <item>"Villa Figueroa"</item>
+        <item>"Villa General Mitre (Est. Pinto)"</item>
+        <item>"Villa Giménez"</item>
+        <item>"Villa La Punta"</item>
+        <item>"Villa Mailín"</item>
+        <item>"Villa Nueva"</item>
+        <item>"Villa Ojo de Agua"</item>
+        <item>"Villa Río Hondo"</item>
+        <item>"Villa Salavina "</item>
+        <item>"Villa San Martín (Est. Loreto)"</item>
+        <item>"Villa Silípica"</item>
+        <item>"Villa Turística del Embalse"</item>
+        <item>"Villa Unión"</item>
+        <item>"Vilmer"</item>
+        <item>"Vinará"</item>
+        <item>"Vuelta de la Barranca"</item>
+        <item>"Weisburd"</item>
+        <item>"Yanda"</item>
+        <item>"Yuchán"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_santa_fe">
+        <item>"Aarón Castellanos (Est. Castellanos)"</item>
+        <item>"Acébal"</item>
+        <item>"Aguará Grande"</item>
+        <item>"Albarellos"</item>
+        <item>"Alcorta"</item>
+        <item>"Aldao"</item>
+        <item>"Aldao (Est. Casablanca)"</item>
+        <item>"Alejandra"</item>
+        <item>"Álvarez"</item>
+        <item>"Alvear"</item>
+        <item>"Ambrosetti"</item>
+        <item>"Amenábar"</item>
+        <item>"Angel Gallardo"</item>
+        <item>"Angélica"</item>
+        <item>"Angeloni"</item>
+        <item>"Arbilla"</item>
+        <item>"Arequito"</item>
+        <item>"Arminda"</item>
+        <item>"Armstrong"</item>
+        <item>"Arocena"</item>
+        <item>"Arroyo Aguiar "</item>
+        <item>"Arroyo Ceibal"</item>
+        <item>"Arroyo Leyes"</item>
+        <item>"Arroyo Seco "</item>
+        <item>"Arrufo"</item>
+        <item>"Arteaga"</item>
+        <item>"Ataliva"</item>
+        <item>"Aurelia"</item>
+        <item>"Avellaneda (Est. Ewald)"</item>
+        <item>"Balneario La Verde"</item>
+        <item>"Balneario Monje"</item>
+        <item>"Barrancas"</item>
+        <item>"Barrio Arroyo del Medio"</item>
+        <item>"Barrio Caima"</item>
+        <item>"Barrio Cicarelli"</item>
+        <item>"Barrio El Pacaá - Barrio Comipini"</item>
+        <item>"Barrio Mitre"</item>
+        <item>"Barrios Acapulco y Veracruz"</item>
+        <item>"Bauer y Sigel"</item>
+        <item>"Bella Italia"</item>
+        <item>"Beravebú"</item>
+        <item>"Berna"</item>
+        <item>"Bernardo de Irigoyen (Est. Irigoyen)"</item>
+        <item>"Bigand"</item>
+        <item>"Bombal"</item>
+        <item>"Bouquet"</item>
+        <item>"Bustinza"</item>
+        <item>"Cabal"</item>
+        <item>"Cacique Ariacaiquín"</item>
+        <item>"Cafferata"</item>
+        <item>"Calchaquí "</item>
+        <item>"Campo Andino"</item>
+        <item>"Candioti"</item>
+        <item>"Cañada de Gómez"</item>
+        <item>"Cañada del Ucle"</item>
+        <item>"Cañada Ombú"</item>
+        <item>"Cañada Rica"</item>
+        <item>"Cañada Rosquín"</item>
+        <item>"Capitán Bermúdez"</item>
+        <item>"Capivara"</item>
+        <item>"Carcarañá"</item>
+        <item>"Carlos Pellegrini"</item>
+        <item>"Carmen"</item>
+        <item>"Carmen del Sauce"</item>
+        <item>"Carreras"</item>
+        <item>"Carrizales (Est. Clarke)"</item>
+        <item>"Casalegno"</item>
+        <item>"Casas"</item>
+        <item>"Casilda"</item>
+        <item>"Castelar"</item>
+        <item>"Castellanos"</item>
+        <item>"Cavour"</item>
+        <item>"Cayastá"</item>
+        <item>"Cayastacito"</item>
+        <item>"Centeno"</item>
+        <item>"Cepeda"</item>
+        <item>"Ceres"</item>
+        <item>"Chabas"</item>
+        <item>"Chañar Ladeado"</item>
+        <item>"Chapuy"</item>
+        <item>"Chovet"</item>
+        <item>"Christophersen"</item>
+        <item>"Classon"</item>
+        <item>"Colmena"</item>
+        <item>"Colonia Ana"</item>
+        <item>"Colonia Belgrano"</item>
+        <item>"Colonia Bicha"</item>
+        <item>"Colonia Bossi"</item>
+        <item>"Colonia Cello"</item>
+        <item>"Colonia Dolores"</item>
+        <item>"Colonia Durán"</item>
+        <item>"Colonia Margarita"</item>
+        <item>"Colonia Médici"</item>
+        <item>"Colonia Raquel"</item>
+        <item>"Colonia Rosa"</item>
+        <item>"Constanza"</item>
+        <item>"Coronda"</item>
+        <item>"Coronel Arnold"</item>
+        <item>"Coronel Bogado"</item>
+        <item>"Coronel Fraga"</item>
+        <item>"Coronel Rodolfo S. Domínguez"</item>
+        <item>"Correa"</item>
+        <item>"Crispi"</item>
+        <item>"Cuatro Esquinas"</item>
+        <item>"Cululú"</item>
+        <item>"Curupaytí"</item>
+        <item>"Desvío Arijón"</item>
+        <item>"Díaz"</item>
+        <item>"Diego de Alvear"</item>
+        <item>"Egusquiza"</item>
+        <item>"El Araza"</item>
+        <item>"El Caramelo"</item>
+        <item>"El Rabón"</item>
+        <item>"El Trébol"</item>
+        <item>"Elisa"</item>
+        <item>"Elortondo"</item>
+        <item>"Emilia"</item>
+        <item>"Empalme San Carlos"</item>
+        <item>"Empalme Villa Constitución"</item>
+        <item>"Esmeralda"</item>
+        <item>"Esperanza"</item>
+        <item>"Estación Clucellas"</item>
+        <item>"Estación Saguier"</item>
+        <item>"Esteban Rams"</item>
+        <item>"Esther"</item>
+        <item>"Eusebia y Carolina"</item>
+        <item>"Eustolia"</item>
+        <item>"Felicia"</item>
+        <item>"Fighiera"</item>
+        <item>"Firmat"</item>
+        <item>"Firmat"</item>
+        <item>"Florencia"</item>
+        <item>"Fortín Olmos"</item>
+        <item>"Franck"</item>
+        <item>"Fray Luis Beltrán"</item>
+        <item>"Frontera"</item>
+        <item>"Fuentes"</item>
+        <item>"Funes"</item>
+        <item>"Gaboto"</item>
+        <item>"Gálvez"</item>
+        <item>"Garabato"</item>
+        <item>"Garibaldi"</item>
+        <item>"Gato Colorado "</item>
+        <item>"General Gelly"</item>
+        <item>"General Lagos"</item>
+        <item>"Gessler"</item>
+        <item>"Gobernador Crespo "</item>
+        <item>"Gödeken"</item>
+        <item>"Godoy"</item>
+        <item>"Golondrina"</item>
+        <item>"Granadero Baigorria"</item>
+        <item>"Gregoria Pérez de Denis  (Est. El Nochero) "</item>
+        <item>"Grutly"</item>
+        <item>"Guadalupe Norte"</item>
+        <item>"Helvecia"</item>
+        <item>"Hersilia"</item>
+        <item>"Hipatía"</item>
+        <item>"Huanqueros"</item>
+        <item>"Hughes"</item>
+        <item>"Humberto Primo"</item>
+        <item>"Humboldt"</item>
+        <item>"Ibarlucea"</item>
+        <item>"Ingeniero Chanourdie"</item>
+        <item>"Intiyaco"</item>
+        <item>"Irigoyen"</item>
+        <item>"Jacinto L. Aráuz"</item>
+        <item>"Josefina"</item>
+        <item>"Juan B. Molina"</item>
+        <item>"Juncal"</item>
+        <item>"Kilómetro 101"</item>
+        <item>"Kilómetro 115"</item>
+        <item>"La Brava"</item>
+        <item>"La Cabral"</item>
+        <item>"La Chispa"</item>
+        <item>"La Criolla (Est. Cañadita)"</item>
+        <item>"La Gallareta"</item>
+        <item>"La Isleta"</item>
+        <item>"La Pelada"</item>
+        <item>"La Penca y Caraguatá"</item>
+        <item>"La Rubia"</item>
+        <item>"La Sarita"</item>
+        <item>"La Vanguardia"</item>
+        <item>"Labordeboy"</item>
+        <item>"Laguna Paiva"</item>
+        <item>"Landeta "</item>
+        <item>"Lanteri"</item>
+        <item>"Larguía"</item>
+        <item>"Larrechea"</item>
+        <item>"Las Avispas"</item>
+        <item>"Las Bandurrias"</item>
+        <item>"Las Garzas"</item>
+        <item>"Las Palmeras"</item>
+        <item>"Las Parejas"</item>
+        <item>"Las Petacas"</item>
+        <item>"Las Rosas"</item>
+        <item>"Las Toscas"</item>
+        <item>"Las Tunas"</item>
+        <item>"Lazzarino"</item>
+        <item>"Lehmann "</item>
+        <item>"Llambi Campbell"</item>
+        <item>"Logroño"</item>
+        <item>"Loma Alta"</item>
+        <item>"López (Est. San Martín de Tours)"</item>
+        <item>"Los Amores"</item>
+        <item>"Los Cardos"</item>
+        <item>"Los Laureles"</item>
+        <item>"Los Molinos"</item>
+        <item>"Los Nogales"</item>
+        <item>"Los Quirquinchos"</item>
+        <item>"Los Zapallos"</item>
+        <item>"Lucio V. López"</item>
+        <item>"Luis Palacios (Est. La Salada)"</item>
+        <item>"Maciel"</item>
+        <item>"Maggiolo"</item>
+        <item>"Malabrigo "</item>
+        <item>"Marcelino Escalada"</item>
+        <item>"Margarita"</item>
+        <item>"María Juana"</item>
+        <item>"María Luisa"</item>
+        <item>"María Susana"</item>
+        <item>"María Teresa"</item>
+        <item>"Matilde"</item>
+        <item>"Máximo Paz (Est. Paz)"</item>
+        <item>"Melincué  (Est. San Urbano)"</item>
+        <item>"Miguel Torres"</item>
+        <item>"Moisés Ville"</item>
+        <item>"Monigotes"</item>
+        <item>"Monje"</item>
+        <item>"Monte Flores"</item>
+        <item>"Monte Vera "</item>
+        <item>"Montefiore"</item>
+        <item>"Montes de Oca"</item>
+        <item>"Murphy"</item>
+        <item>"Naré"</item>
+        <item>"Nelson "</item>
+        <item>"Nueva Lehmann"</item>
+        <item>"Nuevo Torino"</item>
+        <item>"Ñanducita"</item>
+        <item>"Oliveros"</item>
+        <item>"Palacios"</item>
+        <item>"Paraje 29"</item>
+        <item>"Paraje Chaco Chico"</item>
+        <item>"Paraje La Costa"</item>
+        <item>"Paraje San Manuel"</item>
+        <item>"Pavón"</item>
+        <item>"Pavón Arriba"</item>
+        <item>"Pedro Gómez Cello"</item>
+        <item>"Pérez"</item>
+        <item>"Peyrano"</item>
+        <item>"Piamonte"</item>
+        <item>"Pilar"</item>
+        <item>"Piñero (Est. Erasto)"</item>
+        <item>"Plaza Clucellas"</item>
+        <item>"Plaza Matilde"</item>
+        <item>"Plaza Saguier"</item>
+        <item>"Pozo Borrado"</item>
+        <item>"Pozo de los Indios"</item>
+        <item>"Presidente Roca"</item>
+        <item>"Progreso"</item>
+        <item>"Providencia"</item>
+        <item>"Pueblo Andino"</item>
+        <item>"Pueblo Esther"</item>
+        <item>"Pueblo Marini"</item>
+        <item>"Pueblo Muñoz (Est. Bernard)"</item>
+        <item>"Pueblo Santa Lucía"</item>
+        <item>"Pueblo Uranga "</item>
+        <item>"Puerto Aragón"</item>
+        <item>"Puerto Arroyo Seco"</item>
+        <item>"Puerto General San Martín"</item>
+        <item>"Puerto Reconquista"</item>
+        <item>"Pujato "</item>
+        <item>"Rafaela"</item>
+        <item>"Ramayón"</item>
+        <item>"Ramona"</item>
+        <item>"Reconquista"</item>
+        <item>"Recreo"</item>
+        <item>"Ricardone"</item>
+        <item>"Rincón Potrero"</item>
+        <item>"Roldán"</item>
+        <item>"Romang"</item>
+        <item>"Rosario"</item>
+        <item>"Rueda"</item>
+        <item>"Rufino"</item>
+        <item>"Sa Pereyra"</item>
+        <item>"Saladero Mariano Cabal"</item>
+        <item>"Salto Grande "</item>
+        <item>"San Agustín"</item>
+        <item>"San Antonio"</item>
+        <item>"San Antonio de Obligado"</item>
+        <item>"San Bernardo"</item>
+        <item>"San Carlos Centro"</item>
+        <item>"San Carlos Norte"</item>
+        <item>"San Carlos Sud"</item>
+        <item>"San Cristóbal"</item>
+        <item>"San Eduardo"</item>
+        <item>"San Eugenio"</item>
+        <item>"San Fabián"</item>
+        <item>"San Francisco de Santa Fe"</item>
+        <item>"San Genaro"</item>
+        <item>"San Genaro Norte"</item>
+        <item>"San Gregorio"</item>
+        <item>"San Guillermo"</item>
+        <item>"San Javier"</item>
+        <item>"San Jerónimo del Sauce"</item>
+        <item>"San Jerónimo Norte"</item>
+        <item>"San Jerónimo Sud"</item>
+        <item>"San Jorge"</item>
+        <item>"San José de la Esquina"</item>
+        <item>"San José del Rincón"</item>
+        <item>"San Justo"</item>
+        <item>"San Lorenzo"</item>
+        <item>"San Mariano"</item>
+        <item>"San Martín de las Escobas"</item>
+        <item>"San Martín Norte"</item>
+        <item>"San Vicente"</item>
+        <item>"Sancti Spiritu"</item>
+        <item>"Sanford"</item>
+        <item>"Santa Clara de Buena Vista"</item>
+        <item>"Santa Clara de Saguier"</item>
+        <item>"Santa Fe"</item>
+        <item>"Santa Isabel"</item>
+        <item>"Santa Margarita"</item>
+        <item>"Santa Rosa de Calchines "</item>
+        <item>"Santa Teresa"</item>
+        <item>"Santo Domingo "</item>
+        <item>"Santo Tomé"</item>
+        <item>"Santurce"</item>
+        <item>"Sargento Cabral"</item>
+        <item>"Sarmiento"</item>
+        <item>"Sastre"</item>
+        <item>"Sauce Viejo"</item>
+        <item>"Serodino"</item>
+        <item>"Silva (Est. Abipones)"</item>
+        <item>"Soldini"</item>
+        <item>"Soledad"</item>
+        <item>"Stephenson"</item>
+        <item>"Suardi"</item>
+        <item>"Sunchales"</item>
+        <item>"Susana"</item>
+        <item>"Tacuarendí (Emb. Kilómetro 421)"</item>
+        <item>"Tacural "</item>
+        <item>"Tartagal (Est. El Tajamar)"</item>
+        <item>"Teodelina"</item>
+        <item>"Theobald"</item>
+        <item>"Timbúes"</item>
+        <item>"Toba"</item>
+        <item>"Tortugas"</item>
+        <item>"Tostado"</item>
+        <item>"Totoras "</item>
+        <item>"Traill"</item>
+        <item>"Venado Tuerto"</item>
+        <item>"Vera (Est. Gobernador Vera) "</item>
+        <item>"Vera y Pintado (Est. Guaraníes)"</item>
+        <item>"Videla"</item>
+        <item>"Vila"</item>
+        <item>"Villa Amelia"</item>
+        <item>"Villa Ana"</item>
+        <item>"Villa Cañás"</item>
+        <item>"Villa Constitución"</item>
+        <item>"Villa del Plata"</item>
+        <item>"Villa Eloísa"</item>
+        <item>"Villa Elvira"</item>
+        <item>"Villa Gobernador Gálvez"</item>
+        <item>"Villa Guillermina"</item>
+        <item>"Villa Josefina"</item>
+        <item>"Villa La Rivera (Comuna Oliveros)"</item>
+        <item>"Villa La Rivera (Comuna Pueblo Andino)"</item>
+        <item>"Villa Laura (Est. Constituyentes)"</item>
+        <item>"Villa Minetti "</item>
+        <item>"Villa Mugueta"</item>
+        <item>"Villa Ocampo"</item>
+        <item>"Villa San José"</item>
+        <item>"Villa Saralegui"</item>
+        <item>"Villa Trinidad"</item>
+        <item>"Villada"</item>
+        <item>"Virginia"</item>
+        <item>"Wheelwright"</item>
+        <item>"Wildermuth (Est. Granadero B. Bustos)"</item>
+        <item>"Zavalla"</item>
+        <item>"Zenón Pereyra"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_san_juan">
+        <item>"9 de Julio "</item>
+        <item>"Alto de Sierra"</item>
+        <item>"Angualasto"</item>
+        <item>"Astica"</item>
+        <item>"Balde del Rosario"</item>
+        <item>"Barreal  - Villa Pituil"</item>
+        <item>"Barrio Ruta 40"</item>
+        <item>"Barrio Sadop"</item>
+        <item>"Bella Vista"</item>
+        <item>"Bermejo"</item>
+        <item>"Calingasta "</item>
+        <item>"Cañada Honda"</item>
+        <item>"Carpintería"</item>
+        <item>"Caucete "</item>
+        <item>"Chimbas"</item>
+        <item>"Chucuma"</item>
+        <item>"Cienaguita"</item>
+        <item>"Colonia Fiorito"</item>
+        <item>"Colonia Fiscal"</item>
+        <item>"Colonia Gutiérrez"</item>
+        <item>"Divisadero"</item>
+        <item>"Dos Acequias (Est. Los Angacos)"</item>
+        <item>"El Encón"</item>
+        <item>"El Médano"</item>
+        <item>"El Rincón"</item>
+        <item>"El Rincón"</item>
+        <item>"Gran China"</item>
+        <item>"Guanacache"</item>
+        <item>"Huaco"</item>
+        <item>"Iglesia"</item>
+        <item>"Las Chacritas"</item>
+        <item>"Las Flores"</item>
+        <item>"Las Lagunas"</item>
+        <item>"Las Talas - Los Médanos "</item>
+        <item>"Las Tapias"</item>
+        <item>"Los Baldecitos"</item>
+        <item>"Los Berros"</item>
+        <item>"Marayes"</item>
+        <item>"Mogna"</item>
+        <item>"Niquivil"</item>
+        <item>"Pampa Vieja"</item>
+        <item>"Pedernal"</item>
+        <item>"Pie de Palo"</item>
+        <item>"Pismanta"</item>
+        <item>"Punta del Médano"</item>
+        <item>"Quinto Cuartel"</item>
+        <item>"Rawson"</item>
+        <item>"Rivadavia"</item>
+        <item>"Rodeo "</item>
+        <item>"San Isidro"</item>
+        <item>"San Isidro (Est. Los Angacos)"</item>
+        <item>"San José de Jáchal"</item>
+        <item>"San Juan"</item>
+        <item>"Santa Lucía"</item>
+        <item>"Tamberías"</item>
+        <item>"Tamberías"</item>
+        <item>"Tudcum"</item>
+        <item>"Tupelí"</item>
+        <item>"Usno"</item>
+        <item>"Vallecito"</item>
+        <item>"Villa Aberastain - La Rinconada"</item>
+        <item>"Villa Barboza - Villa Nacusi"</item>
+        <item>"Villa Basilio Nievas "</item>
+        <item>"Villa Bolaños"</item>
+        <item>"Villa Borjas - La Chimbera"</item>
+        <item>"Villa Centenario"</item>
+        <item>"Villa Dominguito (Est. Puntilla Blanca)"</item>
+        <item>"Villa Don Bosco (Est. Angaco Sud)"</item>
+        <item>"Villa El Salvador"</item>
+        <item>"Villa El Salvador - Villa Sefair"</item>
+        <item>"Villa El Tango"</item>
+        <item>"Villa General San Martín - Campo Afuera"</item>
+        <item>"Villa Ibáñez"</item>
+        <item>"Villa Independencia"</item>
+        <item>"Villa Malvinas Argentinas"</item>
+        <item>"Villa Media Agua"</item>
+        <item>"Villa Mercedes"</item>
+        <item>"Villa San Agustín"</item>
+        <item>"Villa San Martín "</item>
+        <item>"Villa Santa Rosa"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_santa_cruz">
+        <item>"28 de Noviembre"</item>
+        <item>"Bajo Caracoles"</item>
+        <item>"Caleta Olivia"</item>
+        <item>"Cañadón Seco"</item>
+        <item>"Comandante Luis Piedrabuena"</item>
+        <item>"El Calafate"</item>
+        <item>"El Chaltén"</item>
+        <item>"El Turbio (Est. Gobernador Mayer)"</item>
+        <item>"Fitz Roy"</item>
+        <item>"Gobernador Gregores "</item>
+        <item>"Hipólito Yrigoyen"</item>
+        <item>"Jaramillo"</item>
+        <item>"Julia Dufour"</item>
+        <item>"Koluel Kaike"</item>
+        <item>"Las Heras"</item>
+        <item>"Los Antiguos"</item>
+        <item>"Mina 3"</item>
+        <item>"Perito Moreno "</item>
+        <item>"Pico Truncado"</item>
+        <item>"Puerto Deseado"</item>
+        <item>"Puerto San Julián"</item>
+        <item>"Puerto Santa Cruz"</item>
+        <item>"Río Gallegos"</item>
+        <item>"Rospentek"</item>
+        <item>"Tellier"</item>
+        <item>"Tres Lagos"</item>
+        <item>"Yacimientos Río Turbio "</item>
+
+    </string-array>
+
+    <string-array name="ciudades_rio_negro">
+        <item>"Aguada Cecilio"</item>
+        <item>"Aguada de Guerra"</item>
+        <item>"Aguada Guzmán"</item>
+        <item>"Allen"</item>
+        <item>"Arroyo Los Berros"</item>
+        <item>"Arroyo Ventana"</item>
+        <item>"Bahía Creek"</item>
+        <item>"Bajo San Cayetano"</item>
+        <item>"Barda del Medio"</item>
+        <item>"Barrio Blanco"</item>
+        <item>"Barrio Calle Ciega Nº 10"</item>
+        <item>"Barrio Calle Ciega Nº 6"</item>
+        <item>"Barrio Canale"</item>
+        <item>"Barrio Chacra Monte"</item>
+        <item>"Barrio Colonia Conesa"</item>
+        <item>"Barrio Costa Este"</item>
+        <item>"Barrio Costa Linda"</item>
+        <item>"Barrio Costa Oeste"</item>
+        <item>"Barrio El Labrador"</item>
+        <item>"Barrio El Maruchito"</item>
+        <item>"Barrio El Petróleo"</item>
+        <item>"Barrio El Pilar"</item>
+        <item>"Barrio Frontera"</item>
+        <item>"Barrio Guerrico"</item>
+        <item>"Barrio Isla 10"</item>
+        <item>"Barrio La Barda"</item>
+        <item>"Barrio La Costa (Municipio Grl. Roca)"</item>
+        <item>"Barrio La Costa (Municipio Igr. Huergo)"</item>
+        <item>"Barrio La Defensa"</item>
+        <item>"Barrio La Lor"</item>
+        <item>"Barrio La Ribera - Barrio APYCAR"</item>
+        <item>"Barrio Las Angustias "</item>
+        <item>"Barrio Mar del Plata"</item>
+        <item>"Barrio María Elvira"</item>
+        <item>"Barrio Mosconi"</item>
+        <item>"Barrio Norte (Municipio Dde Cipolletti)"</item>
+        <item>"Barrio Norte (Municipio de Cinco Saltos)"</item>
+        <item>"Barrio Pino Azul"</item>
+        <item>"Barrio Porvenir"</item>
+        <item>"Barrio Presidente Perón"</item>
+        <item>"Barrio Puente 83"</item>
+        <item>"Barrio Santa Rita"</item>
+        <item>"Barrio Unión"</item>
+        <item>"Barrio Unión"</item>
+        <item>"Barrio Virgen de Luján"</item>
+        <item>"Catriel"</item>
+        <item>"Cerro Policía"</item>
+        <item>"Cervantes"</item>
+        <item>"Chelforó"</item>
+        <item>"Chichinales"</item>
+        <item>"Chimpay"</item>
+        <item>"Choele Choel"</item>
+        <item>"Cinco Saltos"</item>
+        <item>"Cipolletti"</item>
+        <item>"Clemente Onelli"</item>
+        <item>"Colan Conhue"</item>
+        <item>"Colonia Juliá y Echarren"</item>
+        <item>"Colonia Suiza"</item>
+        <item>"Comallo"</item>
+        <item>"Comicó"</item>
+        <item>"Cona Niyeu"</item>
+        <item>"Contralmirante Cordero "</item>
+        <item>"Coronel Belisle"</item>
+        <item>"Darwin"</item>
+        <item>"Dina Huapi"</item>
+        <item>"El Bolsón"</item>
+        <item>"El Caín"</item>
+        <item>"El Cóndor"</item>
+        <item>"El Cuy"</item>
+        <item>"El Foyel"</item>
+        <item>"El Juncal"</item>
+        <item>"Ferri"</item>
+        <item>"General Conesa"</item>
+        <item>"General Enrique Godoy"</item>
+        <item>"General Fernández Oro"</item>
+        <item>"General Roca "</item>
+        <item>"Guardia Mitre"</item>
+        <item>"Ingeniero Jacobacci"</item>
+        <item>"Ingeniero Luis A. Huergo"</item>
+        <item>"Ingeniero Otto Krause"</item>
+        <item>"La Lobería"</item>
+        <item>"Laguna Blanca"</item>
+        <item>"Lamarque"</item>
+        <item>"Las Bayas"</item>
+        <item>"Las Grutas"</item>
+        <item>"Las Perlas"</item>
+        <item>"Los Menucos"</item>
+        <item>"Loteo Costa de Río"</item>
+        <item>"Luis Beltrán"</item>
+        <item>"Mainqué"</item>
+        <item>"Mamuel Choique"</item>
+        <item>"Maquinchao"</item>
+        <item>"Mencué"</item>
+        <item>"Mina Santa Teresita"</item>
+        <item>"Ministro Ramos Mexía"</item>
+        <item>"Nahuel Niyeu"</item>
+        <item>"Naupa Huen"</item>
+        <item>"Ñirihuau"</item>
+        <item>"Ñorquincó"</item>
+        <item>"Ojos de Agua"</item>
+        <item>"Paso Córdova"</item>
+        <item>"Paso Córdova"</item>
+        <item>"Paso Flores"</item>
+        <item>"Península Ruca Co"</item>
+        <item>"Peñas Blancas"</item>
+        <item>"Pilcaniyeu"</item>
+        <item>"Pilquiniyeu"</item>
+        <item>"Pilquiniyeu del Limay"</item>
+        <item>"Playas Doradas"</item>
+        <item>"Pomona"</item>
+        <item>"Pozo Salado "</item>
+        <item>"Prahuaniyeu"</item>
+        <item>"Puerto San Antonio Este"</item>
+        <item>"Punta Colorada"</item>
+        <item>"Río Chico (Est. Cerro Mesa)"</item>
+        <item>"Río Colorado"</item>
+        <item>"Río Villegas"</item>
+        <item>"San Antonio Oeste"</item>
+        <item>"San Carlos de Bariloche "</item>
+        <item>"San Javier"</item>
+        <item>"Sargento Vidal"</item>
+        <item>"Sierra Colorada"</item>
+        <item>"Sierra Grande"</item>
+        <item>"Sierra Pailemán"</item>
+        <item>"Treneta"</item>
+        <item>"Valcheta"</item>
+        <item>"Valle Azul"</item>
+        <item>"Viedma"</item>
+        <item>"Villa Alberdi"</item>
+        <item>"Villa Campanario "</item>
+        <item>"Villa Catedral "</item>
+        <item>"Villa del Parque"</item>
+        <item>"Villa Llanquín"</item>
+        <item>"Villa Llao Llao"</item>
+        <item>"Villa Los Coihues"</item>
+        <item>"Villa Manzano"</item>
+        <item>"Villa Regina "</item>
+        <item>"Villa San Isidro"</item>
+        <item>"Yaminué"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_la_pampa">
+        <item>"25 de Mayo"</item>
+        <item>"Abramo"</item>
+        <item>"Adolfo Van Praet"</item>
+        <item>"Agustoni"</item>
+        <item>"Algarrobo del Águila"</item>
+        <item>"Alpachiri"</item>
+        <item>"Alta Italia"</item>
+        <item>"Anguil"</item>
+        <item>"Anzoátegui"</item>
+        <item>"Arata"</item>
+        <item>"Ataliva Roca"</item>
+        <item>"Bernardo Larroude"</item>
+        <item>"Bernasconi"</item>
+        <item>"Caleufú"</item>
+        <item>"Carro Quemado"</item>
+        <item>"Catriló"</item>
+        <item>"Ceballos"</item>
+        <item>"Chacharramendi"</item>
+        <item>"Colonia Barón"</item>
+        <item>"Colonia San José"</item>
+        <item>"Colonia Santa María"</item>
+        <item>"Conhelo"</item>
+        <item>"Coronel Hilario Lagos  (Est. Aguas Buenas)"</item>
+        <item>"Cuchillo Co"</item>
+        <item>"Damián Maisonave (Est. Simson)"</item>
+        <item>"Doblas"</item>
+        <item>"Dorila"</item>
+        <item>"Eduardo Castex"</item>
+        <item>"Embajador Martini"</item>
+        <item>"Falucho"</item>
+        <item>"General Acha"</item>
+        <item>"General Manuel J. Campos"</item>
+        <item>"General Pico"</item>
+        <item>"General San Martín (Est. Villa Alba)"</item>
+        <item>"Gobernador Duval"</item>
+        <item>"Guatraché"</item>
+        <item>"Hucal"</item>
+        <item>"Ingeniero Foster"</item>
+        <item>"Ingeniero Luiggi"</item>
+        <item>"Intendente Alvear"</item>
+        <item>"Jacinto Aráuz"</item>
+        <item>"La Adela"</item>
+        <item>"La Gloria"</item>
+        <item>"La Humada"</item>
+        <item>"La Maruja"</item>
+        <item>"La Reforma"</item>
+        <item>"Limay Mahuida"</item>
+        <item>"Lonquimay"</item>
+        <item>"Loventué"</item>
+        <item>"Luan Toro"</item>
+        <item>"Macachín"</item>
+        <item>"Mauricio Mayer"</item>
+        <item>"Metileo"</item>
+        <item>"Miguel Cané"</item>
+        <item>"Miguel Riglos"</item>
+        <item>"Monte Nievas"</item>
+        <item>"Naicó"</item>
+        <item>"Ojeda"</item>
+        <item>"Parera"</item>
+        <item>"Perú"</item>
+        <item>"Pichi Huinca"</item>
+        <item>"Puelches"</item>
+        <item>"Puelén"</item>
+        <item>"Quehué"</item>
+        <item>"Quemú Quemú"</item>
+        <item>"Quetrequén"</item>
+        <item>"Rancul"</item>
+        <item>"Realicó"</item>
+        <item>"Relmo"</item>
+        <item>"Rolón"</item>
+        <item>"Rucanelo"</item>
+        <item>"Santa Isabel"</item>
+        <item>"Santa Rosa"</item>
+        <item>"Santa Teresa"</item>
+        <item>"Sarah"</item>
+        <item>"Speluzzi"</item>
+        <item>"Telén"</item>
+        <item>"Toay"</item>
+        <item>"Tomás M. Anchorena"</item>
+        <item>"Trebolares"</item>
+        <item>"Trenel"</item>
+        <item>"Unanué"</item>
+        <item>"Uriburu"</item>
+        <item>"Vértiz"</item>
+        <item>"Victorica"</item>
+        <item>"Villa Mirasol"</item>
+        <item>"Winifreda"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_la_rioja">
+        <item>"Adolfo E. Carranza"</item>
+        <item>"Alijilán"</item>
+        <item>"Amadores"</item>
+        <item>"Amanao"</item>
+        <item>"Ancasti"</item>
+        <item>"Andalgalá"</item>
+        <item>"Andalhualá"</item>
+        <item>"Anillaco"</item>
+        <item>"Anquincila"</item>
+        <item>"Antinaco"</item>
+        <item>"Antofagasta de la Sierra"</item>
+        <item>"Antofalla"</item>
+        <item>"Apoyaco"</item>
+        <item>"Balde de la Punta"</item>
+        <item>"Banda de Lucero"</item>
+        <item>"Bañado de Ovanta"</item>
+        <item>"Barranca Larga"</item>
+        <item>"Barrio Bancario"</item>
+        <item>"Belén"</item>
+        <item>"Capayán"</item>
+        <item>"Casa de Piedra"</item>
+        <item>"Caspichango"</item>
+        <item>"Cerro Negro"</item>
+        <item>"Chañar Punco"</item>
+        <item>"Chaquiago"</item>
+        <item>"Choya"</item>
+        <item>"Chuchucaruana"</item>
+        <item>"Chumbicha"</item>
+        <item>"Colana"</item>
+        <item>"Collagasta"</item>
+        <item>"Colonia del Valle"</item>
+        <item>"Colonia Nueva Coneta"</item>
+        <item>"Colpes"</item>
+        <item>"Colpes"</item>
+        <item>"Concepción"</item>
+        <item>"Cóndor Huasi"</item>
+        <item>"Coneta"</item>
+        <item>"Copacabana"</item>
+        <item>"Cordobita"</item>
+        <item>"Corral Quemado"</item>
+        <item>"Costa de Reyes"</item>
+        <item>"El Alamito"</item>
+        <item>"El Alto"</item>
+        <item>"El Aybal"</item>
+        <item>"El Bañado"</item>
+        <item>"El Bañado"</item>
+        <item>"El Bolsón"</item>
+        <item>"El Cajón"</item>
+        <item>"El Desmonte"</item>
+        <item>"El Divisadero"</item>
+        <item>"El Durazno"</item>
+        <item>"El Lindero"</item>
+        <item>"El Pajonal (Est. Pomán)"</item>
+        <item>"El Pantanillo"</item>
+        <item>"El Peñón"</item>
+        <item>"El Portezuelo"</item>
+        <item>"El Potrero"</item>
+        <item>"El Pueblito"</item>
+        <item>"El Puesto"</item>
+        <item>"El Puesto"</item>
+        <item>"El Quimilo"</item>
+        <item>"El Rodeo  "</item>
+        <item>"El Rosario"</item>
+        <item>"El Salado"</item>
+        <item>"Esquiú"</item>
+        <item>"Famatanca"</item>
+        <item>"Farallón Negro"</item>
+        <item>"Fiambalá"</item>
+        <item>"Fuerte Quemado"</item>
+        <item>"Guayamba"</item>
+        <item>"Hualfín"</item>
+        <item>"Huaycama"</item>
+        <item>"Huaycama"</item>
+        <item>"Huillapima"</item>
+        <item>"Icaño"</item>
+        <item>"Infanzón"</item>
+        <item>"Jacipunco"</item>
+        <item>"Joyango"</item>
+        <item>"La Aguada"</item>
+        <item>"La Bajada"</item>
+        <item>"La Candelaria"</item>
+        <item>"La Dorada"</item>
+        <item>"La Guardia"</item>
+        <item>"La Higuera"</item>
+        <item>"La Hoyada"</item>
+        <item>"La Loma"</item>
+        <item>"La Majada"</item>
+        <item>"La Merced"</item>
+        <item>"La Puerta"</item>
+        <item>"La Puntilla"</item>
+        <item>"La Viña"</item>
+        <item>"Las Cañas"</item>
+        <item>"Las Chacritas"</item>
+        <item>"Las Esquinas"</item>
+        <item>"Las Juntas"</item>
+        <item>"Las Juntas"</item>
+        <item>"Las Lajas"</item>
+        <item>"Las Mojarras"</item>
+        <item>"Las Palmitas"</item>
+        <item>"Las Tejas"</item>
+        <item>"Lavalle"</item>
+        <item>"Londres "</item>
+        <item>"Loro Huasi"</item>
+        <item>"Los Altos"</item>
+        <item>"Los Angeles"</item>
+        <item>"Los Balverdis"</item>
+        <item>"Los Castillos"</item>
+        <item>"Los Corrales"</item>
+        <item>"Los Nacimientos"</item>
+        <item>"Los Nacimientos"</item>
+        <item>"Los Talas"</item>
+        <item>"Los Varela"</item>
+        <item>"Manantiales"</item>
+        <item>"Medanitos"</item>
+        <item>"Miraflores"</item>
+        <item>"Monte Potrero"</item>
+        <item>"Mutquin"</item>
+        <item>"Palo Blanco"</item>
+        <item>"Palo Labrado"</item>
+        <item>"Pomán "</item>
+        <item>"Pomancillo Este"</item>
+        <item>"Pomancillo Oeste"</item>
+        <item>"Puerta de Corral Quemado"</item>
+        <item>"Puerta de San José"</item>
+        <item>"Punta de Balasto"</item>
+        <item>"Punta del Agua"</item>
+        <item>"Quirós"</item>
+        <item>"Ramblones"</item>
+        <item>"Recreo"</item>
+        <item>"Rincón"</item>
+        <item>"San Antonio"</item>
+        <item>"San Antonio"</item>
+        <item>"San Fernando del Valle de Catamarca"</item>
+        <item>"San Isidro"</item>
+        <item>"San José"</item>
+        <item>"San José"</item>
+        <item>"San Martín"</item>
+        <item>"San Miguel"</item>
+        <item>"San Pablo"</item>
+        <item>"San Pedro"</item>
+        <item>"San Pedro"</item>
+        <item>"Santa Cruz"</item>
+        <item>"Santa María"</item>
+        <item>"Saujil"</item>
+        <item>"Saujil"</item>
+        <item>"Siján"</item>
+        <item>"Singuil"</item>
+        <item>"Tapso"</item>
+        <item>"Tatón"</item>
+        <item>"Tinogasta"</item>
+        <item>"Vilismán"</item>
+        <item>"Villa de Balcozna"</item>
+        <item>"Villa Las Pirquitas"</item>
+        <item>"Villa Vil"</item>
+        <item>"Yapes"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_neuquen">
+        <item>"11 de Octubre "</item>
+        <item>"Aluminé"</item>
+        <item>"Andacollo"</item>
+        <item>"Añelo"</item>
+        <item>"Arroyito"</item>
+        <item>"Bajada del Agrio"</item>
+        <item>"Barrancas"</item>
+        <item>"Barrio Ruca Luhé"</item>
+        <item>"Buta Ranquil"</item>
+        <item>"Caviahue"</item>
+        <item>"Centenario "</item>
+        <item>"Chorriaca"</item>
+        <item>"Chos Malal"</item>
+        <item>"Copahue"</item>
+        <item>"Cutral Có"</item>
+        <item>"El Chocón  "</item>
+        <item>"El Cholar"</item>
+        <item>"El Huecú"</item>
+        <item>"Huinganco"</item>
+        <item>"Junín de los Andes "</item>
+        <item>"La Buitrera"</item>
+        <item>"Las Coloradas"</item>
+        <item>"Las Lajas "</item>
+        <item>"Las Ovejas"</item>
+        <item>"Loncopué"</item>
+        <item>"Los Catutos "</item>
+        <item>"Los Miches"</item>
+        <item>"Manzano Amargo"</item>
+        <item>"Mari Menuco"</item>
+        <item>"Mariano Moreno "</item>
+        <item>"Neuquén"</item>
+        <item>"Octavio Pico"</item>
+        <item>"Paso Aguerre"</item>
+        <item>"Picún Leufú"</item>
+        <item>"Piedra del Águila"</item>
+        <item>"Plaza Huincul"</item>
+        <item>"Plottier"</item>
+        <item>"Ramón M. Castro"</item>
+        <item>"Rincón de los Sauces"</item>
+        <item>"San Martín de los Andes "</item>
+        <item>"San Patricio del Chañar"</item>
+        <item>"Santo Tomás"</item>
+        <item>"Senillosa"</item>
+        <item>"Taquimilán"</item>
+        <item>"Tricao Malal"</item>
+        <item>"Varvarco"</item>
+        <item>"Villa del Curi Leuvú"</item>
+        <item>"Villa El Chocón "</item>
+        <item>"Villa La Angostura"</item>
+        <item>"Villa Pehuenia"</item>
+        <item>"Villa Traful"</item>
+        <item>"Vista Alegre Norte"</item>
+        <item>"Vista Alegre Sur "</item>
+        <item>"Zapala "</item>
+
+    </string-array>
+
+    <string-array name="ciudades_mendoza">
+        <item>"25 de Mayo"</item>
+        <item>"3 de Mayo"</item>
+        <item>"Agrelo"</item>
+        <item>"Agua Escondida"</item>
+        <item>"Alto Salvador"</item>
+        <item>"Alto Verde"</item>
+        <item>"Andrade "</item>
+        <item>"Bardas Blancas"</item>
+        <item>"Barrancas"</item>
+        <item>"Barrio 12 de Octubre"</item>
+        <item>"Barrio Alto del Olvido"</item>
+        <item>"Barrio Belgrano Norte"</item>
+        <item>"Barrio Campos El Toledano"</item>
+        <item>"Barrio Chivilcoy"</item>
+        <item>"Barrio Cooperativa Los Campamentos"</item>
+        <item>"Barrio El Cepillo"</item>
+        <item>"Barrio El Nevado"</item>
+        <item>"Barrio Emanuel"</item>
+        <item>"Barrio Empleados de Comercio"</item>
+        <item>"Barrio Intendencia"</item>
+        <item>"Barrio Jesús de Nazaret "</item>
+        <item>"Barrio Jocolí II"</item>
+        <item>"Barrio La Palmera"</item>
+        <item>"Barrio La Pega"</item>
+        <item>"Barrio Lagunas de Bartoluzzi"</item>
+        <item>"Barrio Los Charabones"</item>
+        <item>"Barrio Los Jarilleros"</item>
+        <item>"Barrio Los Olivos"</item>
+        <item>"Barrio María Auxiliadora"</item>
+        <item>"Barrio Molina Cabrera"</item>
+        <item>"Barrio Perdriel IV"</item>
+        <item>"Barrio Rivadavia"</item>
+        <item>"Barrio San Cayetano"</item>
+        <item>"Blanco Encalada"</item>
+        <item>"Bowen "</item>
+        <item>"Cacheuta"</item>
+        <item>"Campo Los Andes "</item>
+        <item>"Capdeville"</item>
+        <item>"Capitán Montoya"</item>
+        <item>"Carmensa "</item>
+        <item>"Chapanay"</item>
+        <item>"Chilecito"</item>
+        <item>"Chivilcoy"</item>
+        <item>"Colonia Las Rosas"</item>
+        <item>"Colonia Segovia (Est. Amigorena)"</item>
+        <item>"Cordón del Plata"</item>
+        <item>"Costa de Araujo"</item>
+        <item>"Costa Flores"</item>
+        <item>"Cruz de Piedra "</item>
+        <item>"Cuadro Benegas"</item>
+        <item>"Desaguadero"</item>
+        <item>"El Carrizal"</item>
+        <item>"El Manzano"</item>
+        <item>"El Mirador"</item>
+        <item>"El Nihuil"</item>
+        <item>"El Paramillo"</item>
+        <item>"El Pedregal"</item>
+        <item>"El Peral"</item>
+        <item>"El Salto"</item>
+        <item>"El Sosneado"</item>
+        <item>"El Tropezón"</item>
+        <item>"El Vergel"</item>
+        <item>"Eugenio Bustos"</item>
+        <item>"Fray Luis Beltrán "</item>
+        <item>"General Alvear (Est.Colonia Alvear Norte)"</item>
+        <item>"Godoy Cruz"</item>
+        <item>"Goudge"</item>
+        <item>"Guaymallén"</item>
+        <item>"Ingeniero Giagnoni"</item>
+        <item>"Ingeniero Gustavo André"</item>
+        <item>"Jaime Prats"</item>
+        <item>"Jocolí "</item>
+        <item>"Jocolí "</item>
+        <item>"Jocolí Viejo"</item>
+        <item>"Junín "</item>
+        <item>"La Arboleda"</item>
+        <item>"La Central"</item>
+        <item>"La Colonia"</item>
+        <item>"La Consulta "</item>
+        <item>"La Dormida"</item>
+        <item>"La Esperanza"</item>
+        <item>"La Florida"</item>
+        <item>"La Libertad "</item>
+        <item>"La Llave Nueva"</item>
+        <item>"La Paz "</item>
+        <item>"La Primavera"</item>
+        <item>"Las Catitas (Est. J. N. Lencinas)"</item>
+        <item>"Las Compuertas"</item>
+        <item>"Las Cuevas"</item>
+        <item>"Las Heras"</item>
+        <item>"Las Leñas"</item>
+        <item>"Las Malvinas"</item>
+        <item>"Las Vegas"</item>
+        <item>"Las Violetas"</item>
+        <item>"Los Árboles"</item>
+        <item>"Los Barriales"</item>
+        <item>"Los Campamentos "</item>
+        <item>"Los Compartos"</item>
+        <item>"Los Corralitos"</item>
+        <item>"Los Penitentes"</item>
+        <item>"Los Reyunos"</item>
+        <item>"Los Sauces"</item>
+        <item>"Luján de Cuyo"</item>
+        <item>"Maipú"</item>
+        <item>"Malargüe "</item>
+        <item>"Medrano"</item>
+        <item>"Medrano"</item>
+        <item>"Mendoza"</item>
+        <item>"Monte Comán"</item>
+        <item>"Montecaseros"</item>
+        <item>"Mundo Nuevo"</item>
+        <item>"Nueva California (Est. Moluches)"</item>
+        <item>"Papagayos"</item>
+        <item>"Pareditas"</item>
+        <item>"Perdriel "</item>
+        <item>"Phillips"</item>
+        <item>"Pobre Diablo"</item>
+        <item>"Polvaredas"</item>
+        <item>"Potrerillos"</item>
+        <item>"Puente de Hierro "</item>
+        <item>"Puente del Inca"</item>
+        <item>"Punta de Vacas"</item>
+        <item>"Punta del Agua"</item>
+        <item>"Rama Caída"</item>
+        <item>"Real del Padre"</item>
+        <item>"Reducción de Abajo"</item>
+        <item>"Rivadavia"</item>
+        <item>"Rodeo del Medio "</item>
+        <item>"Rodríguez Peña"</item>
+        <item>"Russell"</item>
+        <item>"Salto de las Rosas"</item>
+        <item>"San Carlos "</item>
+        <item>"San José "</item>
+        <item>"San Martín"</item>
+        <item>"San Rafael "</item>
+        <item>"San Roque"</item>
+        <item>"Santa María de Oro"</item>
+        <item>"Santa Rosa "</item>
+        <item>"Tres Porteñas"</item>
+        <item>"Tunuyán "</item>
+        <item>"Tupungato"</item>
+        <item>"Ugarteche"</item>
+        <item>"Uspallata "</item>
+        <item>"Villa Antigua"</item>
+        <item>"Villa Atuel"</item>
+        <item>"Villa Atuel Norte"</item>
+        <item>"Villa Teresa "</item>
+        <item>"Villa Tulumaya "</item>
+        <item>"Vista Flores"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_jujuy">
+        <item>"Abdón Castro Tolay"</item>
+        <item>"Abra Pampa"</item>
+        <item>"Abralaite"</item>
+        <item>"Aguas Calientes"</item>
+        <item>"Arrayanal"</item>
+        <item>"Arroyo Colorado"</item>
+        <item>"Bananal"</item>
+        <item>"Bárcena"</item>
+        <item>"Barrio El Milagro"</item>
+        <item>"Barrio La Unión"</item>
+        <item>"Barrios"</item>
+        <item>"Bermejito"</item>
+        <item>"Caimancito"</item>
+        <item>"Calilegua"</item>
+        <item>"Cangrejillos"</item>
+        <item>"Carahunco"</item>
+        <item>"Casabindo"</item>
+        <item>"Casira"</item>
+        <item>"Caspalá"</item>
+        <item>"Catua"</item>
+        <item>"Centro Forestal"</item>
+        <item>"Chalicán"</item>
+        <item>"Ciénega"</item>
+        <item>"Cieneguillas"</item>
+        <item>"Cochinoca"</item>
+        <item>"Coctaca"</item>
+        <item>"Colonia San José"</item>
+        <item>"Coranzuli"</item>
+        <item>"Cusi Cusi"</item>
+        <item>"Don Emilio"</item>
+        <item>"El Acheral"</item>
+        <item>"El Aguilar "</item>
+        <item>"El Carmen"</item>
+        <item>"El Ceibal"</item>
+        <item>"El Cóndor"</item>
+        <item>"El Fuerte"</item>
+        <item>"El Moreno"</item>
+        <item>"El Piquete"</item>
+        <item>"El Puesto"</item>
+        <item>"El Quemado"</item>
+        <item>"El Talar "</item>
+        <item>"El Toro"</item>
+        <item>"Fraile Pintado"</item>
+        <item>"Guerrero"</item>
+        <item>"Hipólito Yrigoyen (Est. Iturbe)"</item>
+        <item>"Huacalera"</item>
+        <item>"Huáncar"</item>
+        <item>"Humahuaca"</item>
+        <item>"Juella"</item>
+        <item>"La Almona"</item>
+        <item>"La Ciénega"</item>
+        <item>"La Esperanza "</item>
+        <item>"La Intermedia"</item>
+        <item>"La Manga"</item>
+        <item>"La Mendieta"</item>
+        <item>"La Quiaca"</item>
+        <item>"Lagunillas de Farallón"</item>
+        <item>"León"</item>
+        <item>"Libertad"</item>
+        <item>"Libertador Grl. San Martín (Est. Ledesma)"</item>
+        <item>"Liviara"</item>
+        <item>"Llulluchayoc"</item>
+        <item>"Los Lapachos (Est. Maquinista Verón)"</item>
+        <item>"Loteo Navea"</item>
+        <item>"Lozano"</item>
+        <item>"Maimará"</item>
+        <item>"Maíz Negro"</item>
+        <item>"Manantiales"</item>
+        <item>"Mina 9 de Octubre"</item>
+        <item>"Mina Providencia"</item>
+        <item>"Miraflores"</item>
+        <item>"Misarrumi"</item>
+        <item>"Monterrico "</item>
+        <item>"Nuevo Pirquitas"</item>
+        <item>"Ocloyas"</item>
+        <item>"Olaroz Chico"</item>
+        <item>"Oratorio"</item>
+        <item>"Paicone"</item>
+        <item>"Palma Sola"</item>
+        <item>"Palos Blancos"</item>
+        <item>"Palpalá (Est. Grl. Manuel N. Savio)"</item>
+        <item>"Pampa Blanca"</item>
+        <item>"Pampichuela"</item>
+        <item>"Parapetí"</item>
+        <item>"Pastos Chicos"</item>
+        <item>"Paulina"</item>
+        <item>"Perico "</item>
+        <item>"Piedritas"</item>
+        <item>"Puente Lavayén"</item>
+        <item>"Puesto del Marquéz"</item>
+        <item>"Puesto Sey"</item>
+        <item>"Puesto Viejo "</item>
+        <item>"Pumahuasi"</item>
+        <item>"Purmamarca"</item>
+        <item>"Rinconada"</item>
+        <item>"Rinconadillas"</item>
+        <item>"Rodeito"</item>
+        <item>"Rosario de Río Grande"</item>
+        <item>"San Antonio"</item>
+        <item>"San Antonio"</item>
+        <item>"San Francisco"</item>
+        <item>"San Francisco de Alfarcito"</item>
+        <item>"San Isidro"</item>
+        <item>"San Juan de Oros"</item>
+        <item>"San Juan de Quillaqués"</item>
+        <item>"San Juancito"</item>
+        <item>"San Lucas"</item>
+        <item>"San Pedro (Est. San Pedro de Jujuy)"</item>
+        <item>"San Salvador de Jujuy (Est. Jujuy)"</item>
+        <item>"Santa Ana"</item>
+        <item>"Santa Catalina"</item>
+        <item>"Santa Clara"</item>
+        <item>"Santuario de Tres Pozos"</item>
+        <item>"Sauzal"</item>
+        <item>"Susques"</item>
+        <item>"Tilcara"</item>
+        <item>"Tres Cruces"</item>
+        <item>"Tumbaya"</item>
+        <item>"Tusaquillas"</item>
+        <item>"Uquía (Est. Senador Pérez)"</item>
+        <item>"Valle Colorado"</item>
+        <item>"Valle Grande"</item>
+        <item>"Vinalito"</item>
+        <item>"Volcán"</item>
+        <item>"Yala"</item>
+        <item>"Yavi"</item>
+        <item>"Yavi Chico"</item>
+        <item>"Yoscaba"</item>
+        <item>"Yuto"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_formosa">
+        <item>"Banco Payaguá"</item>
+        <item>"Bartolomé de las Casas"</item>
+        <item>"Buena Vista"</item>
+        <item>"Clorinda"</item>
+        <item>"Colonia Campo Villafañe"</item>
+        <item>"Colonia Pastoril"</item>
+        <item>"Colonia Sarmiento"</item>
+        <item>"Comandante Fontana"</item>
+        <item>"El Colorado"</item>
+        <item>"El Espinillo"</item>
+        <item>"El Potrillo"</item>
+        <item>"El Recreo"</item>
+        <item>"Estanislao del Campo"</item>
+        <item>"Formosa"</item>
+        <item>"Fortín Cabo 1º Lugones"</item>
+        <item>"Fortín Sargento 1º Leyes"</item>
+        <item>"General Lucio V. Mansilla"</item>
+        <item>"General Mosconi "</item>
+        <item>"Gran Guardia"</item>
+        <item>"Herradura"</item>
+        <item>"Ibarreta"</item>
+        <item>"Ingeniero Guillermo N. Juárez"</item>
+        <item>"Juan G. Bazán"</item>
+        <item>"Laguna Blanca"</item>
+        <item>"Laguna Gallo"</item>
+        <item>"Laguna Naick-Neck"</item>
+        <item>"Laguna Yema"</item>
+        <item>"Las Lomitas"</item>
+        <item>"Los Chiriguanos "</item>
+        <item>"Mariano Boedo"</item>
+        <item>"Misión Tacaaglé"</item>
+        <item>"Mojón de Fierro"</item>
+        <item>"Palma Sola"</item>
+        <item>"Palo Santo"</item>
+        <item>"Pirané"</item>
+        <item>"Portón Negro"</item>
+        <item>"Posta Cambio Zalazar"</item>
+        <item>"Pozo de Maza"</item>
+        <item>"Pozo del Mortero"</item>
+        <item>"Pozo del Tigre"</item>
+        <item>"Puerto Pilcomayo"</item>
+        <item>"Riacho He-He "</item>
+        <item>"Riacho Negro"</item>
+        <item>"San Francisco de Laishi "</item>
+        <item>"San Hilario"</item>
+        <item>"San Martín I"</item>
+        <item>"San Martín II"</item>
+        <item>"Siete Palmas"</item>
+        <item>"Subteniente Perín"</item>
+        <item>"Tatané"</item>
+        <item>"Tres Lagunas"</item>
+        <item>"Villa del Carmen"</item>
+        <item>"Villa Escolar"</item>
+        <item>"Villa General Güemes"</item>
+        <item>"Villa General Manuel Belgrano"</item>
+        <item>"Villa Kilómetro 213"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_entre_rios">
+        <item>"1ﾺ de Mayo"</item>
+        <item>"Aldea Asunción"</item>
+        <item>"Aldea Brasilera"</item>
+        <item>"Aldea María Luisa"</item>
+        <item>"Aldea Protestante"</item>
+        <item>"Aldea Salto"</item>
+        <item>"Aldea San Antonio"</item>
+        <item>"Aldea San Francisco"</item>
+        <item>"Aldea San Juan"</item>
+        <item>"Aldea San Rafael"</item>
+        <item>"Aldea Santa María"</item>
+        <item>"Aldea Santa Rosa"</item>
+        <item>"Aldea Spatzenkutter"</item>
+        <item>"Aldea Valle María"</item>
+        <item>"Altamirano Sur "</item>
+        <item>"Antelo"</item>
+        <item>"Aranguren"</item>
+        <item>"Arroyo Barú"</item>
+        <item>"Arroyo Martínez"</item>
+        <item>"Basavilbaso"</item>
+        <item>"Betbeder"</item>
+        <item>"Bovril"</item>
+        <item>"Calabacilla"</item>
+        <item>"Caseros"</item>
+        <item>"Ceibas"</item>
+        <item>"Cerrito"</item>
+        <item>"Chajarí"</item>
+        <item>"Charigüé"</item>
+        <item>"Clodomiro Ledesma "</item>
+        <item>"Colón"</item>
+        <item>"Colonia Alemana"</item>
+        <item>"Colonia Avellaneda"</item>
+        <item>"Colonia Avigdor"</item>
+        <item>"Colonia Ayuí"</item>
+        <item>"Colonia Elía"</item>
+        <item>"Colonia Ensanche Sauce"</item>
+        <item>"Colonia Ensayo"</item>
+        <item>"Colonia General Roca"</item>
+        <item>"Colonia Hugues"</item>
+        <item>"Colonia La Argentina"</item>
+        <item>"Colonia Peña"</item>
+        <item>"Colonia Santa María"</item>
+        <item>"Colonia Yeruá"</item>
+        <item>"Concepción del Uruguay"</item>
+        <item>"Concordia"</item>
+        <item>"Conscripto Bernardi"</item>
+        <item>"Crespo"</item>
+        <item>"Diamante"</item>
+        <item>"Don Cristóbal"</item>
+        <item>"Durazno"</item>
+        <item>"El Cimarrón"</item>
+        <item>"El Palenque"</item>
+        <item>"El Pingo"</item>
+        <item>"El Redomón"</item>
+        <item>"El Solar"</item>
+        <item>"Enrique Carbó"</item>
+        <item>"Estación Arroyo Clé"</item>
+        <item>"Estación Camps"</item>
+        <item>"Estación Lazo"</item>
+        <item>"Estación Raíces"</item>
+        <item>"Estación Yeruá"</item>
+        <item>"Estancia San Pedro"</item>
+        <item>"Faustino M. Parera "</item>
+        <item>"Febré"</item>
+        <item>"Federación"</item>
+        <item>"Federal"</item>
+        <item>"General Almada"</item>
+        <item>"General Alvear"</item>
+        <item>"General Campos"</item>
+        <item>"General Galarza"</item>
+        <item>"General Racedo"</item>
+        <item>"General Ramírez"</item>
+        <item>"Gilbert"</item>
+        <item>"Gobernador Echagüe"</item>
+        <item>"Gobernador Mansilla"</item>
+        <item>"Gobernador Solá"</item>
+        <item>"Gualeguay"</item>
+        <item>"Gualeguaychú"</item>
+        <item>"Guardamonte"</item>
+        <item>"Hambis"</item>
+        <item>"Hasenkamp"</item>
+        <item>"Hernandarias"</item>
+        <item>"Hernández"</item>
+        <item>"Herrera"</item>
+        <item>"Hocker"</item>
+        <item>"Ibicuy"</item>
+        <item>"Ingeniero Miguel Sajaroff"</item>
+        <item>"Irazusta"</item>
+        <item>"Jubileo"</item>
+        <item>"La Clarita"</item>
+        <item>"La Criolla"</item>
+        <item>"La Paz"</item>
+        <item>"La Picada"</item>
+        <item>"Laguna del Pescado"</item>
+        <item>"Larroque"</item>
+        <item>"Las Guachas"</item>
+        <item>"Las Moscas"</item>
+        <item>"Las Tunas "</item>
+        <item>"Líbaros"</item>
+        <item>"Los Charrúas"</item>
+        <item>"Los Conquistadores"</item>
+        <item>"Lucas González"</item>
+        <item>"Maciá"</item>
+        <item>"María Grande"</item>
+        <item>"Médanos"</item>
+        <item>"Mojones Norte"</item>
+        <item>"Molino Doll "</item>
+        <item>"Nogoyá"</item>
+        <item>"Nueva Escocia"</item>
+        <item>"Nueva Vizcaya"</item>
+        <item>"Ñancay"</item>
+        <item>"Oro Verde"</item>
+        <item>"Osvaldo Magnasco"</item>
+        <item>"Paraje La Virgen"</item>
+        <item>"Paraná"</item>
+        <item>"Paso de la Laguna"</item>
+        <item>"Pedernal"</item>
+        <item>"Piedras Blancas"</item>
+        <item>"Pronunciamiento"</item>
+        <item>"Pueblo Arrúa"</item>
+        <item>"Pueblo Bellocq (Est. Las Garzas) "</item>
+        <item>"Pueblo Brugo"</item>
+        <item>"Pueblo Cazes"</item>
+        <item>"Pueblo General Belgrano"</item>
+        <item>"Pueblo General San Martín"</item>
+        <item>"Pueblo Liebig's"</item>
+        <item>"Puerto Las Cuevas"</item>
+        <item>"Puerto Ruiz"</item>
+        <item>"Puerto Yeruá"</item>
+        <item>"Rincón de Nogoyá"</item>
+        <item>"Rocamora"</item>
+        <item>"Rosario del Tala"</item>
+        <item>"San Benito"</item>
+        <item>"San Gustavo "</item>
+        <item>"San Jaime de la Frontera"</item>
+        <item>"San José"</item>
+        <item>"San José de Feliciano"</item>
+        <item>"San Pedro"</item>
+        <item>"San Salvador"</item>
+        <item>"San Víctor "</item>
+        <item>"Santa Ana"</item>
+        <item>"Santa Anita"</item>
+        <item>"Santa Elena"</item>
+        <item>"Sauce de Luna"</item>
+        <item>"Sauce Montrull"</item>
+        <item>"Sauce Pinto "</item>
+        <item>"Seguí"</item>
+        <item>"Sir Leonard"</item>
+        <item>"Sosa"</item>
+        <item>"Tabossi"</item>
+        <item>"Tezanos Pinto"</item>
+        <item>"Ubajay"</item>
+        <item>"Urdinarrain"</item>
+        <item>"Viale"</item>
+        <item>"Victoria"</item>
+        <item>"Villa  Elisa"</item>
+        <item>"Villa Clara"</item>
+        <item>"Villa del Rosario"</item>
+        <item>"Villa Domínguez"</item>
+        <item>"Villa Fontana"</item>
+        <item>"Villa Gdor. Luis F. Etchevehere"</item>
+        <item>"Villa Libertador San Martín"</item>
+        <item>"Villa Mantero"</item>
+        <item>"Villa Paranacito"</item>
+        <item>"Villa San Justo"</item>
+        <item>"Villa San Marcial (Est. Gobernador Urquiza)"</item>
+        <item>"Villa Urquiza"</item>
+        <item>"Villaguay"</item>
+        <item>"XX de Setiembre"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_corrientes">
+        <item>"9 de Julio (Est. Pueblo 9 de Julio)"</item>
+        <item>"Alvear"</item>
+        <item>"Barrio Esperanza"</item>
+        <item>"Bella Vista"</item>
+        <item>"Berón de Astrada"</item>
+        <item>"Bonpland"</item>
+        <item>"Cazadores Correntinos"</item>
+        <item>"Chavarría"</item>
+        <item>"Colonia Carlos Pellegrini"</item>
+        <item>"Colonia Carolina"</item>
+        <item>"Colonia Libertad"</item>
+        <item>"Colonia Liebig's"</item>
+        <item>"Colonia Pando"</item>
+        <item>"Concepción"</item>
+        <item>"Corrientes"</item>
+        <item>"Cruz de los Milagros"</item>
+        <item>"Curuzú Cuatiá"</item>
+        <item>"El Sombrero"</item>
+        <item>"Empedrado"</item>
+        <item>"Esquina"</item>
+        <item>"Estación Libertad"</item>
+        <item>"Estación Torrent"</item>
+        <item>"Felipe Yofré"</item>
+        <item>"Garruchos"</item>
+        <item>"Gobernador Igr. Valentín Virasoro "</item>
+        <item>"Gobernador Juan E. Martínez"</item>
+        <item>"Goya"</item>
+        <item>"Guaviraví"</item>
+        <item>"Ingenio Primer Correntino"</item>
+        <item>"Itá Ibaté"</item>
+        <item>"Itatí"</item>
+        <item>"Ituzaingó"</item>
+        <item>"José Rafael Gómez (Garabí)"</item>
+        <item>"Juan Pujol"</item>
+        <item>"La Cruz"</item>
+        <item>"Laguna Brava"</item>
+        <item>"Lavalle"</item>
+        <item>"Lomas de Vallejos"</item>
+        <item>"Loreto"</item>
+        <item>"Mariano I. Loza (Est. Justino Solari)"</item>
+        <item>"Mburucuyá"</item>
+        <item>"Mercedes"</item>
+        <item>"Mocoretá"</item>
+        <item>"Monte Caseros"</item>
+        <item>"Nuestra Señora del Rosario de Caá Catí "</item>
+        <item>"Palmar Grande"</item>
+        <item>"Parada Acuña"</item>
+        <item>"Parada Pucheta"</item>
+        <item>"Paso de la Patria"</item>
+        <item>"Paso de los Libres"</item>
+        <item>"Pedro R. Fernández (Est. Manuel F. Mantilla)"</item>
+        <item>"Perugorría"</item>
+        <item>"Ramada Paso"</item>
+        <item>"Riachuelo"</item>
+        <item>"Saladas"</item>
+        <item>"San Antonio"</item>
+        <item>"San Carlos"</item>
+        <item>"San Cayetano"</item>
+        <item>"San Cosme"</item>
+        <item>"San Lorenzo"</item>
+        <item>"San Luis del Palmar"</item>
+        <item>"San Miguel"</item>
+        <item>"San Roque"</item>
+        <item>"Santa Ana"</item>
+        <item>"Santa Lucía"</item>
+        <item>"Santa Rosa"</item>
+        <item>"Santo Tomé"</item>
+        <item>"Sauce"</item>
+        <item>"Tabay"</item>
+        <item>"Tapebicuá"</item>
+        <item>"Villa Córdoba"</item>
+        <item>"Villa Olivari"</item>
+        <item>"Yahapé"</item>
+        <item>"Yapeyú"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_chaco">
+        <item>"Barranqueras"</item>
+        <item>"Barrio de los Pescadores"</item>
+        <item>"Basail"</item>
+        <item>"Campo Largo"</item>
+        <item>"Capitán Solari"</item>
+        <item>"Charadai"</item>
+        <item>"Charata"</item>
+        <item>"Chorotis"</item>
+        <item>"Ciervo Petiso"</item>
+        <item>"Colonia Aborigen"</item>
+        <item>"Colonia Baranda"</item>
+        <item>"Colonia Benítez"</item>
+        <item>"Colonia Elisa"</item>
+        <item>"Colonia Popular"</item>
+        <item>"Colonias Unidas"</item>
+        <item>"Concepción del Bermejo"</item>
+        <item>"Coronel Du Graty"</item>
+        <item>"Corzuela"</item>
+        <item>"Cote Lai"</item>
+        <item>"El Espinillo"</item>
+        <item>"El Sauzal"</item>
+        <item>"El Sauzalito"</item>
+        <item>"Enrique Urien"</item>
+        <item>"Estación General Obligado"</item>
+        <item>"Fontana"</item>
+        <item>"Fortín Las Chuñas"</item>
+        <item>"Fortín Lavalle"</item>
+        <item>"Fuerte Esperanza"</item>
+        <item>"Gancedo"</item>
+        <item>"General Capdevila"</item>
+        <item>"General José de San Martín "</item>
+        <item>"General Pinedo"</item>
+        <item>"General Vedia"</item>
+        <item>"Haumonia"</item>
+        <item>"Hermoso Campo"</item>
+        <item>"Horquilla"</item>
+        <item>"Ingeniero Barbet"</item>
+        <item>"Isla del Cerrito"</item>
+        <item>"Itín"</item>
+        <item>"Juan José Castelli"</item>
+        <item>"La Clotilde"</item>
+        <item>"La Eduvigis"</item>
+        <item>"La Escondida"</item>
+        <item>"La Leonesa"</item>
+        <item>"La Sabana"</item>
+        <item>"La Tigra"</item>
+        <item>"La Verde"</item>
+        <item>"Laguna Blanca"</item>
+        <item>"Laguna Limpia"</item>
+        <item>"Lapachito"</item>
+        <item>"Las Breñas"</item>
+        <item>"Las Garcitas"</item>
+        <item>"Las Palmas"</item>
+        <item>"Los Frentones"</item>
+        <item>"Machagai"</item>
+        <item>"Makallé"</item>
+        <item>"Margarita Belén"</item>
+        <item>"Mesón de Fierro"</item>
+        <item>"Miraflores"</item>
+        <item>"Napalpí"</item>
+        <item>"Napenay"</item>
+        <item>"Nueva Pompeya"</item>
+        <item>"Pampa Almirón"</item>
+        <item>"Pampa del Indio"</item>
+        <item>"Pampa del Infierno"</item>
+        <item>"Pampa Landriel"</item>
+        <item>"Presidencia de la Plaza"</item>
+        <item>"Presidencia Roca"</item>
+        <item>"Presidencia Roque Sáenz Peña"</item>
+        <item>"Puerto Bermejo Nuevo"</item>
+        <item>"Puerto Bermejo Viejo"</item>
+        <item>"Puerto Eva Perón"</item>
+        <item>"Puerto Lavalle"</item>
+        <item>"Puerto Tirol"</item>
+        <item>"Puerto Vilelas"</item>
+        <item>"Quitilipi"</item>
+        <item>"Resistencia"</item>
+        <item>"Río Muerto"</item>
+        <item>"Samuhú"</item>
+        <item>"San Bernardo"</item>
+        <item>"Santa Sylvina"</item>
+        <item>"Selvas del Río de Oro"</item>
+        <item>"Taco Pozo"</item>
+        <item>"Tres Isletas"</item>
+        <item>"Venados Grandes"</item>
+        <item>"Villa Angela"</item>
+        <item>"Villa Berthet"</item>
+        <item>"Villa El Palmar"</item>
+        <item>"Villa Río Bermejito"</item>
+        <item>"Wichi"</item>
+        <item>"Zaparinqui"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_cordoba">
+        <item>"Achiras"</item>
+        <item>"Adelia María"</item>
+        <item>"Agua de Oro"</item>
+        <item>"Alcira (Est. Gigena)"</item>
+        <item>"Aldea Santa María"</item>
+        <item>"Alejandro Roca (Est. Alejandro)"</item>
+        <item>"Alejo Ledesma"</item>
+        <item>"Alicia"</item>
+        <item>"Almafuerte"</item>
+        <item>"Alpa Corral"</item>
+        <item>"Alta Gracia"</item>
+        <item>"Alto Alegre"</item>
+        <item>"Alto de los Quebrachos"</item>
+        <item>"Altos de Chipión"</item>
+        <item>"Amboy"</item>
+        <item>"Ambul"</item>
+        <item>"Ana Zumarán"</item>
+        <item>"Anisacate"</item>
+        <item>"Arias"</item>
+        <item>"Arroyito"</item>
+        <item>"Arroyo Algodón"</item>
+        <item>"Arroyo Cabral"</item>
+        <item>"Arroyo Los Patos"</item>
+        <item>"Arroyo San Antonio"</item>
+        <item>"Ascochinga"</item>
+        <item>"Assunta"</item>
+        <item>"Atahona"</item>
+        <item>"Ausonia"</item>
+        <item>"Avellaneda"</item>
+        <item>"Ballesteros"</item>
+        <item>"Ballesteros Sur"</item>
+        <item>"Balnearia"</item>
+        <item>"Bañado de Soto"</item>
+        <item>"Barrio Gilbert"</item>
+        <item>"Barrio Santa Isabel"</item>
+        <item>"Barrio Villa del Parque "</item>
+        <item>"Bell Ville"</item>
+        <item>"Bengolea"</item>
+        <item>"Benjamín Gould"</item>
+        <item>"Berrotarán"</item>
+        <item>"Bialet Massé"</item>
+        <item>"Bouwer"</item>
+        <item>"Brinkmann"</item>
+        <item>"Bulnes"</item>
+        <item>"Cabalango"</item>
+        <item>"Calchín"</item>
+        <item>"Calchín Oeste"</item>
+        <item>"Camilo Aldao"</item>
+        <item>"Caminiaga"</item>
+        <item>"Canals"</item>
+        <item>"Candelaria Sur"</item>
+        <item>"Canteras El Sauce"</item>
+        <item>"Canteras Quilpo"</item>
+        <item>"Cañada de Luque"</item>
+        <item>"Cañada de Machado"</item>
+        <item>"Cañada de Río Pinto"</item>
+        <item>"Cañada del Sauce"</item>
+        <item>"Capilla de los Remedios"</item>
+        <item>"Capilla de Sitón"</item>
+        <item>"Capilla del Carmen"</item>
+        <item>"Capilla del Monte"</item>
+        <item>"Capilla Vieja"</item>
+        <item>"Capitán General Bernardo O'Higgins"</item>
+        <item>"Carnerillo"</item>
+        <item>"Carrilobo"</item>
+        <item>"Casa Bamba"</item>
+        <item>"Casa Grande"</item>
+        <item>"Caseros Centro"</item>
+        <item>"Cavanagh"</item>
+        <item>"Cerro Colorado"</item>
+        <item>"Cerro Colorado"</item>
+        <item>"Cerro Colorado"</item>
+        <item>"Chaján"</item>
+        <item>"Chalacea"</item>
+        <item>"Chancani"</item>
+        <item>"Chañar Viejo"</item>
+        <item>"Charbonier"</item>
+        <item>"Charras"</item>
+        <item>"Chazón"</item>
+        <item>"Chilibroste"</item>
+        <item>"Chucul"</item>
+        <item>"Chuña"</item>
+        <item>"Chuña Huasi"</item>
+        <item>"Churqui Cañada"</item>
+        <item>"Ciénaga del Coro"</item>
+        <item>"Cintra"</item>
+        <item>"Colazo"</item>
+        <item>"Colonia 10 de Julio"</item>
+        <item>"Colonia Almada"</item>
+        <item>"Colonia Anita"</item>
+        <item>"Colonia Barge"</item>
+        <item>"Colonia Bismarck"</item>
+        <item>"Colonia Bremen"</item>
+        <item>"Colonia Caroya"</item>
+        <item>"Colonia Italiana"</item>
+        <item>"Colonia Las Cuatro Esquinas"</item>
+        <item>"Colonia Las Pichanas"</item>
+        <item>"Colonia Marina"</item>
+        <item>"Colonia Prosperidad"</item>
+        <item>"Colonia San Bartolomé"</item>
+        <item>"Colonia San Pedro"</item>
+        <item>"Colonia Santa María"</item>
+        <item>"Colonia Tirolesa"</item>
+        <item>"Colonia Valtelina"</item>
+        <item>"Colonia Veinticinco"</item>
+        <item>"Colonia Vicente Agüero"</item>
+        <item>"Colonia Videla"</item>
+        <item>"Colonia Vignaud"</item>
+        <item>"Conlara"</item>
+        <item>"Copacabana"</item>
+        <item>"Córdoba"</item>
+        <item>"Coronel Baigorria"</item>
+        <item>"Coronel Moldes"</item>
+        <item>"Corral de Bustos"</item>
+        <item>"Corral Quemado"</item>
+        <item>"Corralito"</item>
+        <item>"Corralito"</item>
+        <item>"Cosquín"</item>
+        <item>"Costa Azul"</item>
+        <item>"Costasacate"</item>
+        <item>"Country Chacras de la Villa  - Country San Isidro"</item>
+        <item>"Cruz Alta"</item>
+        <item>"Cruz Caña"</item>
+        <item>"Cruz de Caña"</item>
+        <item>"Cruz del Eje"</item>
+        <item>"Cuesta Blanca"</item>
+        <item>"Dalmacio Vélez "</item>
+        <item>"Deán Funes"</item>
+        <item>"Del Campillo"</item>
+        <item>"Despeñaderos (Est. Dr. Lucas A. de Olmos)"</item>
+        <item>"Devoto"</item>
+        <item>"Diego de Rojas"</item>
+        <item>"Dique Chico"</item>
+        <item>"Dos Arroyos"</item>
+        <item>"El Alcalde (Est. Tala Norte)"</item>
+        <item>"El Arañado"</item>
+        <item>"El Brete"</item>
+        <item>"El Chacho"</item>
+        <item>"El Corcovado - El Torreón"</item>
+        <item>"El Crispín"</item>
+        <item>"El Diquecito"</item>
+        <item>"El Fortín"</item>
+        <item>"El Fuertecito"</item>
+        <item>"El Huayco"</item>
+        <item>"El Manzano"</item>
+        <item>"El Pantanillo"</item>
+        <item>"El Rastreador"</item>
+        <item>"El Rincón"</item>
+        <item>"El Rodeo"</item>
+        <item>"El Tío"</item>
+        <item>"El Tuscal"</item>
+        <item>"Elena"</item>
+        <item>"Embalse"</item>
+        <item>"Esquina"</item>
+        <item>"Esquina del Alambre"</item>
+        <item>"Estación Colonia Tirolesa "</item>
+        <item>"Estación Lecueder"</item>
+        <item>"Estación Luxardo"</item>
+        <item>"Estancia de Guadalupe"</item>
+        <item>"Estancia Vieja"</item>
+        <item>"Etruria"</item>
+        <item>"Eufrasio Loza"</item>
+        <item>"Falda del Cañete"</item>
+        <item>"Falda del Carmen"</item>
+        <item>"Freyre"</item>
+        <item>"General Baldissera"</item>
+        <item>"General Cabrera"</item>
+        <item>"General Deheza"</item>
+        <item>"General Fotheringham"</item>
+        <item>"General Levalle"</item>
+        <item>"General Paz"</item>
+        <item>"General Roca"</item>
+        <item>"Guanaco Muerto"</item>
+        <item>"Guasapampa"</item>
+        <item>"Guatimozín"</item>
+        <item>"Gütemberg"</item>
+        <item>"Hernando"</item>
+        <item>"Hipólito Bouchard"</item>
+        <item>"Huanchillas"</item>
+        <item>"Huerta Grande"</item>
+        <item>"Huinca Renancó"</item>
+        <item>"Idiazabal"</item>
+        <item>"Impira"</item>
+        <item>"Inriville"</item>
+        <item>"Isla Verde"</item>
+        <item>"Italó"</item>
+        <item>"James Craik"</item>
+        <item>"Jardín Arenales"</item>
+        <item>"Jesús María"</item>
+        <item>"Justiniano Posse"</item>
+        <item>"Kilómetro 658"</item>
+        <item>"La Banda"</item>
+        <item>"La Batea"</item>
+        <item>"La Boca del Río"</item>
+        <item>"La Calera"</item>
+        <item>"La Carbonada"</item>
+        <item>"La Carlota"</item>
+        <item>"La Carolina"</item>
+        <item>"La Cautiva"</item>
+        <item>"La Cesira"</item>
+        <item>"La Cortadera"</item>
+        <item>"La Cruz"</item>
+        <item>"La Cumbre"</item>
+        <item>"La Cumbrecita"</item>
+        <item>"La Cumbrecita"</item>
+        <item>"La Falda"</item>
+        <item>"La Francia"</item>
+        <item>"La Gilda"</item>
+        <item>"La Granja"</item>
+        <item>"La Higuera"</item>
+        <item>"La Laguna"</item>
+        <item>"La Paisanita"</item>
+        <item>"La Palestina"</item>
+        <item>"La Pampa"</item>
+        <item>"La Paquita"</item>
+        <item>"La Para"</item>
+        <item>"La Paz"</item>
+        <item>"La Paz"</item>
+        <item>"La Perla"</item>
+        <item>"La Playa"</item>
+        <item>"La Playosa"</item>
+        <item>"La Población"</item>
+        <item>"La Posta"</item>
+        <item>"La Puerta"</item>
+        <item>"La Puerta"</item>
+        <item>"La Quinta"</item>
+        <item>"La Ramada"</item>
+        <item>"La Rancherita"</item>
+        <item>"La Rinconada"</item>
+        <item>"La Serranita"</item>
+        <item>"La Tordilla"</item>
+        <item>"La Travesía"</item>
+        <item>"Laborde"</item>
+        <item>"Laboulaye"</item>
+        <item>"Laguna Larga"</item>
+        <item>"Las Acequias"</item>
+        <item>"Las Albahacas"</item>
+        <item>"Las Arrias"</item>
+        <item>"Las Bajadas"</item>
+        <item>"Las Caleras"</item>
+        <item>"Las Calles"</item>
+        <item>"Las Cañadas"</item>
+        <item>"Las Gramillas"</item>
+        <item>"Las Higueras"</item>
+        <item>"Las Isletillas"</item>
+        <item>"Las Jarillas"</item>
+        <item>"Las Junturas"</item>
+        <item>"Las Mojarras"</item>
+        <item>"Las Oscuras"</item>
+        <item>"Las Palmas"</item>
+        <item>"Las Peñas"</item>
+        <item>"Las Peñas"</item>
+        <item>"Las Perdices"</item>
+        <item>"Las Playas"</item>
+        <item>"Las Rabonas"</item>
+        <item>"Las Saladas"</item>
+        <item>"Las Tapias "</item>
+        <item>"Las Varas"</item>
+        <item>"Las Varillas"</item>
+        <item>"Las Vertientes"</item>
+        <item>"Leguizamón"</item>
+        <item>"Leones"</item>
+        <item>"Los Callejones"</item>
+        <item>"Los Cedros"</item>
+        <item>"Los Cerrillos"</item>
+        <item>"Los Chañaritos"</item>
+        <item>"Los Chañaritos"</item>
+        <item>"Los Chañaritos"</item>
+        <item>"Los Cisnes"</item>
+        <item>"Los Cocos"</item>
+        <item>"Los Cóndores"</item>
+        <item>"Los Hornillos"</item>
+        <item>"Los Hoyos"</item>
+        <item>"Los Mistoles"</item>
+        <item>"Los Molinos"</item>
+        <item>"Los Molles"</item>
+        <item>"Los Molles"</item>
+        <item>"Los Pozos"</item>
+        <item>"Los Reartes"</item>
+        <item>"Los Romeros"</item>
+        <item>"Los Surgentes"</item>
+        <item>"Los Talares"</item>
+        <item>"Los Zorros"</item>
+        <item>"Lozada"</item>
+        <item>"Luca"</item>
+        <item>"Lucio V. Mansilla"</item>
+        <item>"Luque"</item>
+        <item>"Lutti"</item>
+        <item>"Luyaba"</item>
+        <item>"Malagueño"</item>
+        <item>"Malena"</item>
+        <item>"Mallín"</item>
+        <item>"Malvinas Argentinas"</item>
+        <item>"Manfredi"</item>
+        <item>"Maquinista Gallini"</item>
+        <item>"Marcos Juárez"</item>
+        <item>"Marull"</item>
+        <item>"Matorrales"</item>
+        <item>"Mattaldi"</item>
+        <item>"Mayu Sumaj"</item>
+        <item>"Media Naranja"</item>
+        <item>"Melo"</item>
+        <item>"Mendiolaza"</item>
+        <item>"Mi Granja"</item>
+        <item>"Mina Clavero"</item>
+        <item>"Miramar"</item>
+        <item>"Monte Buey"</item>
+        <item>"Monte de los Gauchos"</item>
+        <item>"Monte del Rosario"</item>
+        <item>"Monte Leña"</item>
+        <item>"Monte Maíz"</item>
+        <item>"Monte Ralo"</item>
+        <item>"Monte Ralo"</item>
+        <item>"Montecristo"</item>
+        <item>"Morrison"</item>
+        <item>"Morteros"</item>
+        <item>"Mussi"</item>
+        <item>"Nicolás Bruzzone"</item>
+        <item>"Noetinger"</item>
+        <item>"Noetinger"</item>
+        <item>"Nono"</item>
+        <item>"Obispo Trejo"</item>
+        <item>"Olaeta"</item>
+        <item>"Oliva"</item>
+        <item>"Olivares de San Nicolás"</item>
+        <item>"Onagoity"</item>
+        <item>"Oncativo"</item>
+        <item>"Ordoñez"</item>
+        <item>"Pacheco de Melo"</item>
+        <item>"Pajas Blancas"</item>
+        <item>"Pampayasta Norte"</item>
+        <item>"Pampayasta Sur"</item>
+        <item>"Panaholma"</item>
+        <item>"Parque Calmayo"</item>
+        <item>"Pascanas"</item>
+        <item>"Pasco"</item>
+        <item>"Paso del Durazno"</item>
+        <item>"Paso del Durazno"</item>
+        <item>"Paso Viejo"</item>
+        <item>"Pilar"</item>
+        <item>"Pincén"</item>
+        <item>"Piquillín"</item>
+        <item>"Plaza de Mercedes"</item>
+        <item>"Plaza Luxardo"</item>
+        <item>"Plaza San Francisco"</item>
+        <item>"Porteña"</item>
+        <item>"Potrero de Garay"</item>
+        <item>"Pozo del Molle"</item>
+        <item>"Pozo Nuevo"</item>
+        <item>"Pueblo Comechingones"</item>
+        <item>"Pueblo Italiano"</item>
+        <item>"Puesto de Castro"</item>
+        <item>"Punta del Agua"</item>
+        <item>"Quebracho Herrado"</item>
+        <item>"Quebrada de los Pozos"</item>
+        <item>"Quebrada de Luna"</item>
+        <item>"Quilino"</item>
+        <item>"Rafael García"</item>
+        <item>"Ramón J. Cárcano"</item>
+        <item>"Ranqueles"</item>
+        <item>"Rayo Cortado"</item>
+        <item>"Rincón"</item>
+        <item>"Río Bamba"</item>
+        <item>"Río Ceballos"</item>
+        <item>"Río Cuarto"</item>
+        <item>"Río de los Sauces"</item>
+        <item>"Río Primero"</item>
+        <item>"Río Segundo"</item>
+        <item>"Río Tercero"</item>
+        <item>"Rosales"</item>
+        <item>"Rosario del Saladillo"</item>
+        <item>"Sacanta"</item>
+        <item>"Sagrada Familia"</item>
+        <item>"Saira"</item>
+        <item>"Saladillo"</item>
+        <item>"Saldán"</item>
+        <item>"Salsacate"</item>
+        <item>"Salsipuedes"</item>
+        <item>"Sampacho"</item>
+        <item>"San Agustín"</item>
+        <item>"San Antonio de Arredondo"</item>
+        <item>"San Antonio de Litín"</item>
+        <item>"San Basilio"</item>
+        <item>"San Carlos Minas"</item>
+        <item>"San Clemente"</item>
+        <item>"San Esteban"</item>
+        <item>"San Francisco"</item>
+        <item>"San Francisco del Chañar"</item>
+        <item>"San Gerónimo"</item>
+        <item>"San Huberto"</item>
+        <item>"San Ignacio (Loteo San Javier)"</item>
+        <item>"San Ignacio (Loteo Vélez Crespo)"</item>
+        <item>"San Javier y Yacanto"</item>
+        <item>"San Joaquín"</item>
+        <item>"San José"</item>
+        <item>"San José de la Dormida"</item>
+        <item>"San José de las Salinas"</item>
+        <item>"San Lorenzo"</item>
+        <item>"San Marcos"</item>
+        <item>"San Marcos Sierra"</item>
+        <item>"San Martín"</item>
+        <item>"San Nicolás"</item>
+        <item>"San Pedro"</item>
+        <item>"San Pedro de Gütemberg"</item>
+        <item>"San Pedro de Toyos"</item>
+        <item>"San Pedro Norte"</item>
+        <item>"San Roque "</item>
+        <item>"San Severo"</item>
+        <item>"San Vicente"</item>
+        <item>"Sanabria"</item>
+        <item>"Santa Catalina"</item>
+        <item>"Santa Catalina (Est. Holmberg)"</item>
+        <item>"Santa Elena"</item>
+        <item>"Santa Elena"</item>
+        <item>"Santa Eufemia"</item>
+        <item>"Santa Magdalena (Est. Jovita)"</item>
+        <item>"Santa María de Punilla"</item>
+        <item>"Santa Rosa de Calamuchita"</item>
+        <item>"Santa Rosa de Río Primero (Est. Villa Santa Rosa)"</item>
+        <item>"Santiago Temple"</item>
+        <item>"Sarmiento"</item>
+        <item>"Saturnino María Laspiur"</item>
+        <item>"Sauce Arriba"</item>
+        <item>"Sebastián Elcano"</item>
+        <item>"Seeber"</item>
+        <item>"Segunda Usina"</item>
+        <item>"Serrano"</item>
+        <item>"Serrezuela"</item>
+        <item>"Silvio Pellico"</item>
+        <item>"Simbolar"</item>
+        <item>"Sinsacate"</item>
+        <item>"Socavones"</item>
+        <item>"Solar de los Molinos"</item>
+        <item>"Suco"</item>
+        <item>"Tala Cañada"</item>
+        <item>"Tala Huasi"</item>
+        <item>"Talaini"</item>
+        <item>"Tancacha"</item>
+        <item>"Taninga"</item>
+        <item>"Tanti"</item>
+        <item>"Tasna"</item>
+        <item>"Ticino"</item>
+        <item>"Tinoco"</item>
+        <item>"Tío Pujio"</item>
+        <item>"Toledo"</item>
+        <item>"Toro Pujio"</item>
+        <item>"Tosno"</item>
+        <item>"Tosquitas"</item>
+        <item>"Tránsito"</item>
+        <item>"Trinchera"</item>
+        <item>"Tuclame"</item>
+        <item>"Ucacha"</item>
+        <item>"Unquillo"</item>
+        <item>"Valle Alegre"</item>
+        <item>"Valle de Anisacate"</item>
+        <item>"Valle Hermoso"</item>
+        <item>"Viamonte"</item>
+        <item>"Vicuña Mackenna"</item>
+        <item>"Villa  La Bolsa"</item>
+        <item>"Villa  Los Aromos"</item>
+        <item>"Villa Albertina"</item>
+        <item>"Villa Allende"</item>
+        <item>"Villa Alpina"</item>
+        <item>"Villa Amancay"</item>
+        <item>"Villa Ascasubi"</item>
+        <item>"Villa Berna"</item>
+        <item>"Villa Candelaria Norte"</item>
+        <item>"Villa Carlos Paz"</item>
+        <item>"Villa Cerro Azul"</item>
+        <item>"Villa Ciudad de América (Loteo Diego de Rojas)"</item>
+        <item>"Villa Ciudad Parque Los Reartes (1a. Sección)"</item>
+        <item>"Villa Ciudad Parque Los Reartes (3a. Sección)"</item>
+        <item>"Villa Concepción del Tío"</item>
+        <item>"Villa Cura Brochero"</item>
+        <item>"Villa de las Rosas"</item>
+        <item>"Villa de María"</item>
+        <item>"Villa de Pocho"</item>
+        <item>"Villa de Soto"</item>
+        <item>"Villa del Dique"</item>
+        <item>"Villa del Prado"</item>
+        <item>"Villa del Rosario"</item>
+        <item>"Villa del Totoral"</item>
+        <item>"Villa del Tránsito"</item>
+        <item>"Villa Dolores"</item>
+        <item>"Villa El Chacay"</item>
+        <item>"Villa El Fachinal - Parque Norte - Guiñazú Norte"</item>
+        <item>"Villa El Tala"</item>
+        <item>"Villa Elisa"</item>
+        <item>"Villa Flor Serrana"</item>
+        <item>"Villa Fontana"</item>
+        <item>"Villa General Belgrano"</item>
+        <item>"Villa Giardino"</item>
+        <item>"Villa Gutiérrez"</item>
+        <item>"Villa Huidobro (Est. Cañada Verde)"</item>
+        <item>"Villa La Rivera"</item>
+        <item>"Villa La Viña"</item>
+        <item>"Villa Lago Azul"</item>
+        <item>"Villa Los Llanos"</item>
+        <item>"Villa Los Patos"</item>
+        <item>"Villa María"</item>
+        <item>"Villa Nueva"</item>
+        <item>"Villa Oeste"</item>
+        <item>"Villa Parque Santa Ana"</item>
+        <item>"Villa Parque Siquimán"</item>
+        <item>"Villa Quilino"</item>
+        <item>"Villa Quillinzo"</item>
+        <item>"Villa Reducción"</item>
+        <item>"Villa Río Icho Cruz"</item>
+        <item>"Villa Rossi"</item>
+        <item>"Villa Rumipal"</item>
+        <item>"Villa San Esteban"</item>
+        <item>"Villa San Isidro "</item>
+        <item>"Villa San José"</item>
+        <item>"Villa San Miguel"</item>
+        <item>"Villa Santa Cruz del Lago"</item>
+        <item>"Villa Santa Eugenia"</item>
+        <item>"Villa Sarmiento"</item>
+        <item>"Villa Sarmiento"</item>
+        <item>"Villa Sierras De Oro"</item>
+        <item>"Villa Tulumba"</item>
+        <item>"Villa Valeria"</item>
+        <item>"Villa Yacanto"</item>
+        <item>"Washington"</item>
+        <item>"Wenceslao Escalante"</item>
+        <item>"Yocsina"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_buenos_aires">
+        <item>"12 de Octubre"</item>
+        <item>"16 de Julio"</item>
+        <item>"17 de Agosto"</item>
+        <item>"25 de Mayo"</item>
+        <item>"30 de Agosto"</item>
+        <item>"9 de Julio"</item>
+        <item>"Abbott"</item>
+        <item>"Acevedo"</item>
+        <item>"Adolfo Gonzales Chaves (Est. Chaves)"</item>
+        <item>"Agustín Mosconi"</item>
+        <item>"Agustín Roca"</item>
+        <item>"Agustina"</item>
+        <item>"Alberdi Viejo"</item>
+        <item>"Alberti (Est. Andrés Vaccarezza)"</item>
+        <item>"Alejandro Petión "</item>
+        <item>"Alfredo Demarchi (Est. Facundo Quiroga)"</item>
+        <item>"Almirante Brown"</item>
+        <item>"Altamirano"</item>
+        <item>"Alto Los Cardales"</item>
+        <item>"Álvarez de Toledo"</item>
+        <item>"Alvarez Jonte"</item>
+        <item>"América"</item>
+        <item>"Andant"</item>
+        <item>"Antonio Carboni"</item>
+        <item>"Aparicio"</item>
+        <item>"Arboledas"</item>
+        <item>"Arenas Verdes"</item>
+        <item>"Arenaza"</item>
+        <item>"Argerich"</item>
+        <item>"Ariel"</item>
+        <item>"Arrecifes"</item>
+        <item>"Arribeños"</item>
+        <item>"Arroyo Corto"</item>
+        <item>"Arroyo de la Cruz"</item>
+        <item>"Arroyo Dulce"</item>
+        <item>"Arroyo Venado"</item>
+        <item>"Ascensión"</item>
+        <item>"Atalaya"</item>
+        <item>"Avellaneda"</item>
+        <item>"Ayacucho"</item>
+        <item>"Azcuénaga"</item>
+        <item>"Azopardo"</item>
+        <item>"Azul"</item>
+        <item>"Bahía Blanca"</item>
+        <item>"Bahía San Blas"</item>
+        <item>"Baigorrita"</item>
+        <item>"Bajo Hondo"</item>
+        <item>"Balcarce"</item>
+        <item>"Balneario Laguna de Gómez"</item>
+        <item>"Balneario Marisol"</item>
+        <item>"Balneario Orense"</item>
+        <item>"Balneario Pehuen Co"</item>
+        <item>"Balneario San Cayetano"</item>
+        <item>"Balneario Sauce Grande"</item>
+        <item>"Banderalo"</item>
+        <item>"Baradero"</item>
+        <item>"Barker"</item>
+        <item>"Barrio Colinas Verdes"</item>
+        <item>"Barrio El Boquerón"</item>
+        <item>"Barrio El Casal"</item>
+        <item>"Barrio El Coyunco"</item>
+        <item>"Barrio El Taladro"</item>
+        <item>"Barrio La Gloria"</item>
+        <item>"Barrio Las Casuarinas"</item>
+        <item>"Barrio Las Golondrinas"</item>
+        <item>"Barrio Los Bosquecitos"</item>
+        <item>"Barrio Los Pioneros"</item>
+        <item>"Barrio Parque Almirante Irizar (Ap. Kilómetro 61) "</item>
+        <item>"Barrio Parque Las Acacias"</item>
+        <item>"Barrio Río Salado"</item>
+        <item>"Barrio Ruta 24 Kilómetro 10"</item>
+        <item>"Barrio Saavedra"</item>
+        <item>"Barrio Santa Paula"</item>
+        <item>"Barrio Santa Rosa"</item>
+        <item>"Batán"</item>
+        <item>"Bayauca"</item>
+        <item>"Bellocq"</item>
+        <item>"Benito Juárez (Est. Juárez)"</item>
+        <item>"Berazategui"</item>
+        <item>"Berdier"</item>
+        <item>"Berisso"</item>
+        <item>"Bermúdez"</item>
+        <item>"Berutti"</item>
+        <item>"Blancagrande"</item>
+        <item>"Blaquier"</item>
+        <item>"Blaquier"</item>
+        <item>"Bocayuva"</item>
+        <item>"Bordenave"</item>
+        <item>"Bragado"</item>
+        <item>"Cabildo"</item>
+        <item>"Cacharí"</item>
+        <item>"Cadret"</item>
+        <item>"Campana"</item>
+        <item>"Cañada Seca "</item>
+        <item>"Cañuelas"</item>
+        <item>"Capilla del Señor (Est. Capilla)"</item>
+        <item>"Capitán Castro"</item>
+        <item>"Capitán Sarmiento"</item>
+        <item>"Cardenal Cagliero"</item>
+        <item>"Carhué"</item>
+        <item>"Carlos Beguerie"</item>
+        <item>"Carlos Casares"</item>
+        <item>"Carlos Keen"</item>
+        <item>"Carlos María Naón"</item>
+        <item>"Carlos Salas"</item>
+        <item>"Carlos Tejedor"</item>
+        <item>"Carmen de Areco"</item>
+        <item>"Carmen de Patagones "</item>
+        <item>"Casalins"</item>
+        <item>"Casbas"</item>
+        <item>"Cascadas"</item>
+        <item>"Castelli"</item>
+        <item>"Castilla"</item>
+        <item>"Cazón"</item>
+        <item>"Centro Guerrero"</item>
+        <item>"Chacabuco"</item>
+        <item>"Chacras de San Clemente"</item>
+        <item>"Chapadmalal"</item>
+        <item>"Chascomús"</item>
+        <item>"Chasicó"</item>
+        <item>"Chiclana"</item>
+        <item>"Chillar"</item>
+        <item>"Chivilcoy"</item>
+        <item>"Claraz"</item>
+        <item>"Claromecó "</item>
+        <item>"Club de Campo Larena - Los Quinchos"</item>
+        <item>"Colón"</item>
+        <item>"Colonia Hinojo "</item>
+        <item>"Colonia Mauricio"</item>
+        <item>"Colonia Nievas"</item>
+        <item>"Colonia San Adolfo"</item>
+        <item>"Colonia San Martín"</item>
+        <item>"Colonia San Miguel"</item>
+        <item>"Colonia San Miguel Arcángel"</item>
+        <item>"Colonia San Ricardo (Est. Iriarte)"</item>
+        <item>"Colonia Seré"</item>
+        <item>"Comandante Nicanor Otamendi"</item>
+        <item>"Comodoro Py"</item>
+        <item>"Conesa"</item>
+        <item>"Copetonas"</item>
+        <item>"Coronel Boerr"</item>
+        <item>"Coronel Brandsen"</item>
+        <item>"Coronel Charlone"</item>
+        <item>"Coronel Dorrego"</item>
+        <item>"Coronel Martínez de Hoz (Ap. Kilómetro 322)"</item>
+        <item>"Coronel Pringles (Est. Pringles)"</item>
+        <item>"Coronel Seguí"</item>
+        <item>"Coronel Suárez"</item>
+        <item>"Coronel Vidal"</item>
+        <item>"Cortines"</item>
+        <item>"Costa Bonita"</item>
+        <item>"Country Club Bosque Real - Barrio Morabo"</item>
+        <item>"Country Club El Casco"</item>
+        <item>"Country Club El Jagüel "</item>
+        <item>"Country Club El Rodeo"</item>
+        <item>"Crotto"</item>
+        <item>"Cucullú"</item>
+        <item>"Cura Malal"</item>
+        <item>"Curarú"</item>
+        <item>"D'Orbigny"</item>
+        <item>"Daireaux"</item>
+        <item>"Darregueira"</item>
+        <item>"De Bary"</item>
+        <item>"De la Canal"</item>
+        <item>"De La Garma"</item>
+        <item>"Del Carril"</item>
+        <item>"Del Valle"</item>
+        <item>"Delfín Huergo"</item>
+        <item>"Desvío Aguirre"</item>
+        <item>"Diego Gaynor"</item>
+        <item>"Dolores"</item>
+        <item>"Domselaar"</item>
+        <item>"Dudignac"</item>
+        <item>"Dufaur"</item>
+        <item>"Duggan "</item>
+        <item>"El Arbolito"</item>
+        <item>"El Divisorio"</item>
+        <item>"El Dorado"</item>
+        <item>"El Marquesado"</item>
+        <item>"El Paraíso"</item>
+        <item>"El Pensamiento"</item>
+        <item>"El Perdido (Est. José A. Guisasola)"</item>
+        <item>"El Trigo"</item>
+        <item>"El Triunfo"</item>
+        <item>"Elvira"</item>
+        <item>"Emilio Ayarza"</item>
+        <item>"Emilio V. Bunge"</item>
+        <item>"Ensenada"</item>
+        <item>"Erezcano"</item>
+        <item>"Ernestina"</item>
+        <item>"Escalada"</item>
+        <item>"Escobar"</item>
+        <item>"Espartillar"</item>
+        <item>"Espartillar"</item>
+        <item>"Espigas"</item>
+        <item>"Estación Arenales"</item>
+        <item>"Estación Chapadmalal"</item>
+        <item>"Esteban Agustín Gascón"</item>
+        <item>"Esteban Echeverría"</item>
+        <item>"Estela"</item>
+        <item>"Ezeiza"</item>
+        <item>"Faro"</item>
+        <item>"Felipe Solá"</item>
+        <item>"Ferré"</item>
+        <item>"Florencio Varela"</item>
+        <item>"Florentino Ameghino"</item>
+        <item>"Fontezuela"</item>
+        <item>"Fortín Acha"</item>
+        <item>"Fortín Olavarría"</item>
+        <item>"Fortín Tiburcio"</item>
+        <item>"Francisco Madero"</item>
+        <item>"Franklin"</item>
+        <item>"Gahan"</item>
+        <item>"Gardey"</item>
+        <item>"Garré"</item>
+        <item>"General Alvear"</item>
+        <item>"General Arenales"</item>
+        <item>"General Belgrano"</item>
+        <item>"General Conesa"</item>
+        <item>"General Daniel Cerri (Est. General Cerri)"</item>
+        <item>"General Guido"</item>
+        <item>"General Hornos"</item>
+        <item>"General Juan Madariaga"</item>
+        <item>"General La Madrid"</item>
+        <item>"General Las Heras (Est. Las Heras)"</item>
+        <item>"General Lavalle"</item>
+        <item>"General Mansilla (Est. Bartolomé Bavio)"</item>
+        <item>"General O'Brien"</item>
+        <item>"General Pinto"</item>
+        <item>"General Pirán"</item>
+        <item>"General Rivas"</item>
+        <item>"General Rodríguez"</item>
+        <item>"General Rojo"</item>
+        <item>"General San Martín"</item>
+        <item>"General Villegas (Est. Villegas)"</item>
+        <item>"Germania (Est. Mayor José Orellano)"</item>
+        <item>"Girodias"</item>
+        <item>"Gobernador Castro"</item>
+        <item>"Gobernador Udaondo"</item>
+        <item>"Gobernador Ugarte"</item>
+        <item>"Gómez"</item>
+        <item>"Gonzalez Moreno"</item>
+        <item>"Gorchs"</item>
+        <item>"Gorostiaga"</item>
+        <item>"Gowland"</item>
+        <item>"Goyena"</item>
+        <item>"Guaminí"</item>
+        <item>"Guerrico"</item>
+        <item>"Hale"</item>
+        <item>"Henderson"</item>
+        <item>"Herrera Vegas"</item>
+        <item>"Hilario Ascasubi"</item>
+        <item>"Hinojo "</item>
+        <item>"Hortensia"</item>
+        <item>"Huanguelén"</item>
+        <item>"Hurlingham"</item>
+        <item>"Ignacio Correas"</item>
+        <item>"Indio Rico"</item>
+        <item>"Inés Indart"</item>
+        <item>"Ingeniero Thompson"</item>
+        <item>"Irala"</item>
+        <item>"Irene"</item>
+        <item>"Irineo Portela"</item>
+        <item>"Ituzaingó"</item>
+        <item>"Jeppener"</item>
+        <item>"José B. Casas"</item>
+        <item>"José C. Paz"</item>
+        <item>"José Juan Almeyra"</item>
+        <item>"José María Jauregui (Est. Jáuregui)"</item>
+        <item>"Juan A. de la Peña"</item>
+        <item>"Juan A. Pradere"</item>
+        <item>"Juan Anchorena (Est. Urquiza)"</item>
+        <item>"Juan Bautista Alberdi (Est. Alberdi)"</item>
+        <item>"Juan Cousté (Est. Algarrobo)"</item>
+        <item>"Juan E. Barra"</item>
+        <item>"Juan F. Ibarra"</item>
+        <item>"Juan José Paso"</item>
+        <item>"Juan N. Fernández"</item>
+        <item>"Junín"</item>
+        <item>"La Angelita"</item>
+        <item>"La Armonía"</item>
+        <item>"La Aurora (Est. La Niña)"</item>
+        <item>"La Beba"</item>
+        <item>"La Capilla"</item>
+        <item>"La Carreta"</item>
+        <item>"La Choza"</item>
+        <item>"La Colina"</item>
+        <item>"La Constancia"</item>
+        <item>"La Delfina"</item>
+        <item>"La Emilia "</item>
+        <item>"La Invencible"</item>
+        <item>"La Larga"</item>
+        <item>"La Limpia"</item>
+        <item>"La Luisa"</item>
+        <item>"La Manuela"</item>
+        <item>"La Matanza"</item>
+        <item>"La Pala"</item>
+        <item>"La Plata"</item>
+        <item>"La Rica"</item>
+        <item>"La Sofía"</item>
+        <item>"La Trinidad"</item>
+        <item>"La Violeta"</item>
+        <item>"Labardén"</item>
+        <item>"Laguna Alsina (Est. Bonifacio)"</item>
+        <item>"Laguna de Lobos"</item>
+        <item>"Lanús"</item>
+        <item>"Laplacette"</item>
+        <item>"Laprida"</item>
+        <item>"Lartigau"</item>
+        <item>"Las Armas"</item>
+        <item>"Las Bahamas"</item>
+        <item>"Las Carabelas"</item>
+        <item>"Las Flores"</item>
+        <item>"Las Marianas"</item>
+        <item>"Las Martinetas"</item>
+        <item>"Las Tahonas"</item>
+        <item>"Las Toninas"</item>
+        <item>"Las Toscas"</item>
+        <item>"Leandro N. Alem"</item>
+        <item>"Lezica y Torrezuri"</item>
+        <item>"Líbano"</item>
+        <item>"Licenciado Matienzo"</item>
+        <item>"Lima"</item>
+        <item>"Lin Calel"</item>
+        <item>"Lincoln"</item>
+        <item>"Lobería"</item>
+        <item>"Lobos"</item>
+        <item>"Loma Verde"</item>
+        <item>"Lomas de Copello"</item>
+        <item>"Lomas de Zamora"</item>
+        <item>"Lomas del Río Luján (Est. Río Luján)"</item>
+        <item>"López"</item>
+        <item>"López Lecube"</item>
+        <item>"Los Angeles"</item>
+        <item>"Los Cardales"</item>
+        <item>"Los Indios"</item>
+        <item>"Los Naranjos"</item>
+        <item>"Los Pinos"</item>
+        <item>"Los Toldos"</item>
+        <item>"Lozano"</item>
+        <item>"Lucas Monteverde"</item>
+        <item>"Luján"</item>
+        <item>"Magdala"</item>
+        <item>"Magdalena"</item>
+        <item>"Maipú"</item>
+        <item>"Malvinas Argentinas"</item>
+        <item>"Manuel B. Gonnet (Est. French)"</item>
+        <item>"Manuel J. Cobo (Est. Lezama)"</item>
+        <item>"Manuel Ocampo"</item>
+        <item>"Mar Azul"</item>
+        <item>"Mar Chiquita"</item>
+        <item>"Mar de Ajó - San Bernardo"</item>
+        <item>"Mar de Cobo"</item>
+        <item>"Mar del Plata "</item>
+        <item>"Mar del Sur"</item>
+        <item>"Marcelino Ugarte (Est. Dennehy)"</item>
+        <item>"Marcos Paz"</item>
+        <item>"María Ignacia (Est. Vela)"</item>
+        <item>"Mariano Benítez"</item>
+        <item>"Mariano H. Alfonzo (Est. San Patricio)"</item>
+        <item>"Mariano Unzué"</item>
+        <item>"Massey (Est. Elordi)"</item>
+        <item>"Mauricio Hirsch"</item>
+        <item>"Máximo Fernández (Est. Juan F. Salaberry) "</item>
+        <item>"Máximo Paz"</item>
+        <item>"Mayor Buratovich"</item>
+        <item>"Maza"</item>
+        <item>"Mechita"</item>
+        <item>"Mechita (Est. Mecha)"</item>
+        <item>"Mechongué"</item>
+        <item>"Médanos"</item>
+        <item>"Mercedes"</item>
+        <item>"Merlo"</item>
+        <item>"Micaela Cascallares (Est. Cascallares)"</item>
+        <item>"Mira Pampa"</item>
+        <item>"Miramar"</item>
+        <item>"Moctezuma"</item>
+        <item>"Mones Cazón"</item>
+        <item>"Monte Hermoso"</item>
+        <item>"Moquehuá"</item>
+        <item>"Morea"</item>
+        <item>"Moreno"</item>
+        <item>"Morón"</item>
+        <item>"Morse"</item>
+        <item>"Napaleofú "</item>
+        <item>"Navarro"</item>
+        <item>"Necochea - Quequén"</item>
+        <item>"Nicanor Olivera (Est. La Dulce)"</item>
+        <item>"Norberto de la Riestra"</item>
+        <item>"Norumbega"</item>
+        <item>"Nueva Plata"</item>
+        <item>"O'Higgins"</item>
+        <item>"Obligado"</item>
+        <item>"Ochandío"</item>
+        <item>"Olascoaga"</item>
+        <item>"Olavarría"</item>
+        <item>"Oliden"</item>
+        <item>"Olivera"</item>
+        <item>"Open Door (Est. Dr. Domingo Cabred)"</item>
+        <item>"Ordoqui"</item>
+        <item>"Orense"</item>
+        <item>"Oriente"</item>
+        <item>"Parada Orlando"</item>
+        <item>"Parada Robles - Pavón"</item>
+        <item>"Pardo"</item>
+        <item>"Pasman"</item>
+        <item>"Pasteur"</item>
+        <item>"Patricios"</item>
+        <item>"Paula"</item>
+        <item>"Pavón"</item>
+        <item>"Pearson"</item>
+        <item>"Pedernales"</item>
+        <item>"Pedro Luro"</item>
+        <item>"Pehuajó"</item>
+        <item>"Pellegrini"</item>
+        <item>"Pérez Millán"</item>
+        <item>"Pergamino"</item>
+        <item>"Pichincha"</item>
+        <item>"Piedritas"</item>
+        <item>"Pieres"</item>
+        <item>"Pigüé"</item>
+        <item>"Pila"</item>
+        <item>"Pilar"</item>
+        <item>"Pinamar "</item>
+        <item>"Pinzón"</item>
+        <item>"Pipinas"</item>
+        <item>"Pirovano"</item>
+        <item>"Pla"</item>
+        <item>"Plomer"</item>
+        <item>"Polvaredas"</item>
+        <item>"Pontaut"</item>
+        <item>"Porvenir"</item>
+        <item>"Presidente Perón"</item>
+        <item>"Puán"</item>
+        <item>"Pueblo Doyle"</item>
+        <item>"Pueblo Gouin"</item>
+        <item>"Pueblo Nuevo"</item>
+        <item>"Pueblo San Jorge"</item>
+        <item>"Puerto Paraná"</item>
+        <item>"Punta Alta (Est. Almirante Solier) "</item>
+        <item>"Punta Indio"</item>
+        <item>"Quenumá"</item>
+        <item>"Quilmes"</item>
+        <item>"Rafael Obligado"</item>
+        <item>"Ramallo"</item>
+        <item>"Ramón Biaus"</item>
+        <item>"Ramón Santamarina"</item>
+        <item>"Ramos Otero"</item>
+        <item>"Rancagua"</item>
+        <item>"Ranchos"</item>
+        <item>"Rauch"</item>
+        <item>"Rawson"</item>
+        <item>"Recalde"</item>
+        <item>"Reta"</item>
+        <item>"Río Tala"</item>
+        <item>"Rivera"</item>
+        <item>"Roberto Cano"</item>
+        <item>"Roberto J. Payró"</item>
+        <item>"Roberts"</item>
+        <item>"Rojas"</item>
+        <item>"Roosevelt"</item>
+        <item>"Roque Pérez"</item>
+        <item>"Ruta Sol"</item>
+        <item>"Saavedra"</item>
+        <item>"Saforcada"</item>
+        <item>"Saladillo"</item>
+        <item>"Salazar"</item>
+        <item>"Saldungaray"</item>
+        <item>"Salliqueló"</item>
+        <item>"Salto"</item>
+        <item>"Salvador María"</item>
+        <item>"Samborombón"</item>
+        <item>"San Agustín"</item>
+        <item>"San Andrés de Giles"</item>
+        <item>"San Antonio de Areco"</item>
+        <item>"San Bernardo (Est. Guanaco)"</item>
+        <item>"San Carlos de Bolívar (Est. Bolívar)"</item>
+        <item>"San Cayetano"</item>
+        <item>"San Clemente del Tuyú"</item>
+        <item>"San Emilio"</item>
+        <item>"San Enrique"</item>
+        <item>"San Fernando"</item>
+        <item>"San Francisco de Bellocq"</item>
+        <item>"San Germán"</item>
+        <item>"San Isidro"</item>
+        <item>"San José"</item>
+        <item>"San Manuel"</item>
+        <item>"San Mauricio"</item>
+        <item>"San Mayol"</item>
+        <item>"San Miguel"</item>
+        <item>"San Miguel del Monte (Est. Monte)"</item>
+        <item>"San Nicolás de los Arroyos "</item>
+        <item>"San Pedro"</item>
+        <item>"San Román"</item>
+        <item>"San Sebastián"</item>
+        <item>"San Vicente"</item>
+        <item>"Sansinena"</item>
+        <item>"Santa Clara del Mar "</item>
+        <item>"Santa Coloma"</item>
+        <item>"Santa Eleodora"</item>
+        <item>"Santa Lucía"</item>
+        <item>"Santa Luisa"</item>
+        <item>"Santa María"</item>
+        <item>"Santa Regina"</item>
+        <item>"Santa Rosa"</item>
+        <item>"Santa Teresita - Mar del Tuyú"</item>
+        <item>"Santa Trinidad"</item>
+        <item>"Santo Domingo"</item>
+        <item>"Sarasa"</item>
+        <item>"Sevigne"</item>
+        <item>"Sierra Chica"</item>
+        <item>"Sierra de la Ventana"</item>
+        <item>"Sierra de los Padres"</item>
+        <item>"Sierras Bayas"</item>
+        <item>"Smith"</item>
+        <item>"Sol de Mayo"</item>
+        <item>"Solanet"</item>
+        <item>"Solís"</item>
+        <item>"Stroeder"</item>
+        <item>"Suipacha"</item>
+        <item>"Sundblad"</item>
+        <item>"Tamangueyú"</item>
+        <item>"Tandil"</item>
+        <item>"Tapalqué"</item>
+        <item>"Tedín Uriburu"</item>
+        <item>"Teniente Origone"</item>
+        <item>"Thames"</item>
+        <item>"Tigre"</item>
+        <item>"Timote"</item>
+        <item>"Todd"</item>
+        <item>"Tomás Jofré"</item>
+        <item>"Tornquist"</item>
+        <item>"Torres"</item>
+        <item>"Trenque Lauquen"</item>
+        <item>"Tres Algarrobos (Est. Cuenca)"</item>
+        <item>"Tres Arroyos"</item>
+        <item>"Tres de Febrero"</item>
+        <item>"Tres Lomas "</item>
+        <item>"Tres Picos"</item>
+        <item>"Tres Sargentos"</item>
+        <item>"Trongé"</item>
+        <item>"Udaquiola"</item>
+        <item>"Urdampilleta"</item>
+        <item>"Uribelarrea"</item>
+        <item>"Valdés"</item>
+        <item>"Vásquez"</item>
+        <item>"Vedia"</item>
+        <item>"Velloso"</item>
+        <item>"Verónica"</item>
+        <item>"Vicente Casares "</item>
+        <item>"Vicente López"</item>
+        <item>"Vieytes"</item>
+        <item>"Villa Alfredo Fortabat "</item>
+        <item>"Villa Alsina (Est. Alsina)"</item>
+        <item>"Villa Angélica (Est. El Socorro)"</item>
+        <item>"Villa Cacique (Est. Alfredo Fortabat)"</item>
+        <item>"Villa Castelar (Est. Erize)"</item>
+        <item>"Villa del Mar"</item>
+        <item>"Villa Esperanza"</item>
+        <item>"Villa Espil"</item>
+        <item>"Villa Francia (Est. Coronel Granada)"</item>
+        <item>"Villa General Arias (Est. Kilómetro 638)"</item>
+        <item>"Villa General Fournier (Est. 9 de Julio Sud)"</item>
+        <item>"Villa General Savio (Est. Sánchez)"</item>
+        <item>"Villa Gesell "</item>
+        <item>"Villa Grisolía (Est. Achupallas)"</item>
+        <item>"Villa Iris"</item>
+        <item>"Villa La Arcadia"</item>
+        <item>"Villa La Serranía"</item>
+        <item>"Villa Laguna La Brava"</item>
+        <item>"Villa Las Encadenadas"</item>
+        <item>"Villa Lía"</item>
+        <item>"Villa Lynch Pueyrredón"</item>
+        <item>"Villa Manuel Pomar"</item>
+        <item>"Villa Margarita"</item>
+        <item>"Villa María"</item>
+        <item>"Villa Moll (Est. Moll)"</item>
+        <item>"Villa Ortiz (Est. Coronel Mom)"</item>
+        <item>"Villa Parque Cecir"</item>
+        <item>"Villa Parque Girado"</item>
+        <item>"Villa Ramallo"</item>
+        <item>"Villa Roch"</item>
+        <item>"Villa Rodríguez (Est. Barrow)"</item>
+        <item>"Villa Roth (Est. Ingeniero Balbín)"</item>
+        <item>"Villa Ruiz"</item>
+        <item>"Villa Saboya"</item>
+        <item>"Villa San José"</item>
+        <item>"Villa Sauze"</item>
+        <item>"Villa Serrana La Gruta"</item>
+        <item>"Villa Ventana"</item>
+        <item>"Villalonga"</item>
+        <item>"Villanueva  (Ap. Río Salado)"</item>
+        <item>"Villars"</item>
+        <item>"Viña"</item>
+        <item>"Vivoratá"</item>
+        <item>"Warnes"</item>
+        <item>"Yutuyaco"</item>
+        <item>"Zárate "</item>
+        <item>"Zavalía"</item>
+        <item>"Zenón Videla Dorna"</item>
+        <item>"Villa Martelli"</item>
+    </string-array>
+
+    <string-array name="ciudades_capital">
+        <item>"Ciudad Autonoma de Buenos Aires"</item>
+    </string-array>
+
+    <string-array name="ciudad_vacia">
+        <item>"-"</item>
+    </string-array>
+
+    <string-array name="ciudades_misiones">
+        <item>"1ﾺ de Mayo"</item>
+        <item>"25 de Mayo"</item>
+        <item>"9 de Julio"</item>
+        <item>"9 de Julio Kilometro 20 "</item>
+        <item>"Alba Posse"</item>
+        <item>"Alberdi"</item>
+        <item>"Almafuerte"</item>
+        <item>"Almirante Brown "</item>
+        <item>"Apóstoles"</item>
+        <item>"Aristóbulo del Valle"</item>
+        <item>"Arroyo del Medio"</item>
+        <item>"Azara"</item>
+        <item>"Barra Concepción"</item>
+        <item>"Bernardo de Irigoyen"</item>
+        <item>"Bonpland"</item>
+        <item>"Caá - Yarí"</item>
+        <item>"Campo Grande"</item>
+        <item>"Campo Ramón"</item>
+        <item>"Campo Viera"</item>
+        <item>"Candelaria"</item>
+        <item>"Capioví"</item>
+        <item>"Caraguatay"</item>
+        <item>"Cerro Azul"</item>
+        <item>"Cerro Corá"</item>
+        <item>"Colonia Alicia"</item>
+        <item>"Colonia Aurora"</item>
+        <item>"Colonia Polana"</item>
+        <item>"Colonia Victoria"</item>
+        <item>"Concepción de la Sierra"</item>
+        <item>"Corpus"</item>
+        <item>"Cruce Caballero"</item>
+        <item>"Domingo Savio"</item>
+        <item>"Dos Arroyos"</item>
+        <item>"Dos de Mayo Núcleo I"</item>
+        <item>"Dos de Mayo Núcleo II"</item>
+        <item>"Dos de Mayo Nucleo III"</item>
+        <item>"Dos Hermanas"</item>
+        <item>"El Alcázar"</item>
+        <item>"El Salto"</item>
+        <item>"El Soberbio"</item>
+        <item>"Eldorado"</item>
+        <item>"Esperanza "</item>
+        <item>"Estación Apóstoles"</item>
+        <item>"Florentino Ameghino"</item>
+        <item>"Fracrán"</item>
+        <item>"Garuhapé"</item>
+        <item>"Garupá"</item>
+        <item>"General Alvear"</item>
+        <item>"General Urquiza"</item>
+        <item>"Gobernador López"</item>
+        <item>"Gobernador Roca"</item>
+        <item>"Guaraní"</item>
+        <item>"Helvecia"</item>
+        <item>"Hipólito Yrigoyen"</item>
+        <item>"Integración"</item>
+        <item>"Itacaruaré"</item>
+        <item>"Jardín América"</item>
+        <item>"La Corita"</item>
+        <item>"Laharrague"</item>
+        <item>"Leandro N. Alem"</item>
+        <item>"Libertad "</item>
+        <item>"Loreto"</item>
+        <item>"Los Helechos"</item>
+        <item>"María Magdalena"</item>
+        <item>"Mártires"</item>
+        <item>"Mbopicuá"</item>
+        <item>"Mojón Grande"</item>
+        <item>"Montecarlo"</item>
+        <item>"Nemesio Parma"</item>
+        <item>"Oasis"</item>
+        <item>"Oberá"</item>
+        <item>"Olegario V. Andrade"</item>
+        <item>"Panambí"</item>
+        <item>"Panambí Kilómetro 8 "</item>
+        <item>"Paraíso"</item>
+        <item>"Pindapoy"</item>
+        <item>"Piñalito Sur"</item>
+        <item>"Piray Kilómetro 18 "</item>
+        <item>"Posadas (Municipio de Garupá )"</item>
+        <item>"Posadas (Municipio de Posadas)"</item>
+        <item>"Profundidad"</item>
+        <item>"Pueblo Illia"</item>
+        <item>"Puerto Iguazú"</item>
+        <item>"Puerto Leoni"</item>
+        <item>"Puerto Mado"</item>
+        <item>"Puerto Pinares"</item>
+        <item>"Puerto Piray"</item>
+        <item>"Puerto Rico"</item>
+        <item>"Puerto Santa Ana"</item>
+        <item>"Rincón de Azara"</item>
+        <item>"Roca Chica"</item>
+        <item>"Ruiz de Montoya"</item>
+        <item>"Salto Encantado"</item>
+        <item>"San Alberto"</item>
+        <item>"San Antonio"</item>
+        <item>"San Francisco de Asís"</item>
+        <item>"San Gotardo"</item>
+        <item>"San Ignacio"</item>
+        <item>"San Javier"</item>
+        <item>"San José"</item>
+        <item>"San Martín"</item>
+        <item>"San Miguel"</item>
+        <item>"San Pedro"</item>
+        <item>"San Vicente"</item>
+        <item>"Santa Ana"</item>
+        <item>"Santa María"</item>
+        <item>"Santa Rita"</item>
+        <item>"Santiago de Liniers"</item>
+        <item>"Santo Pipó"</item>
+        <item>"Tarumá"</item>
+        <item>"Tobuna"</item>
+        <item>"Tres Capones"</item>
+        <item>"Valle Hermoso"</item>
+        <item>"Villa Akerman"</item>
+        <item>"Villa Bonita"</item>
+        <item>"Villa Libertad  (Municipio Leandro N. Alem)"</item>
+        <item>"Villa Libertad (Municipio Caá - Yarí)"</item>
+        <item>"Villa Parodi"</item>
+        <item>"Villa Roulet"</item>
+        <item>"Wanda"</item>
+
+    </string-array>
+
+    <string-array name="ciudades_san_luis">
+        <item>"Alto Pelado"</item>
+        <item>"Alto Pencoso"</item>
+        <item>"Anchorena"</item>
+        <item>"Arizona"</item>
+        <item>"Bagual"</item>
+        <item>"Balde"</item>
+        <item>"Batavia"</item>
+        <item>"Beazley"</item>
+        <item>"Buena Esperanza"</item>
+        <item>"Candelaria"</item>
+        <item>"Carolina"</item>
+        <item>"Carpintería"</item>
+        <item>"Cazador"</item>
+        <item>"Cerro de Oro"</item>
+        <item>"Chosmes"</item>
+        <item>"Concarán"</item>
+        <item>"Cortaderas"</item>
+        <item>"Desaguadero"</item>
+        <item>"El Trapiche"</item>
+        <item>"El Volcán"</item>
+        <item>"Fortín El Patria"</item>
+        <item>"Fortuna"</item>
+        <item>"Fraga"</item>
+        <item>"Jarilla"</item>
+        <item>"Juan Jorba"</item>
+        <item>"Juan Llerena"</item>
+        <item>"Juana Koslay "</item>
+        <item>"Justo Daract"</item>
+        <item>"La Bajada"</item>
+        <item>"La Calera"</item>
+        <item>"La Florida"</item>
+        <item>"La Majada"</item>
+        <item>"La Maroma"</item>
+        <item>"La Punilla"</item>
+        <item>"La Punta"</item>
+        <item>"La Toma"</item>
+        <item>"La Vertiente"</item>
+        <item>"Lafinur"</item>
+        <item>"Las Aguadas"</item>
+        <item>"Las Chacras"</item>
+        <item>"Las Lagunas"</item>
+        <item>"Lavaisse"</item>
+        <item>"Leandro N. Alem"</item>
+        <item>"Los Cajones"</item>
+        <item>"Los Molles"</item>
+        <item>"Los Overos"</item>
+        <item>"Luján"</item>
+        <item>"Martín de Loyola"</item>
+        <item>"Merlo "</item>
+        <item>"Mosmota"</item>
+        <item>"Nahuel Mapá"</item>
+        <item>"Naschel"</item>
+        <item>"Navia"</item>
+        <item>"Nogolí"</item>
+        <item>"Nueva Galia"</item>
+        <item>"Papagayos"</item>
+        <item>"Paso Grande"</item>
+        <item>"Potrerillo"</item>
+        <item>"Potrero de los Funes"</item>
+        <item>"Quines"</item>
+        <item>"Renca"</item>
+        <item>"Río Grande"</item>
+        <item>"Río Juan Gómez"</item>
+        <item>"Riocito"</item>
+        <item>"Saladillo"</item>
+        <item>"Salinas del Bebedero"</item>
+        <item>"San Francisco del Monte de Oro"</item>
+        <item>"San Jerónimo"</item>
+        <item>"San José del Morro"</item>
+        <item>"San Luis"</item>
+        <item>"San Martín"</item>
+        <item>"San Pablo"</item>
+        <item>"Santa Rosa del Conlara"</item>
+        <item>"Talita"</item>
+        <item>"Tilisarao"</item>
+        <item>"Unión"</item>
+        <item>"Villa de la Quebrada"</item>
+        <item>"Villa de Praga"</item>
+        <item>"Villa del Carmen"</item>
+        <item>"Villa General Roca"</item>
+        <item>"Villa Larca"</item>
+        <item>"Villa Mercedes "</item>
+        <item>"Villa Reynolds"</item>
+        <item>"Villa Salles "</item>
+        <item>"Zanjitas"</item>
+
+
+    </string-array>
+</resources>
