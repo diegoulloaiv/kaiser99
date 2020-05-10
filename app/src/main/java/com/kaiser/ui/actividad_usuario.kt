@@ -3,8 +3,11 @@ package com.kaiser.ui
 //import android.support.v7.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
+import androidx.core.util.Pair
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.google.firebase.firestore.FirebaseFirestore
@@ -17,6 +20,7 @@ import com.kaiser.logica.producto
 import com.kaiser.logica.tonos
 import com.kaiser.logica.usuario
 import kotlinx.android.synthetic.main.activity_actividad_usuario.*
+import java.net.URI.create
 import java.sql.Timestamp
 
 class actividad_usuario : AppCompatActivity() {
@@ -43,7 +47,11 @@ class actividad_usuario : AppCompatActivity() {
         {
             val intent = Intent(this, actividad_modificar_usuario::class.java)
             intent.putExtra("id",usuario_id)
-            startActivity(intent)
+            val p1 = Pair.create<View, String>(im_usuario_foto, "imagen_perfil")
+            val p2 = Pair.create<View, String>(txt_usuario_nombre,"nombre_usuario")
+            val p3 = Pair.create<View,String>(txt_usuario_categoria,"categoria")
+            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, p1,p2,p3)
+            startActivity(intent,options.toBundle())
         }
     }
 

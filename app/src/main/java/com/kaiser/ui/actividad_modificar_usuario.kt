@@ -294,7 +294,10 @@ class actividad_modificar_usuario : AppCompatActivity() {
                 .document(id_automatico)
                 .set(usuario)
                 .addOnSuccessListener { documentReference ->
-                    this.finish()
+                    run {
+                        supportFinishAfterTransition()
+                        this.finish()
+                    }
 
                 }
     }

@@ -8,6 +8,7 @@
         <item name="colorAccent">#9CA5A4</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
     <style name="MyTheme" parent="FirebaseUI">
@@ -21,6 +22,7 @@
         <item name="android:textViewStyle">@style/TextViewColor</item>
         <item name="colorControlNormal">@color/colorPrimary</item>
         <item name="colorControlActivated">#20201E</item>
+        <item name="android:windowContentTransitions">true</item>
 
     </style>
 

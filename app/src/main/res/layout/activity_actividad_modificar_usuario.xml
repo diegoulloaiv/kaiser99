@@ -96,6 +96,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="18dp"
+        android:transitionName="imagen_perfil"
         android:layout_marginTop="19dp"
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/txt_update_usuario_email"
@@ -130,6 +131,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="45dp"
         android:layout_weight="1"
+        android:transitionName="nombre_usuario"
         android:autofillHints=""
         android:inputType="none|textPersonName|text"
         android:maxLength="250"
@@ -201,6 +203,7 @@
 
     <TextView
         android:id="@+id/txt_update_usuario_categoria"
+        android:transitionName="categoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"

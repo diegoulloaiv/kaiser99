@@ -51,7 +51,7 @@ class RecyclerAdapterPedidos(private val pedidos: ArrayList<pedidos>) : Recycler
             //view.txt_pedido_fecha.text = i!!.fecha_hora.toString()
             view.txt_pedido_estado.text = i!!.estado.toString()
             view.txt_pedido_total.text = i!!.total.toString()
-            view.txt_pedido_cant.text = i!!.items?.size.toString()
+            view.txt_pedido_metodo_envio.text = i!!.metodo_envio
             Toast.makeText(view.context,"a", Toast.LENGTH_SHORT)
         }
 
