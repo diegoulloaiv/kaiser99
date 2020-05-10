@@ -164,7 +164,6 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
         txtaux.text = texto
     }
 
-
     fun cargar_informacion_usuario()
     {
         // CHEQUEO SI EL USUARIO SE LOGUEO CORRECTAMENTE
@@ -269,6 +268,7 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
                                 var aux_usuario = document.toObject(usuario::class.java)
                                 Log.d(TAG, "Usuario Existia ${document.id} => ${document.data}")
                                 MyApplication.globalVar = aux_usuario.categoria
+                                MyApplication.usuario_id = document.id
                                 existia = true
                             }
                             //Toast.makeText(

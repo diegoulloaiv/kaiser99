@@ -2,30 +2,39 @@ package com.kaiser.ui
 
 
 import android.app.Activity
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.preference.Preference
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
+import com.google.firebase.firestore.Query
+import com.google.firebase.firestore.QuerySnapshot
 import com.kaiser.R
 import com.kaiser.logica.usuario
-
+import com.kaiser.logica.variables_sistema
 import kotlinx.android.synthetic.main.activity_actividad_metodo_envio.*
 
 
 class actividad_metodo_envio : AppCompatActivity() {
 
-    private var usuario_string : String = ""
-    private var locales = arrayListOf<String> ("Bahia Blanca", "Viedma", "Neuquén")
-    private var provincia_seleccionada : String = ""
-    private var ciudad_seleccionada  : String = ""
-    private var local_seleccionado : String = ""
+    lateinit var database: FirebaseFirestore
+    private var usuario_string: String = ""
+    private var locales = arrayListOf<String>("Bahia Blanca", "Viedma", "Neuquén")
+    private var provincia_seleccionada: String = ""
+    private var ciudad_seleccionada: String = ""
+    private var local_seleccionado: String = ""
+    private var total: Double = 0.0
+    private var cadete_sin_cargo: Double = 0.0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,28 +42,29 @@ class actividad_metodo_envio : AppCompatActivity() {
 
         val adapterLocales = ArrayAdapter(this, R.layout.spinner_item, locales)
         sp_locales.adapter = adapterLocales
+        total = intent.getDoubleExtra("total", 0.0)
+
 
         val user = FirebaseAuth.getInstance().currentUser
         user?.let {
             usuario_string = user.uid
         }
 
-                sp_locales.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                    override fun onNothingSelected(p0: AdapterView<*>?) {
-                        TODO("Not yet implemented")
-                    }
+        sp_locales.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
 
-                    override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                        local_seleccionado = locales[p2]
-                        when (locales[p2])
-                        {
-                            "Bahia Blanca" -> txt_info_local.setText("Saavedra 164, Bahia Blanca \n (0291) - 4514602 ")
-                            "Viedma" -> txt_info_local.setText("Buenos Aires 581, Viedma \n (02920) - 428204 ")
-                            "Neuquén" -> txt_info_local.setText("Belgrano 2424, Neuquén \n (0299) - 5093730 ")
-                         }
-                    }
-
+            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+                local_seleccionado = locales[p2]
+                when (locales[p2]) {
+                    "Bahia Blanca" -> txt_info_local.setText("Saavedra 164, Bahia Blanca \n (0291) - 4514602 ")
+                    "Viedma" -> txt_info_local.setText("Buenos Aires 581, Viedma \n (02920) - 428204 ")
+                    "Neuquén" -> txt_info_local.setText("Belgrano 2424, Neuquén \n (0299) - 5093730 ")
                 }
+            }
+
+        }
 
         sp_provincia2.visibility = View.INVISIBLE
         sp_ciudad2.visibility = View.INVISIBLE
@@ -99,33 +109,19 @@ class actividad_metodo_envio : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.spinner_item, provincias)
         sp_provincia2.adapter = adapter
 
+
         btn_confirmar_pedido.setOnClickListener()
         {
             if (ChipEnvio.isChecked or ChipLocal.isChecked) {
                 if (chipOnline.isChecked or ChipEfectivo.isChecked) {
-                    val intent = Intent()
-                    if (ChipEnvio.isChecked)
-                        intent.putExtra("metodo_envio", "envio")
-                    else
-                        intent.putExtra("metodo_envio", "local")
-                    if (chipOnline.isChecked)
-                        intent.putExtra("metodo_pago", "online")
-                    else
-                        intent.putExtra("metodo_pago", "efectivo")
-                    intent.putExtra("provincia", provincia_seleccionada)
-                    intent.putExtra("ciudad", ciudad_seleccionada)
-                    intent.putExtra("local", local_seleccionado)
-                    var aux: String = txt_direccion2.text.toString()
-                    intent.putExtra("direccion", aux)
-                    setResult(Activity.RESULT_OK, intent)
-                    finish()
-                }
-                else
-                    Toast.makeText(this,"Debe seleccionar una Forma de Pago", Toast.LENGTH_LONG)
-            }
-            else
-                Toast.makeText(this,"Debe seleccionar un Metodo de Envio",Toast.LENGTH_LONG)
-                //MercadoPago.SDK.configure("ENV_ACCESS_TOKEN")
+
+                    buscar_variables_sistema(ciudad_seleccionada)
+
+                } else
+                    Toast.makeText(this, "Debe seleccionar una Forma de Pago", Toast.LENGTH_LONG).show()
+            } else
+                Toast.makeText(this, "Debe seleccionar un Metodo de Envio", Toast.LENGTH_LONG).show()
+            //MercadoPago.SDK.configure("ENV_ACCESS_TOKEN")
         }
 
         var adapterCiudad = ArrayAdapter<String>(this, R.layout.spinner_item, ciudades)
@@ -347,4 +343,62 @@ class actividad_metodo_envio : AppCompatActivity() {
                     }
                 }
     }
+
+    fun buscar_variables_sistema(ciudad: String) {
+        val rootRef = FirebaseFirestore.getInstance()
+        val yourCollRef = rootRef.collection("variables_sistema")
+        val query: Query = yourCollRef.whereEqualTo("variable", ciudad_seleccionada)
+        query.get().addOnCompleteListener(OnCompleteListener<QuerySnapshot> { task ->
+            if (task.isSuccessful) {
+                var entro = false
+                for (document in task.result!!) {
+                    var aux = document.toObject(variables_sistema::class.java)
+                    entro = true
+                    cadete_sin_cargo = aux.numero.toDouble()
+                    if (total < cadete_sin_cargo) {
+                        var faltante: Double = cadete_sin_cargo - total
+                        AlertDialog.Builder(this@actividad_metodo_envio)
+                                .setTitle("Envio sin Cargo")
+                                .setMessage("Cuando el total es superior a $ ${cadete_sin_cargo} el envio es sin cargo. \n Te restan $ $faltante para que el envio sea sin cargo") // Specifying a listener allows you to take an action before dismissing the dialog.
+                                // The dialog is automatically dismissed when a dialog button is clicked.
+                                .setPositiveButton("Confirmar", DialogInterface.OnClickListener { dialog, which ->
+                                    finalizar()
+                                }) // A null listener allows the button to dismiss the dialog and take no further action.
+                                .setNegativeButton("Volver", null)
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .show()
+
+                    } else {
+                        finalizar()
+                        break
+                            }
+                    break
+                }
+                if (!entro) finalizar()
+            }
+        })
+
+
+    }
+
+    fun finalizar() {
+        val intent = Intent()
+        if (ChipEnvio.isChecked)
+            intent.putExtra("metodo_envio", "envio")
+        else
+            intent.putExtra("metodo_envio", "local")
+        if (chipOnline.isChecked)
+            intent.putExtra("metodo_pago", "online")
+        else
+            intent.putExtra("metodo_pago", "efectivo")
+        intent.putExtra("provincia", provincia_seleccionada)
+        intent.putExtra("ciudad", ciudad_seleccionada)
+        intent.putExtra("local", local_seleccionado)
+        var aux: String = txt_direccion2.text.toString()
+        intent.putExtra("direccion", aux)
+        setResult(Activity.RESULT_OK, intent)
+        finish()
+
+    }
+
 }

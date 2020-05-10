@@ -74,6 +74,7 @@ class actividad_carrito : AppCompatActivity() {
         {
 
             val intent = Intent(this, actividad_metodo_envio::class.java)
+            intent.putExtra("total",total)
             startActivityForResult(intent, 2)
 
 

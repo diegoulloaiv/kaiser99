@@ -5,6 +5,8 @@ import android.app.Application
 class MyApplication: Application() {
     companion object {
         var globalVar = "publico"
+        var usuario_id = ""
+        var cadete_sin_cargo : Int = 0
     }
 
     override fun onCreate() {
