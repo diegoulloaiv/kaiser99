@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.text.Html
 import android.text.Spanned
 import android.text.method.ScrollingMovementMethod
+import android.view.MotionEvent
+import android.view.ScaleGestureDetector
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -29,6 +31,8 @@ import kotlin.collections.ArrayList
 
 class actividad_producto : AppCompatActivity() {
 
+    private var mScaleGestureDetector: ScaleGestureDetector? = null
+    private var mScaleFactor = 1.0f
     lateinit var txtTitulo: TextView
     lateinit var id: String
     lateinit var imagen: ImageView
@@ -132,6 +136,8 @@ class actividad_producto : AppCompatActivity() {
             thread.start()
             super.onBackPressed()
         }
+
+
 
     }
 

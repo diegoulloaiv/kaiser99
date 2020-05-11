@@ -3,6 +3,7 @@ package com.kaiser.adaptadores
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
+import android.content.ContextWrapper
 import android.content.Intent
 import android.util.Log
 import android.view.View
@@ -16,14 +17,11 @@ import com.google.firebase.storage.FirebaseStorage
 import com.kaiser.R
 import com.kaiser.logica.MyApplication
 import com.kaiser.logica.producto
-import com.kaiser.ui.actividad_listado_productos
 import com.kaiser.ui.actividad_producto
 import kotlinx.android.synthetic.main.recyclerview_item_row_listado_producto.view.*
-import java.text.NumberFormat
-import java.util.*
-import kotlin.collections.ArrayList
 
-class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>) : RecyclerView.Adapter<RecyclerAdapterListadoProductos.PhotoHolder>()  {
+
+class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>) : RecyclerView.Adapter<RecyclerAdapterListadoProductos.PhotoHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapterListadoProductos.PhotoHolder {
         val inflatedView = parent.inflate(R.layout.recyclerview_item_row_listado_producto, false)
         return RecyclerAdapterListadoProductos.PhotoHolder(inflatedView)
@@ -79,9 +77,19 @@ class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>
             v.setOnClickListener(this)
         }
 
+        fun getActivity(context: Context?): Activity {
+            return if (context is Activity) {
+                context
+            } else {
+                getActivity((context as ContextWrapper).baseContext)
+            }
+        }
+
         //4
         override fun onClick(v: View) {
             val context: Context = v.context
+            var actividad : Activity = getActivity(context)
+
             val intent = Intent(context, actividad_producto::class.java)
             intent.putExtra("id", prducto?.id)
             intent.putExtra("nombre", prducto?.nombre)
@@ -101,10 +109,10 @@ class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>
             val imagen = Pair.create<View, String>(v.iv_imagen_producto, "imagen_producto")
             val nombre = Pair.create<View, String>(v.txt_descripcion_producto, "nombre_producto")
             val precio = Pair.create<View, String>(v.txt_precio_producto, "precio_producto")
+
             //val options = ActivityOptionsCompat.makeSceneTransitionAnimation(actividad_listado_productos ,imagen)
-
-
-            context.startActivity(intent)
+            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(actividad,imagen,nombre,precio)
+            context.startActivity(intent,options.toBundle())
             Log.d("RecyclerView", "CLICK!")
         }
 
