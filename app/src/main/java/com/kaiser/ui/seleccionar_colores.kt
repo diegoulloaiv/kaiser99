@@ -44,8 +44,8 @@ class seleccionar_colores : AppCompatActivity() {
             for (a in lista_colores)
             {
                 if (a.cantidad > 0)
-                    // ? separacion de item
-                    // * separacion de campos
+                // ? separacion de item
+                // * separacion de campos
                     cadena_resultado += a.numero + "*" + a.cantidad.toString() + "?"
             }
             val intent = Intent()
@@ -70,7 +70,7 @@ class seleccionar_colores : AppCompatActivity() {
                     {
                         lista_colores?.add(item.toObject(tonos::class.java))
 
-                        val storageReference = FirebaseStorage.getInstance().reference.child("/productos" + item.id + ".jpg")
+                        //val storageReference = FirebaseStorage.getInstance().reference.child("/productos" + item.id + ".jpg")
                         adapter.notifyItemInserted(lista_colores?.size!! -1)
                     }
 

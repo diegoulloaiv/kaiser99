@@ -2,23 +2,25 @@ package com.kaiser.ui
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.text.Html
 import android.text.Spanned
+import android.text.method.ScrollingMovementMethod
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
 import com.bumptech.glide.Glide
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.storage.FirebaseStorage
 import com.kaiser.R
-import com.kaiser.logica.AppDb
-import com.kaiser.logica.CarroEntity
-import com.kaiser.logica.MyApplication
-import com.kaiser.logica.tonos
+import com.kaiser.logica.*
 import kotlinx.android.synthetic.main.activity_actividad_producto.*
 import java.text.NumberFormat
 import java.util.*
@@ -37,13 +39,20 @@ class actividad_producto : AppCompatActivity() {
     var lista_colores: MutableList<CarroEntity> = ArrayList<CarroEntity>()
     lateinit var lista_resultado: List<String>
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actividad_producto)
+
         txtTitulo = this.findViewById(R.id.TxtTitulo)
         id = intent.getStringExtra("id")
+        txt_texto_producto.movementMethod = ScrollingMovementMethod()
         txtTitulo.text = intent.getStringExtra("nombre")
         precio = this.findViewById(R.id.txt_precio)
+        txt_texto_producto.text = Html.fromHtml(intent.getStringExtra("texto"), Html.FROM_HTML_MODE_COMPACT)
+        txt_marca.text = intent.getStringExtra("marca")
+
+
         //CAMBiAR SEGUN EL USUARIO
         when (MyApplication.globalVar) {
             "publico" ->   precio.text =   intent.getStringExtra("precio1")
@@ -151,6 +160,8 @@ class actividad_producto : AppCompatActivity() {
             }
         }
     }
+
+
 
 
 }

@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.google.firebase.storage.FirebaseStorage
 import com.kaiser.R
 import com.kaiser.logica.tonos
-import kotlinx.android.synthetic.main.activity_actividad_usuario.view.*
+
 import kotlinx.android.synthetic.main.recyclerview_item_row_tonos.view.*
 
 class RecyclerAdapterTonos(private val tonos: ArrayList<tonos>) : RecyclerView.Adapter<RecyclerAdapterTonos.PhotoHolder>()  {
@@ -60,7 +60,7 @@ class RecyclerAdapterTonos(private val tonos: ArrayList<tonos>) : RecyclerView.A
 
         //3
         init {
-            v.btn_modificar_usuario.setOnClickListener()
+            v.btn_minus_tono.setOnClickListener()
             {
                 var aux = v.txt_cantidad_tono.text.toString()
                 v.txt_cantidad_tono.text  = (aux.toInt() + 1).toString()

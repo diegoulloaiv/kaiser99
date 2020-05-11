@@ -6,6 +6,7 @@ import java.util.*
 class producto(var id: String,
                    var nombre: String,
                    var producto_proveedor: String,
+                    var nombre_proveedor: String,
                    var precio1: Double,
                    var precio2: Double,
                    var precio3: Double,
@@ -15,9 +16,11 @@ class producto(var id: String,
                    var vendidos: Int,
                     var url: String,
                     var text : String,
-                    var tiene_tonos : Boolean)
+                    var tiene_tonos : Boolean,
+                    var texto : String)
     {
         constructor() :this("",
+                "",
                 "",
                 "",
                 0.0,
@@ -29,6 +32,7 @@ class producto(var id: String,
                 0,
                 "",
                 "",
-                false
+                false,
+                ""
         )
     }

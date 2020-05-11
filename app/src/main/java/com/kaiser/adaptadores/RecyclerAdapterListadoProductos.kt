@@ -1,18 +1,22 @@
 package com.kaiser.adaptadores
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.storage.FirebaseStorage
 import com.kaiser.R
 import com.kaiser.logica.MyApplication
 import com.kaiser.logica.producto
+import com.kaiser.ui.actividad_listado_productos
 import com.kaiser.ui.actividad_producto
 import kotlinx.android.synthetic.main.recyclerview_item_row_listado_producto.view.*
 import java.text.NumberFormat
@@ -91,6 +95,14 @@ class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>
             intent.putExtra("precio6",prducto?.precio6.toString())
             intent.putExtra("text",prducto?.text)
             intent.putExtra("tiene_tonos",prducto?.tiene_tonos.toString())
+            intent.putExtra("texto",prducto?.texto)
+            intent.putExtra("marca",prducto?.nombre_proveedor)
+
+            val imagen = Pair.create<View, String>(v.iv_imagen_producto, "imagen_producto")
+            val nombre = Pair.create<View, String>(v.txt_descripcion_producto, "nombre_producto")
+            val precio = Pair.create<View, String>(v.txt_precio_producto, "precio_producto")
+            //val options = ActivityOptionsCompat.makeSceneTransitionAnimation(actividad_listado_productos ,imagen)
+
 
             context.startActivity(intent)
             Log.d("RecyclerView", "CLICK!")

@@ -9,9 +9,12 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.storage.FirebaseStorage
 import com.kaiser.R
 import com.kaiser.logica.producto
+import com.kaiser.logica.proveedor
 import com.kaiser.ui.actividad_producto
 import kotlinx.android.synthetic.main.recyclerview_item_row.view.*
 
@@ -80,9 +83,14 @@ class RecyclerAdapter(private val productos: ArrayList<producto>) : RecyclerView
             intent.putExtra("precio6",prducto?.precio6.toString())
             intent.putExtra("text",prducto?.text)
             intent.putExtra("tiene_tonos",prducto?.tiene_tonos.toString())
+            intent.putExtra("texto",prducto?.texto)
+            intent.putExtra("marca",prducto?.nombre_proveedor)
+
+
             context.startActivity(intent)
             Log.d("RecyclerView", "CLICK!")
         }
+
 
         companion object {
             //5
