@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.actividad_listado_productos">
+    tools:context=".ui.actividad_listado_productos"
+    android:background ="@android:color/white">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_listado_productos"
@@ -13,5 +14,6 @@
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background ="@android:color/white"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
@@ -80,6 +81,29 @@ class actividad_carrito : AppCompatActivity() {
 
         }
 
+        btn_cancelar_pedido.setOnClickListener()
+        {
+            val builder = AlertDialog.Builder(this)
+            builder.setMessage("Seguro que desea eliminar el pedido?")
+                    .setCancelable(false)
+                    .setPositiveButton("Si") { dialog, id ->
+                        val t = Thread()
+                        {
+                            var db = Room.databaseBuilder(applicationContext, AppDb::class.java, "CarroDB")
+                                    .fallbackToDestructiveMigration().build()
+                            db.carroDao().nukeTable()
+
+                        }
+                        t.start()
+                        super.onBackPressed()
+                    }
+                    .setNegativeButton("No") { dialog, id ->
+                        // Dismiss the dialog
+                        dialog.dismiss()
+                    }
+            val alert = builder.create()
+            alert.show()
+        }
 
     }
 
@@ -128,6 +152,7 @@ class actividad_carrito : AppCompatActivity() {
         }
 
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

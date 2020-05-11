@@ -15,6 +15,7 @@ import com.google.firebase.storage.StorageReference
 import com.kaiser.R
 import com.kaiser.logica.usuario
 import com.squareup.picasso.Picasso
+// TODO: Arregar el nuevo usuario, seguro que anda como el culo. Y falta agregar la categoria
 
 
 class nuevo_usuario : AppCompatActivity() {
@@ -87,7 +88,7 @@ class nuevo_usuario : AppCompatActivity() {
 
         sp_provincia.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
 
             override fun onItemSelected(

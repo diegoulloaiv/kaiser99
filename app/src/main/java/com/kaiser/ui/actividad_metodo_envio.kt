@@ -21,6 +21,7 @@ import com.google.firebase.firestore.QuerySnapshot
 import com.kaiser.R
 import com.kaiser.logica.usuario
 import com.kaiser.logica.variables_sistema
+import kotlinx.android.synthetic.main.activity_actividad_carrito.*
 import kotlinx.android.synthetic.main.activity_actividad_metodo_envio.*
 
 
@@ -52,7 +53,7 @@ class actividad_metodo_envio : AppCompatActivity() {
 
         sp_locales.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(p0: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
 
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
@@ -110,7 +111,7 @@ class actividad_metodo_envio : AppCompatActivity() {
         sp_provincia2.adapter = adapter
 
 
-        btn_confirmar_pedido.setOnClickListener()
+        btn_confirmar_pedido1.setOnClickListener()
         {
             if (ChipEnvio.isChecked or ChipLocal.isChecked) {
                 if (chipOnline.isChecked or ChipEfectivo.isChecked) {
@@ -128,7 +129,7 @@ class actividad_metodo_envio : AppCompatActivity() {
         sp_ciudad2.adapter = adapterCiudad
         sp_provincia2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
 
             override fun onItemSelected(
@@ -316,7 +317,7 @@ class actividad_metodo_envio : AppCompatActivity() {
 
         sp_ciudad2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(p0: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
 
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {

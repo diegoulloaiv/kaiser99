@@ -60,7 +60,7 @@ class actividad_modificar_usuario : AppCompatActivity() {
 
         sp_update_usuario_provincia.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
 
             override fun onItemSelected(

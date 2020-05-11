@@ -202,7 +202,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sp_provincia2" />
 
     <Button
-        android:id="@+id/btn_confirmar_pedido"
+        android:id="@+id/btn_confirmar_pedido1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"

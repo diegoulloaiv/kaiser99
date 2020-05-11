@@ -5,10 +5,13 @@ import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
+import android.os.Build
+import android.text.Html
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.util.Pair
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +21,7 @@ import com.kaiser.R
 import com.kaiser.logica.MyApplication
 import com.kaiser.logica.producto
 import com.kaiser.ui.actividad_producto
+import kotlinx.android.synthetic.main.activity_actividad_producto.view.*
 import kotlinx.android.synthetic.main.recyclerview_item_row_listado_producto.view.*
 
 
@@ -32,6 +36,7 @@ class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>
         return productos.size
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onBindViewHolder(holder: PhotoHolder, position: Int) {
         val itemPhoto = productos[position]
         holder.bindPhoto(itemPhoto)
@@ -43,13 +48,12 @@ class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>
         private var view: View = v
         private var prducto: producto? = null
 
+        @RequiresApi(Build.VERSION_CODES.N)
         @SuppressLint("RestrictedApi")
         fun bindPhoto(producto: producto) {
             this.prducto = producto
             // Reference to an image file in Cloud Storage
             val storageReference = FirebaseStorage.getInstance().getReference("productos")
-
-
 
             // Download directly from StorageReference using Glide
             // (See MyAppGlideModule for Loader registration)
@@ -59,6 +63,8 @@ class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>
 
             view.txt_descripcion_producto.text = prducto!!.nombre.toString()
             //CAMBIAR CUANDO IMPLEMENTE LOS VARIOS PRECIOS
+            var aux = "<strike> $" + producto.precio1.toString() + "</strike>"
+            view.txt_precio_original.text = Html.fromHtml(aux, Html.FROM_HTML_MODE_COMPACT)
             when (MyApplication.globalVar) {
               "publico" ->   view.txt_precio_producto.text = producto!!.precio1.toString()
                 "peluquero/a" -> view.txt_precio_producto.text = producto!!.precio2.toString()
@@ -67,6 +73,8 @@ class RecyclerAdapterListadoProductos(private val productos: ArrayList<producto>
                 "peluquera/maquilladora/cosmetologa" -> view.txt_precio_producto.text = producto!!.precio5.toString()
                 "comercio" -> view.txt_precio_producto.text = producto!!.precio6.toString()
             }
+            if (view.txt_precio_producto.text == producto.precio1.toString())
+                view.txt_precio_original.visibility = View.INVISIBLE
             //Picasso.with(view.context).load(producto.id).into(view.itemImage)
             Toast.makeText(view.context,"a", Toast.LENGTH_SHORT)
         }

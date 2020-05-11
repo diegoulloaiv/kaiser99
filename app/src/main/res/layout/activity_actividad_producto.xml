@@ -39,7 +39,7 @@
             android:id="@+id/txt_precio"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="72dp"
             android:layout_marginEnd="36dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:transitionName="precio_producto"
@@ -50,7 +50,7 @@
             android:id="@+id/ib_plus"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginTop="228dp"
+            android:layout_marginTop="268dp"
             android:layout_marginEnd="36dp"
             android:adjustViewBounds="true"
             android:background="@android:color/white"
@@ -63,7 +63,7 @@
             android:id="@+id/txtcantidad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="228dp"
+            android:layout_marginTop="268dp"
             android:layout_marginEnd="20dp"
             android:text="1"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -74,7 +74,7 @@
             android:id="@+id/ib_minus"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginTop="228dp"
+            android:layout_marginTop="268dp"
             android:layout_marginEnd="20dp"
             android:background="@android:color/white"
             android:scaleType="fitCenter"
@@ -101,7 +101,7 @@
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="72dp"
             android:layout_marginEnd="8dp"
             android:text="$"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -159,6 +159,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TxtTitulo" />
+
+        <TextView
+            android:id="@+id/txt_producto_precio_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="999.99"
+            app:layout_constraintEnd_toEndOf="@+id/txt_precio"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/txt_precio" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

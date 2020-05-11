@@ -66,6 +66,11 @@ class actividad_producto : AppCompatActivity() {
             "peluquera/maquilladora/cosmetologa" -> precio.text = intent.getStringExtra("precio5")
             "comercio" -> precio.text = intent.getStringExtra("precio6")
         }
+            var aux = "<strike> $" + intent.getStringExtra("precio1") + "</strike>"
+        txt_producto_precio_original.text = Html.fromHtml(aux, Html.FROM_HTML_MODE_COMPACT)
+
+        if (precio.text == intent.getStringExtra("precio1"))
+            txt_producto_precio_original.visibility = View.INVISIBLE
 
 
         cantidad = this.findViewById(R.id.txtcantidad)
