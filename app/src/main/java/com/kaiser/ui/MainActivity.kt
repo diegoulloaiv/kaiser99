@@ -289,7 +289,7 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
                             }
                         }
                     } catch (ex: Exception) {
-                        Toast.makeText(this, ex.message, Toast.LENGTH_LONG).show()
+                        //Toast.makeText(this, ex.message, Toast.LENGTH_LONG).show()
                         //Log.e(TAG, ex.message)
                     }
                 }.addOnFailureListener { e ->

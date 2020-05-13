@@ -3,16 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
     tools:context=".ui.nuevo_usuario">
 
     <TextView
         android:id="@+id/Titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:text="Bienvenido"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,9 +23,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
         android:text="Antes de comenzar a usar la app, te pedimos un par de datos:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titulo" />
 
@@ -30,10 +37,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
         android:inputType="none"
         android:text="Nombre:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -41,37 +49,40 @@
         android:id="@+id/txt_nombre"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
         android:autofillHints=""
         android:inputType="none|textPersonName|text"
         android:maxLength="250"
         android:text=" "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/fui_bgGitHub"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/txt_telefono"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="28dp"
         android:autofillHints=""
         android:inputType="phone"
         android:text=" "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/fui_bgGitHub"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="96dp"
         android:inputType="text"
         android:text="Telefono:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -79,34 +90,39 @@
         android:id="@+id/txt_email"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="28dp"
         android:autofillHints=""
         android:inputType="none|textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/fui_bgGitHub"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/txt_direccion"
+        android:id="@+id/txt_n_usuario_direccion"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
         android:autofillHints=""
-        android:inputType="none|textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/fui_bgGitHub"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/sp_ciudad" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="164dp"
         android:inputType="text"
         android:text="Email:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -114,52 +130,65 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="220dp"
         android:inputType="text"
-        android:text="Imagen Perfil:"
+        android:text="Imagen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:inputType="text"
+        android:text="perfil:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="440dp"
+        android:layout_marginStart="32dp"
         android:inputType="text"
         android:text="Direccion:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/txt_n_usuario_direccion" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="356dp"
+        android:layout_marginStart="52dp"
         android:inputType="text"
         android:text="Ciudad:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/sp_ciudad" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginStart="36dp"
         android:inputType="text"
         android:text="Provincia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/sp_provincia" />
 
     <ImageView
         android:id="@+id/imagen_perfil"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_email"
         app:srcCompat="@drawable/fui_ic_anonymous_white_24dp" />
@@ -168,8 +197,8 @@
         android:id="@+id/btn_imagen_perfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toEndOf="@+id/imagen_perfil"
         app:layout_constraintTop_toBottomOf="@+id/txt_email"
         app:srcCompat="@android:drawable/ic_menu_camera" />
@@ -178,19 +207,19 @@
         android:id="@+id/btn_aceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
         android:text="Aceptar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_direccion" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_n_usuario_direccion" />
 
     <Spinner
         android:id="@+id/sp_provincia"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="60dp"
-
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagen_perfil" />
 
@@ -198,10 +227,32 @@
         android:id="@+id/sp_ciudad"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="28dp"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sp_provincia" />
 
+    <ProgressBar
+        android:id="@+id/pb_n_usuario"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Grabando la informacion, por favor espere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_n_usuario" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

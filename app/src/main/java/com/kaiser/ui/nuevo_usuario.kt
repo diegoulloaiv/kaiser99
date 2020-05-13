@@ -15,6 +15,8 @@ import com.google.firebase.storage.StorageReference
 import com.kaiser.R
 import com.kaiser.logica.usuario
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_n_usuario.*
+
 // TODO: Arregar el nuevo usuario, seguro que anda como el culo. Y falta agregar la categoria
 
 
@@ -26,20 +28,19 @@ class nuevo_usuario : AppCompatActivity() {
     lateinit var email: String
     lateinit var id: String
     lateinit var telefono: String
-    lateinit var photourl: Uri
-    lateinit var direccion: String
+     var photourl: Uri = Uri.EMPTY
     lateinit var txt_nombre: TextView
     lateinit var txt_telefono: TextView
     lateinit var txt_email: TextView
     lateinit var imagen_perfil: ImageView
     lateinit var btn_imagen_perfil: ImageButton
-    lateinit var txt_direccion: TextView
+
     lateinit var btn_aceptar: Button
     lateinit var sp_provincia: Spinner
     lateinit var sp_ciudad: Spinner
     private var firebaseStore: FirebaseStorage? = null
     private var storageReference: StorageReference? = null
-
+    var aux_url_photo = ""
     lateinit var database: FirebaseFirestore
     private val RC_PHOTO_PICKER = 2
 
@@ -47,14 +48,13 @@ class nuevo_usuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_n_usuario)
+        pb_n_usuario.visibility = View.INVISIBLE
+        textView32.visibility = View.INVISIBLE
         nombre = intent.getStringExtra("nombre") ?: ""
         email = intent.getStringExtra("email") ?: ""
         id = intent.getStringExtra("id") ?: ""
         telefono = intent.getStringExtra("telefono") ?: ""
-        photourl = Uri.parse(intent.getStringExtra("photourl") ?: "")
 
-        firebaseStore = FirebaseStorage.getInstance()
-        storageReference = firebaseStore!!.getReference().child("uploads")
 
         txt_nombre = this.findViewById(R.id.txt_nombre)
         txt_telefono = this.findViewById(R.id.txt_telefono)
@@ -71,7 +71,7 @@ class nuevo_usuario : AppCompatActivity() {
                 RC_PHOTO_PICKER
             )
         }
-        txt_direccion = this.findViewById(R.id.txt_direccion)
+
 
         sp_provincia = this.findViewById(R.id.sp_provincia)
         sp_ciudad = this.findViewById(R.id.sp_ciudad)
@@ -79,11 +79,11 @@ class nuevo_usuario : AppCompatActivity() {
         ciudades = resources.getStringArray(R.array.ciudad_vacia).toMutableList()
         val provincias = resources.getStringArray(R.array.provincias)
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, provincias)
+        val adapter = ArrayAdapter(this, R.layout.spinner_item_2, provincias)
         sp_provincia.adapter = adapter
 
         var adapterCiudad =
-            ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ciudades)
+            ArrayAdapter<String>(this, R.layout.spinner_item_2, ciudades)
         sp_ciudad.adapter = adapterCiudad
 
         sp_provincia.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -279,47 +279,92 @@ class nuevo_usuario : AppCompatActivity() {
         btn_aceptar = this.findViewById(R.id.btn_aceptar)
         btn_aceptar.setOnClickListener()
         {
-            val ultima_parte = id
-            val photoRef = ultima_parte?.let { it1 -> storageReference!!.child(it1) }
-            photoRef?.putFile(photourl)?.addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    direccionImagen = photoRef.downloadUrl.toString()
-                    val vUsuario = usuario(
-                        txt_nombre.text.toString(),
-                        id,
-                        txt_email.text.toString(),
-                        txt_telefono.text.toString(),
-                        direccionImagen,
-                        txt_direccion.text.toString(),
-                        sp_ciudad.selectedItem.toString(),
-                        sp_provincia.selectedItem.toString(), ""
-                    )// FALTA LA CATEGORIA
-                    database = FirebaseFirestore.getInstance()
-                    database.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
 
-                    database.collection("usuarios")
-                        .add(vUsuario)
-                        .addOnSuccessListener { documentReference ->
-                            Log.d(TAG, "DocumentSnapshot written with ID: ${documentReference.id}")
-                            this.finish()
-                        }
-                        .addOnFailureListener { e ->
-                            Log.w(TAG, "Error adding document", e)
-                        }
+            if (photourl == Uri.EMPTY) {
+                aux_url_photo = ""
+                continuar_insercion()
+            }
 
-                }
+            else {
+                pb_n_usuario.visibility = View.VISIBLE
+                textView32.visibility = View.VISIBLE
+                Titulo.visibility = View.INVISIBLE
+                textView2.visibility = View.INVISIBLE
+                textView3.visibility = View.INVISIBLE
+                txt_nombre.visibility = View.INVISIBLE
+                txt_telefono.visibility = View.INVISIBLE
+                textView6.visibility = View.INVISIBLE
+                txt_email.visibility = View.INVISIBLE
+                txt_n_usuario_direccion.visibility = View.INVISIBLE
+                textView7.visibility = View.INVISIBLE
+                textView8.visibility = View.INVISIBLE
+                textView31.visibility = View.INVISIBLE
+                textView9.visibility = View.INVISIBLE
+                textView.visibility = View.INVISIBLE
+                textView4.visibility = View.INVISIBLE
+                imagen_perfil.visibility = View.INVISIBLE
+                btn_imagen_perfil.visibility = View.INVISIBLE
+                btn_aceptar.visibility = View.INVISIBLE
+                sp_provincia.visibility = View.INVISIBLE
+                sp_ciudad.visibility = View.INVISIBLE
+
+                firebaseStore = FirebaseStorage.getInstance()
+                storageReference = firebaseStore!!.getReference().child("uploads")
+                storageReference!!.putFile (photourl) .addOnFailureListener {
+                    // failure
+                } .addOnSuccessListener () {taskSnapshot ->
+                    // success
+                    storageReference!!.downloadUrl.addOnCompleteListener () { taskSnapshot ->
+
+                        var url = taskSnapshot.result
+                        aux_url_photo = url.toString()
+                        continuar_insercion()
+                    }
+                    }
             }
 
 
-        }
-
+                }
 
         txt_nombre.text = nombre
         txt_telefono.text = telefono
         txt_email.text = email
-        Picasso.with(this).load(photourl).into(imagen_perfil);
 
 
+        //photourl = Uri.parse(intent.getStringExtra("photourl") ?: "")
+
+        //firebaseStore = FirebaseStorage.getInstance()
+        //storageReference = firebaseStore!!.getReference().child("uploads")
+
+        //Picasso.with(this).load(photourl).into(imagen_perfil);
+
+
+    }
+
+    fun continuar_insercion()
+    {
+        val vUsuario = usuario(
+                txt_nombre.text.toString(),
+                id,
+                txt_email.text.toString(),
+                txt_telefono.text.toString(),
+                aux_url_photo,
+                txt_n_usuario_direccion.text.toString(),
+                sp_ciudad.selectedItem.toString(),
+                sp_provincia.selectedItem.toString(), "publico"
+        )// FALTA LA CATEGORIA
+        database = FirebaseFirestore.getInstance()
+        database.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
+
+        database.collection("usuarios")
+                .add(vUsuario)
+                .addOnSuccessListener { documentReference ->
+                    Log.d(TAG, "DocumentSnapshot written with ID: ${documentReference.id}")
+                    this.finish()
+                }
+                .addOnFailureListener { e ->
+                    Log.w(TAG, "Error adding document", e)
+                }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

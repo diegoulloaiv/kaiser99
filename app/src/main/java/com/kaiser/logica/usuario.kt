@@ -19,7 +19,7 @@ class usuario : Serializable {
     constructor(nombre : String, usuario_id: String, email: String, telefono: String, photourl: String, direcion: String, ciudad: String, provincia: String, categoria : String)
     {
         this.ciudad = ciudad
-        this.direccion = direccion
+        this.direccion = direcion
         this.email = email
         this.nombre = nombre
         this.photourl = photourl
