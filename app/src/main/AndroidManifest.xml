@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.actividad_metodo_envio"></activity>
+        <activity android:name=".ui.actividad_categoria_usuario"></activity>
+        <activity android:name=".ui.actividad_metodo_envio" />
         <activity android:name=".ui.actividad_modificar_usuario" />
         <activity android:name=".ui.actividad_pedido" />
         <activity android:name=".ui.actividad_usuario" />

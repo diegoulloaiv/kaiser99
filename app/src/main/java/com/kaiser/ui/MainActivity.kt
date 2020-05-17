@@ -66,6 +66,8 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
+        // TODO notificaciones push
+
         //Logout()
 
         im_usuario.setOnClickListener()
@@ -226,6 +228,11 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
                 finish()
             }
         }
+        if (requestCode == 3)
+        {
+            var intent = Intent(this, actividad_categoria_usuario::class.java)
+            startActivity(intent)
+        }
     }
 
 
@@ -250,7 +257,7 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
         var existia = false
         database = FirebaseFirestore.getInstance()
         database.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
-        val intent = Intent(this, nuevo_usuario::class.java)
+        var intent = Intent(this, nuevo_usuario::class.java)
         intent.putExtra("id",userId)
         intent.putExtra("nombre", nombre)
         intent.putExtra("email", email)
@@ -277,15 +284,17 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
                             //   Toast.LENGTH_LONG
                             //).show()
                             if (existia == false) {
-                                startActivity(intent)
+                                startActivityForResult(intent,3)
+
                             }
                         } else {
                             //Toast.makeText(this, "No such document!", Toast.LENGTH_LONG).show()
                             if (existia == false) {
-                                val intent = Intent(this,
+                                var intent = Intent(this,
                                     nuevo_usuario::class.java)
                                 intent.putExtra("id",userId)
-                                startActivity(intent)
+                                startActivityForResult(intent,3)
+
                             }
                         }
                     } catch (ex: Exception) {

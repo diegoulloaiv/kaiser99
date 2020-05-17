@@ -17,7 +17,7 @@ import com.kaiser.logica.usuario
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_n_usuario.*
 
-// TODO: Arregar el nuevo usuario, seguro que anda como el culo. Y falta agregar la categoria
+
 
 
 class nuevo_usuario : AppCompatActivity() {
@@ -365,6 +365,9 @@ class nuevo_usuario : AppCompatActivity() {
                 .addOnFailureListener { e ->
                     Log.w(TAG, "Error adding document", e)
                 }
+        val intent = Intent()
+        setResult(Activity.RESULT_OK, intent)
+        finish()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
