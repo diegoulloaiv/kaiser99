@@ -11,7 +11,6 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -21,9 +20,7 @@ import com.google.firebase.firestore.QuerySnapshot
 import com.kaiser.R
 import com.kaiser.logica.usuario
 import com.kaiser.logica.variables_sistema
-import kotlinx.android.synthetic.main.activity_actividad_carrito.*
 import kotlinx.android.synthetic.main.activity_actividad_metodo_envio.*
-
 
 class actividad_metodo_envio : AppCompatActivity() {
 
@@ -35,6 +32,8 @@ class actividad_metodo_envio : AppCompatActivity() {
     private var local_seleccionado: String = ""
     private var total: Double = 0.0
     private var cadete_sin_cargo: Double = 0.0
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,6 +75,8 @@ class actividad_metodo_envio : AppCompatActivity() {
         textView23.visibility = View.INVISIBLE
         sp_locales.visibility = View.INVISIBLE
         txt_info_local.visibility = View.INVISIBLE
+        txt_telefono_mp.visibility = View.INVISIBLE
+        textView35.visibility = View.INVISIBLE
 
         ChipEnvio.setOnClickListener()
         {
@@ -90,6 +91,17 @@ class actividad_metodo_envio : AppCompatActivity() {
             txt_info_local.visibility = View.INVISIBLE
         }
 
+        ChipEfectivo.setOnClickListener()
+        {
+            txt_telefono_mp.visibility = View.INVISIBLE
+            textView35.visibility = View.INVISIBLE
+        }
+
+        chipOnline.setOnClickListener()
+        {
+            txt_telefono_mp.visibility = View.VISIBLE
+            textView35.visibility = View.VISIBLE
+        }
 
         ChipLocal.setOnClickListener()
         {
@@ -122,7 +134,7 @@ class actividad_metodo_envio : AppCompatActivity() {
                     Toast.makeText(this, "Debe seleccionar una Forma de Pago", Toast.LENGTH_LONG).show()
             } else
                 Toast.makeText(this, "Debe seleccionar un Metodo de Envio", Toast.LENGTH_LONG).show()
-            //MercadoPago.SDK.configure("ENV_ACCESS_TOKEN")
+
         }
 
         var adapterCiudad = ArrayAdapter<String>(this, R.layout.spinner_item, ciudades)
@@ -338,6 +350,7 @@ class actividad_metodo_envio : AppCompatActivity() {
 
                     for (item in items) {
                         usuario_aux = item.toObject(usuario::class.java)
+                        txt_telefono_mp.setText(usuario_aux.telefono)
                         sp_provincia2.setSelection(provincias.indexOf(usuario_aux.provincia))
                         sp_ciudad2.setSelection(ciudades.indexOf(usuario_aux.ciudad))
                         txt_direccion2.setText(usuario_aux.direccion.toString())
@@ -389,7 +402,10 @@ class actividad_metodo_envio : AppCompatActivity() {
         else
             intent.putExtra("metodo_envio", "local")
         if (chipOnline.isChecked)
+        {
+            intent.putExtra("telefono",txt_telefono_mp.text.toString())
             intent.putExtra("metodo_pago", "online")
+        }
         else
             intent.putExtra("metodo_pago", "efectivo")
         intent.putExtra("provincia", provincia_seleccionada)
@@ -397,9 +413,16 @@ class actividad_metodo_envio : AppCompatActivity() {
         intent.putExtra("local", local_seleccionado)
         var aux: String = txt_direccion2.text.toString()
         intent.putExtra("direccion", aux)
+
         setResult(Activity.RESULT_OK, intent)
         finish()
 
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        Toast.makeText(this,"a",Toast.LENGTH_LONG)
+    }
+
 
 }

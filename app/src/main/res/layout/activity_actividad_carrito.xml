@@ -3,23 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_alignParentBottom="true"
     android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_carro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
     <TextView
         android:id="@+id/txt_carro_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
         android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv_carro" />
 
@@ -27,24 +30,63 @@
         android:id="@+id/btn_confirmar_pedido"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="48dp"
         android:background="@android:color/white"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_observaciones"
         app:srcCompat="@drawable/success" />
 
     <ImageButton
         android:id="@+id/btn_cancelar_pedido"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="24dp"
         android:background="@android:color/white"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_confirmar_pedido"
+        app:layout_constraintTop_toBottomOf="@+id/txt_observaciones"
         app:srcCompat="@drawable/error" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Observaciones:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_carro_total" />
+
+    <EditText
+        android:id="@+id/txt_observaciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/fondo_texto"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Productos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

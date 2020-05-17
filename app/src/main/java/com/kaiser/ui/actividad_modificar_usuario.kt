@@ -19,6 +19,8 @@ import com.kaiser.logica.usuario
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_actividad_modificar_usuario.*
 
+
+
 class actividad_modificar_usuario : AppCompatActivity() {
 
     lateinit var database: FirebaseFirestore
@@ -38,7 +40,7 @@ class actividad_modificar_usuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actividad_modificar_usuario)
-
+        ocultar()
         usuario_id = intent.getStringExtra("id")
         buscar_info_usuario()
         btn_update_usuario_btn_imagen.setOnClickListener()
@@ -252,6 +254,7 @@ class actividad_modificar_usuario : AppCompatActivity() {
 
         btn_update_usuario_actualizar.setOnClickListener()
         {
+            ocultar()
             if (cambio_la_foto == true) {
                 firebaseStore = FirebaseStorage.getInstance()
                 storageReference = firebaseStore!!.getReference().child("uploads")
@@ -275,7 +278,54 @@ class actividad_modificar_usuario : AppCompatActivity() {
 
 
     }
+        mostrar()
 }
+
+    fun ocultar()
+    {
+        progressBar.visibility = View.VISIBLE
+        btn_update_usuario_actualizar.visibility = View.INVISIBLE
+        txt_update_usuario_direccion.visibility = View.INVISIBLE
+        textView20.visibility = View.INVISIBLE
+        sp_update_usuario_ciudad.visibility = View.INVISIBLE
+        textView19.visibility = View.INVISIBLE
+        textView18.visibility = View.INVISIBLE
+        sp_update_usuario_provincia.visibility = View.INVISIBLE
+        textView17.visibility = View.INVISIBLE
+        im_update_usuario_imagen.visibility = View.INVISIBLE
+        btn_update_usuario_btn_imagen.visibility = View.INVISIBLE
+        textView13.visibility = View.INVISIBLE
+        txt_update_usuario_nombre.visibility = View.INVISIBLE
+        textView15.visibility = View.INVISIBLE
+        txt_update_usuario_telefono.visibility = View.INVISIBLE
+        textView16.visibility = View.INVISIBLE
+        txt_update_usuario_email.visibility = View.INVISIBLE
+        textView21.visibility = View.INVISIBLE
+        txt_update_usuario_categoria.visibility = View.INVISIBLE
+    }
+
+    fun mostrar()
+    {
+        progressBar.visibility = View.INVISIBLE
+        btn_update_usuario_actualizar.visibility = View.VISIBLE
+        txt_update_usuario_direccion.visibility = View.VISIBLE
+        textView20.visibility = View.VISIBLE
+        sp_update_usuario_ciudad.visibility = View.VISIBLE
+        textView19.visibility = View.VISIBLE
+        textView18.visibility = View.VISIBLE
+        sp_update_usuario_provincia.visibility = View.VISIBLE
+        textView17.visibility = View.VISIBLE
+        im_update_usuario_imagen.visibility = View.VISIBLE
+        btn_update_usuario_btn_imagen.visibility = View.VISIBLE
+        textView13.visibility = View.VISIBLE
+        txt_update_usuario_nombre.visibility = View.VISIBLE
+        textView15.visibility = View.VISIBLE
+        txt_update_usuario_telefono.visibility = View.VISIBLE
+        textView16.visibility = View.VISIBLE
+        txt_update_usuario_email.visibility = View.VISIBLE
+        textView21.visibility = View.VISIBLE
+        txt_update_usuario_categoria.visibility = View.VISIBLE
+    }
 
     fun actualizar_usuario()
     {
@@ -286,6 +336,7 @@ class actividad_modificar_usuario : AppCompatActivity() {
         usuario.nombre = txt_update_usuario_nombre.text.toString()
         usuario.provincia = sp_update_usuario_provincia.selectedItem.toString()
         usuario.usuario_id = usuario_id
+        usuario.telefono = txt_update_usuario_telefono.text.toString()
 
         database = FirebaseFirestore.getInstance()
         database.firestoreSettings = FirebaseFirestoreSettings.Builder().build()

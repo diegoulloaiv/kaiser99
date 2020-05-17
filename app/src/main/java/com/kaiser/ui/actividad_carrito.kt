@@ -7,6 +7,7 @@ import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
@@ -16,6 +17,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
+import com.google.android.material.internal.ContextUtils.getActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
@@ -47,6 +49,7 @@ class actividad_carrito : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
         GlobalScope.launch(Dispatchers.Main) {
             buscar_articulos()
@@ -173,6 +176,11 @@ class actividad_carrito : AppCompatActivity() {
                     p1.estado = "nuevo"
                     p1.total = total
                     p1.usuario = usuario_string
+                    var telefono_aux = data.getStringExtra("telefono")
+                    if (telefono_aux.isNullOrEmpty())
+                            p1.observaciones = txt_observaciones.text.toString()
+                    else
+                            p1.observaciones = "Telefono para MercadoPago: " + data.getStringExtra("telefono") + ". Observaciones: ${txt_observaciones.text.toString()}"
                     db.collection("pedidos")
                             .add(p1)
                             .addOnSuccessListener { documentReference ->

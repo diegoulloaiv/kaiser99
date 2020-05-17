@@ -9,18 +9,18 @@
         android:id="@+id/ChipFormaPago"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="88dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
         app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
-            android:checkable = "true"
             android:id="@+id/ChipEfectivo"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checkable="true"
             android:clickable="true"
             android:text="Efectivo"
             android:textSize="25dp"
@@ -28,12 +28,12 @@
             app:chipBackgroundColor="@color/bg_chip_state_list" />
 
         <com.google.android.material.chip.Chip
-            android:checkable = "true"
             android:id="@+id/chipOnline"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checkable="true"
             android:clickable="true"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="Tarjeta/MercadoPago"
             android:textSize="25dp"
             android:theme="@style/Theme.MaterialComponents.Light"
@@ -114,8 +114,8 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="94dp"
-        android:layout_marginEnd="53dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="52dp"
         android:text="Forma de Pago"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -205,10 +205,36 @@
         android:id="@+id/btn_confirmar_pedido1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="52dp"
         android:text="Finalizar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_telefono_mp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="22dp"
+        android:text="Te enviaremos el link de pago al siguiente telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ChipFormaPago" />
+
+    <EditText
+        android:id="@+id/txt_telefono_mp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
