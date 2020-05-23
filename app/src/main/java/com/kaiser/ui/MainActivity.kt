@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.firebase.ui.auth.AuthUI
@@ -98,7 +99,8 @@ import kotlin.coroutines.CoroutineContext
         rv_mas_vendidos.layoutManager = layoutManager
         adapter = RecyclerAdapter(lista_productos_vendidos as ArrayList<producto>)
         rv_mas_vendidos.adapter = adapter
-
+        val decoration = DividerItemDecoration(this, DividerItemDecoration.HORIZONTAL)
+        rv_mas_vendidos.addItemDecoration(decoration)
         // IF PELUQUERO
         //        {
         lista_menu?.add("coloracion")
@@ -232,7 +234,7 @@ import kotlin.coroutines.CoroutineContext
         database.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
         database
                 .collection("productos")
-                .orderBy("vendidos", Query.Direction.DESCENDING).limit(3)
+                .orderBy("vendidos", Query.Direction.DESCENDING).limit(10)
                 .get()
                 .addOnSuccessListener { items ->
 

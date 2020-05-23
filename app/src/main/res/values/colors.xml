@@ -6,4 +6,5 @@
     <color name="negro">#000000</color>
     <color name="blanco">#FFFFFF</color>
     <color name="fondo_texto">#F3B4B4</color>
+    <color name="divisor">#818181</color>
 </resources>
