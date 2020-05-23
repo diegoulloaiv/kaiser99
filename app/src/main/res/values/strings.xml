@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">kaiser</string>
-
+    <string name="channel_id" translatable="false">hardik-channel</string>
+    <string name="channel_name" translatable="false">hardik</string>
+    <string name="fcm_token">FCM Token: %s</string>
     <string-array name="provincias">
         <item>"Buenos Aires"</item>
         <item>"Catamarca"</item>

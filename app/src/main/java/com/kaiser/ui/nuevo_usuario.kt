@@ -373,7 +373,7 @@ class nuevo_usuario : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == RC_PHOTO_PICKER && resultCode == Activity.RESULT_OK) {
-            Picasso.with(this).load(data?.data).into(imagen_perfil)
+            Picasso.get().load(data?.data).into(imagen_perfil)
             if (data != null) {
                 photourl = data.data!!
             }

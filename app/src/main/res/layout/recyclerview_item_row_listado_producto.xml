@@ -2,26 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="110dp"
-    android:gravity="center"
-    android:background ="@android:color/white">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center">
 
     <ImageView
         android:id="@+id/iv_imagen_producto"
-        android:transitionName="imagen_producto"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_weight="0"
+        android:transitionName="imagen_producto"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <TextView
         android:id="@+id/txt_descripcion_producto"
-        android:transitionName="nombre_producto"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:transitionName="nombre_producto" />
 
 
     <LinearLayout
@@ -56,14 +56,14 @@
                 android:text="$  "
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-        <TextView
-            android:id="@+id/txt_precio_producto"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="TextView"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:transitionName="precio_producto" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/txt_precio_producto"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:transitionName="precio_producto" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

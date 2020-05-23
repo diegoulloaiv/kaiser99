@@ -2,21 +2,17 @@ package com.kaiser.ui
 
 
 import android.os.Bundle
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
-import com.google.firebase.firestore.Query
 import com.google.firebase.storage.FirebaseStorage
 import com.kaiser.R
-import com.kaiser.adaptadores.RecyclerAdapter
 import com.kaiser.adaptadores.RecyclerAdapterListadoProductos
 import com.kaiser.logica.producto
 import kotlinx.android.synthetic.main.activity_actividad_listado_productos.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_n_usuario.*
+
 
 class actividad_listado_productos : AppCompatActivity() {
 
@@ -34,7 +30,8 @@ class actividad_listado_productos : AppCompatActivity() {
         rv_listado_productos .layoutManager = layoutManager
         adapter = RecyclerAdapterListadoProductos(lista_productos as ArrayList<producto>)
         rv_listado_productos.adapter = adapter
-
+        val decoration = DividerItemDecoration(this,DividerItemDecoration.VERTICAL)
+        rv_listado_productos.addItemDecoration(decoration)
         categoria = intent.getStringExtra("opcion")
 
         buscar_articulos()

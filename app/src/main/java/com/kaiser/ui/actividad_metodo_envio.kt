@@ -22,6 +22,8 @@ import com.kaiser.logica.usuario
 import com.kaiser.logica.variables_sistema
 import kotlinx.android.synthetic.main.activity_actividad_metodo_envio.*
 
+//TODO Corregir los colores horribles
+
 class actividad_metodo_envio : AppCompatActivity() {
 
     lateinit var database: FirebaseFirestore

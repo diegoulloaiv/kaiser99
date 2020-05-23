@@ -21,7 +21,8 @@ class pedidos( var fecha_hora: com.google.firebase.Timestamp,
                 var direccion  : String,
                 var metodo_pago : String,
                 var local : String,
-var observaciones : String)
+var observaciones : String,
+var token : String)
 
 {
      constructor() : this(
@@ -30,6 +31,7 @@ var observaciones : String)
             0.0,
             "",
             null,
+             "",
              "",
              "",
              "",

@@ -4,22 +4,27 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
-import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.AuthUI.TAG
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.firestore.Query
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.iid.InstanceIdResult
 import com.google.firebase.storage.FirebaseStorage
 import com.kaiser.R
 import com.kaiser.adaptadores.RecyclerAdapter
@@ -28,15 +33,14 @@ import com.kaiser.logica.AppDb
 import com.kaiser.logica.MyApplication
 import com.kaiser.logica.producto
 import com.kaiser.logica.usuario
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.rv_mas_vendidos
-import kotlinx.android.synthetic.main.activity_main.rv_menu
 import kotlinx.android.synthetic.main.activity_main2.*
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
 import kotlin.coroutines.CoroutineContext
 
 
-class   MainActivity : AppCompatActivity(), CoroutineScope {
+    class   MainActivity : AppCompatActivity(), CoroutineScope {
 
     private lateinit var mFirebaseAuth: FirebaseAuth
     private lateinit var mAuthStateListener: FirebaseAuth.AuthStateListener
@@ -66,7 +70,20 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        // TODO notificaciones push
+
+        FirebaseInstanceId.getInstance().instanceId
+                .addOnCompleteListener(object : OnCompleteListener<InstanceIdResult?> {
+                    override fun onComplete(@NonNull task: Task<InstanceIdResult?>) {
+                        if (!task.isSuccessful()) {
+                           // Log.w(FragmentActivity.TAG, "getInstanceId failed", task.getException())
+                            return
+                        }
+
+                        // Get new Instance ID token
+                        MyApplication.token = task.result!!.token
+
+                    }
+                })
 
         //Logout()
 
@@ -127,8 +144,8 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
         }
         buscar_articulos_mas_vendidos()
 
-        job = Job() // create the Job
-/*
+        /*job = Job() // create the Job
+
         txtaux = findViewById(R.id.txtaux)
         btnaux = findViewById(R.id.btnaux)
         btnaux.setOnClickListener()
@@ -151,15 +168,30 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
             t.start()
         }
 
-      */
 
+*/
         carrito = im_carrito
         carrito.setOnClickListener()
         {
             val intent = Intent(this, actividad_carrito::class.java)
             startActivity(intent)
         }
+
+        FirebaseInstanceId.getInstance().instanceId
+                .addOnCompleteListener(OnCompleteListener { task ->
+                    if (!task.isSuccessful) {
+                       // Log.w(TAG, "getInstanceId failed", task.exception)
+                        return@OnCompleteListener
+                    }
+
+                    // Get new Instance ID token
+                    val token = task.result?.token
+
+                })
+
+
     }
+
 
     fun actualizar_ui(texto: String)
     {
@@ -311,6 +343,9 @@ class   MainActivity : AppCompatActivity(), CoroutineScope {
         job.cancel() // cancel the Job
         super.onDestroy()
     }
+
+
+
 
 }
 

@@ -9,7 +9,9 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.GenericTransitionOptions.with
 import com.bumptech.glide.Glide
+
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.storage.FirebaseStorage
@@ -356,7 +358,7 @@ class actividad_modificar_usuario : AppCompatActivity() {
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
     super.onActivityResult(requestCode, resultCode, data)
     if (requestCode == RC_PHOTO_PICKER && resultCode == Activity.RESULT_OK) {
-        Picasso.with(this).load(data?.data).into(im_update_usuario_imagen)
+           Picasso.get().load(data?.data).into(im_update_usuario_imagen)
         if (data != null) {
             photourl = data.data!!
             cambio_la_foto = true

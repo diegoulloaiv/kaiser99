@@ -7,6 +7,7 @@ class MyApplication: Application() {
         var globalVar = "publico"
         var usuario_id = ""
         var cadete_sin_cargo : Int = 0
+        var token : String = ""
     }
 
     override fun onCreate() {

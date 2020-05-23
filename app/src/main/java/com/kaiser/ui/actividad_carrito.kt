@@ -159,8 +159,10 @@ class actividad_carrito : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+
         if (requestCode == 2) {
             if (resultCode == Activity.RESULT_OK) {
+                ocultar_ui()
                 if (data != null) {
                     var db = FirebaseFirestore.getInstance()
                     var ultimo_id = ""
@@ -176,6 +178,7 @@ class actividad_carrito : AppCompatActivity() {
                     p1.estado = "nuevo"
                     p1.total = total
                     p1.usuario = usuario_string
+                    p1.token = MyApplication.token
                     var telefono_aux = data.getStringExtra("telefono")
                     if (telefono_aux.isNullOrEmpty())
                             p1.observaciones = txt_observaciones.text.toString()
@@ -208,5 +211,15 @@ class actividad_carrito : AppCompatActivity() {
         }
     }
 
+    fun ocultar_ui()
+    {
+        rv_carro.visibility = View.INVISIBLE
+        txt_carro_total.visibility = View.INVISIBLE
+        btn_confirmar_pedido.visibility = View.INVISIBLE
+        btn_cancelar_pedido.visibility = View.INVISIBLE
+        textView36.visibility = View.INVISIBLE
+        txt_observaciones.visibility = View.INVISIBLE
+        textView38.visibility = View.INVISIBLE
+    }
 
 }
