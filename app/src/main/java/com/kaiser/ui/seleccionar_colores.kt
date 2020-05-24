@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
@@ -15,6 +16,7 @@ import com.kaiser.adaptadores.RecyclerAdapterTonos
 import com.kaiser.logica.producto
 import com.kaiser.logica.tonos
 import kotlinx.android.synthetic.main.activity_actividad_listado_productos.*
+import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.activity_seleccionar_colores.*
 
 class seleccionar_colores : AppCompatActivity() {
@@ -34,7 +36,8 @@ class seleccionar_colores : AppCompatActivity() {
         rv_listado_tonos .layoutManager = layoutManager
         adapter = RecyclerAdapterTonos(lista_colores as ArrayList<tonos>)
         rv_listado_tonos.adapter = adapter
-
+        val decoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        rv_listado_tonos.addItemDecoration(decoration)
 
         buscar_articulos()
 

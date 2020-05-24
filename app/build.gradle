@@ -89,5 +89,5 @@ dependencies {
     implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.5"
     apply plugin: 'com.google.gms.google-services'
     //implementation 'com.onesignal:OneSignal:[3.13.0, 3.99.99]'
-    implementation 'com.onesignal:OneSignal:[3.8.3, 3.99.99]'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 }

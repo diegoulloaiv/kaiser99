@@ -15,6 +15,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.google.android.material.internal.ContextUtils.getActivity
@@ -28,6 +29,7 @@ import com.kaiser.adaptadores.RecyclerAdapterListadoProductos
 import com.kaiser.logica.*
 import kotlinx.android.synthetic.main.activity_actividad_carrito.*
 import kotlinx.android.synthetic.main.activity_actividad_listado_productos.*
+import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.coroutines.*
 import java.sql.Timestamp
 import java.time.Instant
@@ -66,6 +68,8 @@ class actividad_carrito : AppCompatActivity() {
         rv_carro.layoutManager = layoutManager
         adapter = RecyclerAdapterCarrito(lista_carro as ArrayList<Carro>)
         rv_carro.adapter = adapter
+        val decoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        rv_carro.addItemDecoration(decoration)
         val user = FirebaseAuth.getInstance().currentUser
         user?.let {
             usuario_string = user.uid

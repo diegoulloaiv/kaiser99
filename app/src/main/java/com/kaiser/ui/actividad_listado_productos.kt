@@ -33,6 +33,21 @@ class actividad_listado_productos : AppCompatActivity() {
         val decoration = DividerItemDecoration(this,DividerItemDecoration.VERTICAL)
         rv_listado_productos.addItemDecoration(decoration)
         categoria = intent.getStringExtra("opcion")
+        when (categoria)
+        {
+            "coloracion" -> textView40.text = "Coloración"
+            "shampoo" -> textView40.text = "Shampoo"
+            "nutricion" -> textView40.text = "Nutrición"
+            "finalizacion" -> textView40.text = "Finalización"
+            "accesorios_pelu" -> textView40.text = "Accesorios de Peluquería"
+            "herramientas" -> textView40.text = "Herramientas de Peluqueria"
+            "barberia" -> textView40.text = "Productos de Barberia"
+            "facial" -> textView40.text = "Productos Faciales"
+            "corpo" -> textView40.text = "Productos Corporales"
+            "accesorios_estetica" -> textView40.text = "Accesorios de Estetica"
+            "aparatologia" -> textView40.text = "Aparatologia"
+        }
+
 
         buscar_articulos()
 

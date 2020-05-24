@@ -6,6 +6,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -71,6 +72,7 @@ import kotlin.coroutines.CoroutineContext
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
+        ocultar_ui()
 
         FirebaseInstanceId.getInstance().instanceId
                 .addOnCompleteListener(object : OnCompleteListener<InstanceIdResult?> {
@@ -247,6 +249,7 @@ import kotlin.coroutines.CoroutineContext
                     }
                     //for (producto in this!!.lista_productos_vendidos!!)
                       //  Toast.makeText(this,producto.nombre, Toast.LENGTH_SHORT)
+                    mostrar_ui()
                 }
     }
 
@@ -347,7 +350,33 @@ import kotlin.coroutines.CoroutineContext
     }
 
 
+fun mostrar_ui()
+{
+    toolbar.visibility = View.VISIBLE
+    rv_mas_vendidos.visibility = View.VISIBLE
+    rv_menu.visibility = View.VISIBLE
+    view.visibility = View.VISIBLE
+    textView37.visibility = View.VISIBLE
+    view2.visibility = View.VISIBLE
+    view3.visibility = View.VISIBLE
+    textView39.visibility = View.VISIBLE
+    view4.visibility = View.VISIBLE
+    spin_kit.visibility = View.INVISIBLE
+}
 
+        fun ocultar_ui()
+        {
+            toolbar.visibility = View.INVISIBLE
+            rv_mas_vendidos.visibility = View.INVISIBLE
+            rv_menu.visibility = View.INVISIBLE
+            view.visibility = View.INVISIBLE
+            textView37.visibility = View.INVISIBLE
+            view2.visibility = View.INVISIBLE
+            view3.visibility = View.INVISIBLE
+            textView39.visibility = View.INVISIBLE
+            view4.visibility = View.INVISIBLE
+            spin_kit.visibility = View.VISIBLE
+        }
 
 }
 

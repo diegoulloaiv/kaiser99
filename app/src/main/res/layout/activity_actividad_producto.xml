@@ -37,6 +37,7 @@
 
         <TextView
             android:id="@+id/txt_precio"
+            android:textColor="@color/divisor"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
@@ -65,6 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="268dp"
             android:layout_marginEnd="20dp"
+            android:textColor="@color/divisor"
             android:text="1"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toStartOf="@+id/ib_plus"
@@ -86,14 +88,15 @@
             android:id="@+id/FAB__producto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="540dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
             android:padding="0dp"
             android:scaleType="fitXY"
             app:backgroundTint="@android:color/transparent"
             app:borderWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TxtTitulo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_texto_producto"
             app:srcCompat="@drawable/success"
             app:useCompatPadding="true" />
 
@@ -104,6 +107,7 @@
             android:layout_marginTop="72dp"
             android:layout_marginEnd="8dp"
             android:text="$"
+            android:textColor="@color/divisor"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toStartOf="@+id/txt_precio"
             app:layout_constraintTop_toBottomOf="@+id/TxtTitulo" />
@@ -134,17 +138,15 @@
         <TextView
             android:id="@+id/txt_texto_producto"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_marginStart="19dp"
             android:layout_marginTop="27dp"
             android:layout_marginEnd="19dp"
-            android:fadeScrollbars="true"
-            android:fadingEdge="vertical"
-            android:scrollbarStyle="insideOverlay"
-            android:scrollbars="vertical"
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -156,6 +158,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="160dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/divisor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TxtTitulo" />

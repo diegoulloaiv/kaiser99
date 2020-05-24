@@ -11,19 +11,19 @@
         android:id="@+id/txt_pedido_fecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
         android:text="10/12/2020"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/txt_pedido_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="44dp"
         android:text="999.98"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView27"
@@ -55,11 +55,11 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
         android:text="Fecha:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toStartOf="@+id/txt_pedido_fecha"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
@@ -79,10 +79,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="47dp"
-        android:text="Importe: $"
+        android:text="Importe:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="$"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_pedido_total"
+        app:layout_constraintEnd_toStartOf="@+id/txt_pedido_total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toTopOf="@+id/txt_pedido_total" />
 
     <TextView
         android:id="@+id/textView28"
