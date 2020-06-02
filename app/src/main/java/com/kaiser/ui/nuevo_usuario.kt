@@ -376,6 +376,7 @@ class nuevo_usuario : AppCompatActivity() {
             Picasso.get().load(data?.data).into(imagen_perfil)
             if (data != null) {
                 photourl = data.data!!
+                Toast.makeText(this,"a",Toast.LENGTH_LONG).show()
             }
         }
 

@@ -1,6 +1,8 @@
 package com.kaiser.adaptadores
 
 import android.annotation.SuppressLint
+import android.app.Activity
+import android.app.PendingIntent.getActivity
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -8,11 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
 import androidx.recyclerview.widget.RecyclerView
 import com.kaiser.R
 import com.kaiser.logica.pedidos
 import com.kaiser.ui.actividad_pedido
 import kotlinx.android.synthetic.main.recycler_item_row_pedidos.view.*
+import kotlinx.android.synthetic.main.recyclerview_item_row_listado_producto.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -71,7 +76,9 @@ class RecyclerAdapterPedidos(private val pedidos: ArrayList<pedidos>) : Recycler
         override fun onClick(p0: View?) {
             val context: Context = itemView.context
             val intent = Intent(context, actividad_pedido::class.java)
+
             intent.putExtra("id", pronos?.id)
+
             context.startActivity(intent)
         }
     }

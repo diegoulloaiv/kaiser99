@@ -3,6 +3,7 @@ package com.kaiser.ui
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
@@ -12,6 +13,7 @@ import com.kaiser.logica.pedidos
 import com.kaiser.logica.pedidos_Items
 import kotlinx.android.synthetic.main.activity_actividad_pedido.*
 import kotlinx.android.synthetic.main.activity_actividad_usuario.*
+import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.recycler_item_row_pedidos.view.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -31,6 +33,8 @@ class actividad_pedido : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         rv_pedidos_items .layoutManager = layoutManager
         adapter = RecyclerAdapterPedidosItems(listado_items as ArrayList<pedidos_Items>)
+        val decoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        rv_pedidos_items.addItemDecoration(decoration)
         rv_pedidos_items.adapter = adapter
         buscar_info_pedido()
 

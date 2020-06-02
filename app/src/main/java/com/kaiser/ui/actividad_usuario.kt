@@ -61,7 +61,7 @@ class actividad_usuario : AppCompatActivity() {
         database.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
         database
                 .collection("pedidos")
-               // .whereEqualTo("usuario",usuario_id)
+                .whereEqualTo("usuario_id",usuario_id)
                // .orderBy("dateTime")
                 .get()
                 .addOnSuccessListener { items ->

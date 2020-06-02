@@ -42,6 +42,8 @@ class actividad_metodo_envio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actividad_metodo_envio)
 
+        spin_kit3.visibility = View.INVISIBLE
+
         val adapterLocales = ArrayAdapter(this, R.layout.spinner_item, locales)
         sp_locales.adapter = adapterLocales
         total = intent.getDoubleExtra("total", 0.0)
@@ -360,7 +362,27 @@ class actividad_metodo_envio : AppCompatActivity() {
                 }
     }
 
+    fun ocultar_ui()
+    {
+        spin_kit3.visibility = View.VISIBLE
+        btn_confirmar_pedido1.visibility = View.INVISIBLE
+        textView26.visibility = View.INVISIBLE
+        ChipFormaPago.visibility = View.INVISIBLE
+        ChipFormaEnvio.visibility = View.INVISIBLE
+        textView24.visibility = View.INVISIBLE
+        sp_provincia2.visibility = View.INVISIBLE
+        sp_ciudad2.visibility = View.INVISIBLE
+        txt_direccion2.visibility = View.INVISIBLE
+        textView12.visibility = View.INVISIBLE
+        textView11.visibility = View.INVISIBLE
+        textView10.visibility = View.INVISIBLE
+        textView23.visibility = View.INVISIBLE
+        sp_locales.visibility = View.INVISIBLE
+        txt_info_local.visibility = View.INVISIBLE
+    }
+
     fun buscar_variables_sistema(ciudad: String) {
+        ocultar_ui()
         val rootRef = FirebaseFirestore.getInstance()
         val yourCollRef = rootRef.collection("variables_sistema")
         val query: Query = yourCollRef.whereEqualTo("variable", ciudad_seleccionada)
@@ -397,12 +419,32 @@ class actividad_metodo_envio : AppCompatActivity() {
 
     }
 
+    fun buscar_local(): String{
+        val nqn = listOf<String>("Allen","Cinco Saltos","Cipolletti","El Bolsón","General Enrique Godoy","General Fernández Oro","General Roca","Villa Regina","Bariloche")
+        if (ciudad_seleccionada in nqn)
+                return "Neuquén"
+        if (ciudad_seleccionada == "Río Colorado")
+                return "Bahia Blanca"
+        if (ciudad_seleccionada == "Carmen de Patagones")
+                return "Viedma"
+        when (provincia_seleccionada)
+        {
+            "Río Negro" -> return "Viedma"
+            "Neuquén" -> return "Neuquén"
+            else -> return "Bahia Blanca"
+        }
+    }
+
     fun finalizar() {
         val intent = Intent()
-        if (ChipEnvio.isChecked)
+        if (ChipEnvio.isChecked) {
             intent.putExtra("metodo_envio", "envio")
-        else
+            intent.putExtra("local",buscar_local())
+        }
+        else {
             intent.putExtra("metodo_envio", "local")
+            intent.putExtra("local", local_seleccionado)
+        }
         if (chipOnline.isChecked)
         {
             intent.putExtra("telefono",txt_telefono_mp.text.toString())
@@ -412,7 +454,7 @@ class actividad_metodo_envio : AppCompatActivity() {
             intent.putExtra("metodo_pago", "efectivo")
         intent.putExtra("provincia", provincia_seleccionada)
         intent.putExtra("ciudad", ciudad_seleccionada)
-        intent.putExtra("local", local_seleccionado)
+
         var aux: String = txt_direccion2.text.toString()
         intent.putExtra("direccion", aux)
 

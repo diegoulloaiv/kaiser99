@@ -10,9 +10,12 @@
         android:id="@+id/txt_detalle_pedido_fecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:text="TextView"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,27 +23,40 @@
         android:id="@+id/txt_detalle_pedido_estado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="312dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_detalle_pedido_fecha" />
 
     <TextView
         android:id="@+id/txt_detalle_pedido_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/txt_detalle_pedido_estado"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_pedidos_items"
         android:layout_width="match_parent"
-        android:layout_height="634dp"
-        android:layout_marginTop="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_detalle_pedido_total"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_detalle_pedido_estado" />
 </androidx.constraintlayout.widget.ConstraintLayout>

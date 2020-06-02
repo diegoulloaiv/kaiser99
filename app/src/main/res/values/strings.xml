@@ -1203,6 +1203,7 @@
         <item>"Bahía Creek"</item>
         <item>"Bajo San Cayetano"</item>
         <item>"Barda del Medio"</item>
+        <item>"Bariloche"</item>
         <item>"Barrio Blanco"</item>
         <item>"Barrio Calle Ciega Nº 10"</item>
         <item>"Barrio Calle Ciega Nº 6"</item>
@@ -1269,7 +1270,7 @@
         <item>"General Conesa"</item>
         <item>"General Enrique Godoy"</item>
         <item>"General Fernández Oro"</item>
-        <item>"General Roca "</item>
+        <item>"General Roca"</item>
         <item>"Guardia Mitre"</item>
         <item>"Ingeniero Jacobacci"</item>
         <item>"Ingeniero Luis A. Huergo"</item>
@@ -1323,14 +1324,14 @@
         <item>"Valle Azul"</item>
         <item>"Viedma"</item>
         <item>"Villa Alberdi"</item>
-        <item>"Villa Campanario "</item>
-        <item>"Villa Catedral "</item>
+        <item>"Villa Campanario"</item>
+        <item>"Villa Catedral"</item>
         <item>"Villa del Parque"</item>
         <item>"Villa Llanquín"</item>
         <item>"Villa Llao Llao"</item>
         <item>"Villa Los Coihues"</item>
         <item>"Villa Manzano"</item>
-        <item>"Villa Regina "</item>
+        <item>"Villa Regina"</item>
         <item>"Villa San Isidro"</item>
         <item>"Yaminué"</item>
 
@@ -2973,7 +2974,7 @@
         <item>"Carlos Salas"</item>
         <item>"Carlos Tejedor"</item>
         <item>"Carmen de Areco"</item>
-        <item>"Carmen de Patagones "</item>
+        <item>"Carmen de Patagones"</item>
         <item>"Casalins"</item>
         <item>"Casbas"</item>
         <item>"Cascadas"</item>
